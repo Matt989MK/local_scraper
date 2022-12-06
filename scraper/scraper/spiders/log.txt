@@ -1,0 +1,1389 @@
+INFO: Scrapy 2.7.1 started (bot: scraper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 38.0.4, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'scraper',
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: 296d303f903195fa
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Attempting to acquire lock 2898865726912 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2898865726912 acquired on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Attempting to release lock 2898865726912 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2898865726912 released on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Crawled (200) <GET http://smithgill.com/robots.txt> (referer: None)
+DEBUG: Rule at line 20 without any user agent to enforce it on.
+DEBUG: Rule at line 36 without any user agent to enforce it on.
+DEBUG: Rule at line 228 without any user agent to enforce it on.
+DEBUG: Rule at line 229 without any user agent to enforce it on.
+DEBUG: Rule at line 230 without any user agent to enforce it on.
+DEBUG: Rule at line 238 without any user agent to enforce it on.
+DEBUG: Rule at line 239 without any user agent to enforce it on.
+DEBUG: Rule at line 240 without any user agent to enforce it on.
+DEBUG: Rule at line 241 without any user agent to enforce it on.
+DEBUG: Rule at line 242 without any user agent to enforce it on.
+DEBUG: Rule at line 243 without any user agent to enforce it on.
+DEBUG: Rule at line 244 without any user agent to enforce it on.
+DEBUG: Rule at line 245 without any user agent to enforce it on.
+DEBUG: Rule at line 246 without any user agent to enforce it on.
+DEBUG: Rule at line 247 without any user agent to enforce it on.
+DEBUG: Rule at line 248 without any user agent to enforce it on.
+DEBUG: Rule at line 249 without any user agent to enforce it on.
+DEBUG: Rule at line 250 without any user agent to enforce it on.
+DEBUG: Rule at line 251 without any user agent to enforce it on.
+DEBUG: Rule at line 285 without any user agent to enforce it on.
+DEBUG: Rule at line 291 without any user agent to enforce it on.
+DEBUG: Rule at line 297 without any user agent to enforce it on.
+DEBUG: Rule at line 303 without any user agent to enforce it on.
+DEBUG: Rule at line 309 without any user agent to enforce it on.
+DEBUG: Rule at line 315 without any user agent to enforce it on.
+DEBUG: Rule at line 321 without any user agent to enforce it on.
+DEBUG: Rule at line 327 without any user agent to enforce it on.
+DEBUG: Rule at line 333 without any user agent to enforce it on.
+DEBUG: Rule at line 339 without any user agent to enforce it on.
+DEBUG: Rule at line 353 without any user agent to enforce it on.
+DEBUG: Rule at line 359 without any user agent to enforce it on.
+DEBUG: Rule at line 365 without any user agent to enforce it on.
+DEBUG: Rule at line 371 without any user agent to enforce it on.
+DEBUG: Rule at line 377 without any user agent to enforce it on.
+DEBUG: Rule at line 383 without any user agent to enforce it on.
+DEBUG: Rule at line 389 without any user agent to enforce it on.
+DEBUG: Rule at line 395 without any user agent to enforce it on.
+DEBUG: Rule at line 401 without any user agent to enforce it on.
+DEBUG: Rule at line 407 without any user agent to enforce it on.
+DEBUG: Rule at line 413 without any user agent to enforce it on.
+DEBUG: Rule at line 419 without any user agent to enforce it on.
+DEBUG: Rule at line 440 without any user agent to enforce it on.
+DEBUG: Rule at line 441 without any user agent to enforce it on.
+DEBUG: Rule at line 442 without any user agent to enforce it on.
+DEBUG: Rule at line 443 without any user agent to enforce it on.
+DEBUG: Rule at line 449 without any user agent to enforce it on.
+DEBUG: Rule at line 453 without any user agent to enforce it on.
+DEBUG: Rule at line 454 without any user agent to enforce it on.
+DEBUG: Rule at line 472 without any user agent to enforce it on.
+DEBUG: Rule at line 481 without any user agent to enforce it on.
+DEBUG: Crawled (200) <GET http://smithgill.com/> (referer: None)
+DEBUG: driver not found in PATH, trying Selenium Manager
+DEBUG: Executing: C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome
+DEBUG: Using driver at: C:\Users\moffi\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+DEBUG: Started executable: `chromedriver` in a child process with pid: 22340
+DEBUG: POST http://localhost:51635/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+DEBUG: Starting new HTTP connection (1): localhost:51635
+DEBUG: http://localhost:51635 "POST /session HTTP/1.1" 200 791
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\moffi\\AppData\\Local\\Temp\\scoped_dir22340_1552261349"},"goog:chromeOptions":{"debuggerAddress":"localhost:51638"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"bf11cd543f059a6fa717ab4c1e834c5b"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:51635/session/bf11cd543f059a6fa717ab4c1e834c5b/url {"url": "http://smithgill.com/"}
+DEBUG: http://localhost:51635 "POST /session/bf11cd543f059a6fa717ab4c1e834c5b/url HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:51635/session/bf11cd543f059a6fa717ab4c1e834c5b/timeouts {"implicit": 10000}
+DEBUG: http://localhost:51635 "POST /session/bf11cd543f059a6fa717ab4c1e834c5b/timeouts HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: Filtered duplicate request: <GET http://smithgill.com/contact> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+DEBUG: Scraped from <200 http://smithgill.com/>
+{'facebook': 'https://www.facebook.com/smithgillarch'}
+DEBUG: DELETE http://localhost:51635/session/bf11cd543f059a6fa717ab4c1e834c5b {}
+DEBUG: http://localhost:51635 "DELETE /session/bf11cd543f059a6fa717ab4c1e834c5b HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: Redirecting (301) to <GET http://smithgill.com/contact/> from <GET http://smithgill.com/contact>
+DEBUG: Crawled (200) <GET http://smithgill.com/contact/> (referer: http://smithgill.com/)
+INFO: Closing spider (finished)
+INFO: Stored json feed (1 items) in: website_spider_output.json
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1252,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 18931,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 3,
+ 'downloader/response_status_count/301': 1,
+ 'dupefilter/filtered': 1,
+ 'elapsed_time_seconds': 18.209871,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 5, 23, 55, 13, 986742),
+ 'httpcompression/response_bytes': 85365,
+ 'httpcompression/response_count': 3,
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 84,
+ 'log_count/INFO': 11,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2022, 12, 5, 23, 54, 55, 776871)}
+INFO: Spider closed (finished)
+INFO: Scrapy 2.7.1 started (bot: scraper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 38.0.4, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'scraper',
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: f74f7239a1d268d1
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Attempting to acquire lock 2215736630752 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2215736630752 acquired on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Attempting to release lock 2215736630752 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2215736630752 released on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Crawled (200) <GET http://smithgill.com/robots.txt> (referer: None)
+DEBUG: Rule at line 20 without any user agent to enforce it on.
+DEBUG: Rule at line 36 without any user agent to enforce it on.
+DEBUG: Rule at line 228 without any user agent to enforce it on.
+DEBUG: Rule at line 229 without any user agent to enforce it on.
+DEBUG: Rule at line 230 without any user agent to enforce it on.
+DEBUG: Rule at line 238 without any user agent to enforce it on.
+DEBUG: Rule at line 239 without any user agent to enforce it on.
+DEBUG: Rule at line 240 without any user agent to enforce it on.
+DEBUG: Rule at line 241 without any user agent to enforce it on.
+DEBUG: Rule at line 242 without any user agent to enforce it on.
+DEBUG: Rule at line 243 without any user agent to enforce it on.
+DEBUG: Rule at line 244 without any user agent to enforce it on.
+DEBUG: Rule at line 245 without any user agent to enforce it on.
+DEBUG: Rule at line 246 without any user agent to enforce it on.
+DEBUG: Rule at line 247 without any user agent to enforce it on.
+DEBUG: Rule at line 248 without any user agent to enforce it on.
+DEBUG: Rule at line 249 without any user agent to enforce it on.
+DEBUG: Rule at line 250 without any user agent to enforce it on.
+DEBUG: Rule at line 251 without any user agent to enforce it on.
+DEBUG: Rule at line 285 without any user agent to enforce it on.
+DEBUG: Rule at line 291 without any user agent to enforce it on.
+DEBUG: Rule at line 297 without any user agent to enforce it on.
+DEBUG: Rule at line 303 without any user agent to enforce it on.
+DEBUG: Rule at line 309 without any user agent to enforce it on.
+DEBUG: Rule at line 315 without any user agent to enforce it on.
+DEBUG: Rule at line 321 without any user agent to enforce it on.
+DEBUG: Rule at line 327 without any user agent to enforce it on.
+DEBUG: Rule at line 333 without any user agent to enforce it on.
+DEBUG: Rule at line 339 without any user agent to enforce it on.
+DEBUG: Rule at line 353 without any user agent to enforce it on.
+DEBUG: Rule at line 359 without any user agent to enforce it on.
+DEBUG: Rule at line 365 without any user agent to enforce it on.
+DEBUG: Rule at line 371 without any user agent to enforce it on.
+DEBUG: Rule at line 377 without any user agent to enforce it on.
+DEBUG: Rule at line 383 without any user agent to enforce it on.
+DEBUG: Rule at line 389 without any user agent to enforce it on.
+DEBUG: Rule at line 395 without any user agent to enforce it on.
+DEBUG: Rule at line 401 without any user agent to enforce it on.
+DEBUG: Rule at line 407 without any user agent to enforce it on.
+DEBUG: Rule at line 413 without any user agent to enforce it on.
+DEBUG: Rule at line 419 without any user agent to enforce it on.
+DEBUG: Rule at line 440 without any user agent to enforce it on.
+DEBUG: Rule at line 441 without any user agent to enforce it on.
+DEBUG: Rule at line 442 without any user agent to enforce it on.
+DEBUG: Rule at line 443 without any user agent to enforce it on.
+DEBUG: Rule at line 449 without any user agent to enforce it on.
+DEBUG: Rule at line 453 without any user agent to enforce it on.
+DEBUG: Rule at line 454 without any user agent to enforce it on.
+DEBUG: Rule at line 472 without any user agent to enforce it on.
+DEBUG: Rule at line 481 without any user agent to enforce it on.
+DEBUG: Crawled (200) <GET http://smithgill.com/> (referer: None)
+DEBUG: driver not found in PATH, trying Selenium Manager
+DEBUG: Executing: C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome
+DEBUG: Using driver at: C:\Users\moffi\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+DEBUG: Started executable: `chromedriver` in a child process with pid: 15088
+DEBUG: POST http://localhost:49199/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+DEBUG: Starting new HTTP connection (1): localhost:49199
+DEBUG: http://localhost:49199 "POST /session HTTP/1.1" 200 791
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\moffi\\AppData\\Local\\Temp\\scoped_dir15088_1423117287"},"goog:chromeOptions":{"debuggerAddress":"localhost:49202"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"8104acd0b3740afb0111ae884d988a25"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:49199/session/8104acd0b3740afb0111ae884d988a25/url {"url": "http://smithgill.com/"}
+DEBUG: http://localhost:49199 "POST /session/8104acd0b3740afb0111ae884d988a25/url HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:49199/session/8104acd0b3740afb0111ae884d988a25/timeouts {"implicit": 10000}
+DEBUG: http://localhost:49199 "POST /session/8104acd0b3740afb0111ae884d988a25/timeouts HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: Filtered duplicate request: <GET http://smithgill.com/contact> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+DEBUG: Scraped from <200 http://smithgill.com/>
+{'facebook': 'https://www.facebook.com/smithgillarch'}
+DEBUG: DELETE http://localhost:49199/session/8104acd0b3740afb0111ae884d988a25 {}
+DEBUG: http://localhost:49199 "DELETE /session/8104acd0b3740afb0111ae884d988a25 HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: Redirecting (301) to <GET http://smithgill.com/contact/> from <GET http://smithgill.com/contact>
+DEBUG: Crawled (200) <GET http://smithgill.com/contact/> (referer: http://smithgill.com/)
+INFO: Closing spider (finished)
+INFO: Stored json feed (1 items) in: website_spider_output.json
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1252,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 18931,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 3,
+ 'downloader/response_status_count/301': 1,
+ 'dupefilter/filtered': 1,
+ 'elapsed_time_seconds': 18.327564,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 5, 23, 59, 32, 128719),
+ 'httpcompression/response_bytes': 85365,
+ 'httpcompression/response_count': 3,
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 84,
+ 'log_count/INFO': 11,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2022, 12, 5, 23, 59, 13, 801155)}
+INFO: Spider closed (finished)
+INFO: Scrapy 2.7.1 started (bot: scraper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 38.0.4, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'scraper',
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: 37f0ff2012db75e8
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Attempting to acquire lock 1502844935504 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 1502844935504 acquired on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Attempting to release lock 1502844935504 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 1502844935504 released on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Crawled (200) <GET http://smithgill.com/robots.txt> (referer: None)
+DEBUG: Rule at line 20 without any user agent to enforce it on.
+DEBUG: Rule at line 36 without any user agent to enforce it on.
+DEBUG: Rule at line 228 without any user agent to enforce it on.
+DEBUG: Rule at line 229 without any user agent to enforce it on.
+DEBUG: Rule at line 230 without any user agent to enforce it on.
+DEBUG: Rule at line 238 without any user agent to enforce it on.
+DEBUG: Rule at line 239 without any user agent to enforce it on.
+DEBUG: Rule at line 240 without any user agent to enforce it on.
+DEBUG: Rule at line 241 without any user agent to enforce it on.
+DEBUG: Rule at line 242 without any user agent to enforce it on.
+DEBUG: Rule at line 243 without any user agent to enforce it on.
+DEBUG: Rule at line 244 without any user agent to enforce it on.
+DEBUG: Rule at line 245 without any user agent to enforce it on.
+DEBUG: Rule at line 246 without any user agent to enforce it on.
+DEBUG: Rule at line 247 without any user agent to enforce it on.
+DEBUG: Rule at line 248 without any user agent to enforce it on.
+DEBUG: Rule at line 249 without any user agent to enforce it on.
+DEBUG: Rule at line 250 without any user agent to enforce it on.
+DEBUG: Rule at line 251 without any user agent to enforce it on.
+DEBUG: Rule at line 285 without any user agent to enforce it on.
+DEBUG: Rule at line 291 without any user agent to enforce it on.
+DEBUG: Rule at line 297 without any user agent to enforce it on.
+DEBUG: Rule at line 303 without any user agent to enforce it on.
+DEBUG: Rule at line 309 without any user agent to enforce it on.
+DEBUG: Rule at line 315 without any user agent to enforce it on.
+DEBUG: Rule at line 321 without any user agent to enforce it on.
+DEBUG: Rule at line 327 without any user agent to enforce it on.
+DEBUG: Rule at line 333 without any user agent to enforce it on.
+DEBUG: Rule at line 339 without any user agent to enforce it on.
+DEBUG: Rule at line 353 without any user agent to enforce it on.
+DEBUG: Rule at line 359 without any user agent to enforce it on.
+DEBUG: Rule at line 365 without any user agent to enforce it on.
+DEBUG: Rule at line 371 without any user agent to enforce it on.
+DEBUG: Rule at line 377 without any user agent to enforce it on.
+DEBUG: Rule at line 383 without any user agent to enforce it on.
+DEBUG: Rule at line 389 without any user agent to enforce it on.
+DEBUG: Rule at line 395 without any user agent to enforce it on.
+DEBUG: Rule at line 401 without any user agent to enforce it on.
+DEBUG: Rule at line 407 without any user agent to enforce it on.
+DEBUG: Rule at line 413 without any user agent to enforce it on.
+DEBUG: Rule at line 419 without any user agent to enforce it on.
+DEBUG: Rule at line 440 without any user agent to enforce it on.
+DEBUG: Rule at line 441 without any user agent to enforce it on.
+DEBUG: Rule at line 442 without any user agent to enforce it on.
+DEBUG: Rule at line 443 without any user agent to enforce it on.
+DEBUG: Rule at line 449 without any user agent to enforce it on.
+DEBUG: Rule at line 453 without any user agent to enforce it on.
+DEBUG: Rule at line 454 without any user agent to enforce it on.
+DEBUG: Rule at line 472 without any user agent to enforce it on.
+DEBUG: Rule at line 481 without any user agent to enforce it on.
+DEBUG: Crawled (200) <GET http://smithgill.com/> (referer: None)
+DEBUG: driver not found in PATH, trying Selenium Manager
+DEBUG: Executing: C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome
+DEBUG: Using driver at: C:\Users\moffi\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+DEBUG: Started executable: `chromedriver` in a child process with pid: 27404
+DEBUG: POST http://localhost:49266/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+DEBUG: Starting new HTTP connection (1): localhost:49266
+DEBUG: http://localhost:49266 "POST /session HTTP/1.1" 200 791
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\moffi\\AppData\\Local\\Temp\\scoped_dir27404_1278179160"},"goog:chromeOptions":{"debuggerAddress":"localhost:49269"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"1285595ee63e95d3abc3724ba2fadb70"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:49266/session/1285595ee63e95d3abc3724ba2fadb70/url {"url": "http://smithgill.com/"}
+DEBUG: http://localhost:49266 "POST /session/1285595ee63e95d3abc3724ba2fadb70/url HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:49266/session/1285595ee63e95d3abc3724ba2fadb70/timeouts {"implicit": 10000}
+DEBUG: http://localhost:49266 "POST /session/1285595ee63e95d3abc3724ba2fadb70/timeouts HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: Filtered duplicate request: <GET http://smithgill.com/contact> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+DEBUG: Scraped from <200 http://smithgill.com/>
+{'facebook': 'https://www.facebook.com/smithgillarch'}
+DEBUG: DELETE http://localhost:49266/session/1285595ee63e95d3abc3724ba2fadb70 {}
+DEBUG: http://localhost:49266 "DELETE /session/1285595ee63e95d3abc3724ba2fadb70 HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: Redirecting (301) to <GET http://smithgill.com/contact/> from <GET http://smithgill.com/contact>
+DEBUG: Crawled (200) <GET http://smithgill.com/contact/> (referer: http://smithgill.com/)
+INFO: Closing spider (finished)
+INFO: Stored json feed (1 items) in: website_spider_output.json
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1252,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 18931,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 3,
+ 'downloader/response_status_count/301': 1,
+ 'dupefilter/filtered': 1,
+ 'elapsed_time_seconds': 18.828954,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 6, 0, 0, 38, 296836),
+ 'httpcompression/response_bytes': 85365,
+ 'httpcompression/response_count': 3,
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 84,
+ 'log_count/INFO': 11,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2022, 12, 6, 0, 0, 19, 467882)}
+INFO: Spider closed (finished)
+INFO: Scrapy 2.7.1 started (bot: scraper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 38.0.4, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'scraper',
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: c048dd801886f7e2
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Attempting to acquire lock 2216693160288 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2216693160288 acquired on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Attempting to release lock 2216693160288 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2216693160288 released on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Crawled (200) <GET http://smithgill.com/robots.txt> (referer: None)
+DEBUG: Rule at line 20 without any user agent to enforce it on.
+DEBUG: Rule at line 36 without any user agent to enforce it on.
+DEBUG: Rule at line 228 without any user agent to enforce it on.
+DEBUG: Rule at line 229 without any user agent to enforce it on.
+DEBUG: Rule at line 230 without any user agent to enforce it on.
+DEBUG: Rule at line 238 without any user agent to enforce it on.
+DEBUG: Rule at line 239 without any user agent to enforce it on.
+DEBUG: Rule at line 240 without any user agent to enforce it on.
+DEBUG: Rule at line 241 without any user agent to enforce it on.
+DEBUG: Rule at line 242 without any user agent to enforce it on.
+DEBUG: Rule at line 243 without any user agent to enforce it on.
+DEBUG: Rule at line 244 without any user agent to enforce it on.
+DEBUG: Rule at line 245 without any user agent to enforce it on.
+DEBUG: Rule at line 246 without any user agent to enforce it on.
+DEBUG: Rule at line 247 without any user agent to enforce it on.
+DEBUG: Rule at line 248 without any user agent to enforce it on.
+DEBUG: Rule at line 249 without any user agent to enforce it on.
+DEBUG: Rule at line 250 without any user agent to enforce it on.
+DEBUG: Rule at line 251 without any user agent to enforce it on.
+DEBUG: Rule at line 285 without any user agent to enforce it on.
+DEBUG: Rule at line 291 without any user agent to enforce it on.
+DEBUG: Rule at line 297 without any user agent to enforce it on.
+DEBUG: Rule at line 303 without any user agent to enforce it on.
+DEBUG: Rule at line 309 without any user agent to enforce it on.
+DEBUG: Rule at line 315 without any user agent to enforce it on.
+DEBUG: Rule at line 321 without any user agent to enforce it on.
+DEBUG: Rule at line 327 without any user agent to enforce it on.
+DEBUG: Rule at line 333 without any user agent to enforce it on.
+DEBUG: Rule at line 339 without any user agent to enforce it on.
+DEBUG: Rule at line 353 without any user agent to enforce it on.
+DEBUG: Rule at line 359 without any user agent to enforce it on.
+DEBUG: Rule at line 365 without any user agent to enforce it on.
+DEBUG: Rule at line 371 without any user agent to enforce it on.
+DEBUG: Rule at line 377 without any user agent to enforce it on.
+DEBUG: Rule at line 383 without any user agent to enforce it on.
+DEBUG: Rule at line 389 without any user agent to enforce it on.
+DEBUG: Rule at line 395 without any user agent to enforce it on.
+DEBUG: Rule at line 401 without any user agent to enforce it on.
+DEBUG: Rule at line 407 without any user agent to enforce it on.
+DEBUG: Rule at line 413 without any user agent to enforce it on.
+DEBUG: Rule at line 419 without any user agent to enforce it on.
+DEBUG: Rule at line 440 without any user agent to enforce it on.
+DEBUG: Rule at line 441 without any user agent to enforce it on.
+DEBUG: Rule at line 442 without any user agent to enforce it on.
+DEBUG: Rule at line 443 without any user agent to enforce it on.
+DEBUG: Rule at line 449 without any user agent to enforce it on.
+DEBUG: Rule at line 453 without any user agent to enforce it on.
+DEBUG: Rule at line 454 without any user agent to enforce it on.
+DEBUG: Rule at line 472 without any user agent to enforce it on.
+DEBUG: Rule at line 481 without any user agent to enforce it on.
+DEBUG: Crawled (200) <GET http://smithgill.com/> (referer: None)
+DEBUG: driver not found in PATH, trying Selenium Manager
+DEBUG: Executing: C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome
+DEBUG: Using driver at: C:\Users\moffi\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+DEBUG: Started executable: `chromedriver` in a child process with pid: 20180
+DEBUG: POST http://localhost:49334/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+DEBUG: Starting new HTTP connection (1): localhost:49334
+DEBUG: http://localhost:49334 "POST /session HTTP/1.1" 200 790
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\moffi\\AppData\\Local\\Temp\\scoped_dir20180_515118047"},"goog:chromeOptions":{"debuggerAddress":"localhost:49337"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"239f2ac481164180e2bf7d45a31c2cfc"}} | headers=HTTPHeaderDict({'Content-Length': '790', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:49334/session/239f2ac481164180e2bf7d45a31c2cfc/url {"url": "http://smithgill.com/"}
+DEBUG: http://localhost:49334 "POST /session/239f2ac481164180e2bf7d45a31c2cfc/url HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:49334/session/239f2ac481164180e2bf7d45a31c2cfc/timeouts {"implicit": 10000}
+DEBUG: http://localhost:49334 "POST /session/239f2ac481164180e2bf7d45a31c2cfc/timeouts HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: Filtered duplicate request: <GET http://smithgill.com/contact> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+DEBUG: Scraped from <200 http://smithgill.com/>
+{'facebook': 'https://www.facebook.com/smithgillarch'}
+DEBUG: DELETE http://localhost:49334/session/239f2ac481164180e2bf7d45a31c2cfc {}
+DEBUG: http://localhost:49334 "DELETE /session/239f2ac481164180e2bf7d45a31c2cfc HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: Redirecting (301) to <GET http://smithgill.com/contact/> from <GET http://smithgill.com/contact>
+DEBUG: Crawled (200) <GET http://smithgill.com/contact/> (referer: http://smithgill.com/)
+INFO: Closing spider (finished)
+INFO: Stored json feed (1 items) in: website_spider_output.json
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1252,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 18931,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 3,
+ 'downloader/response_status_count/301': 1,
+ 'dupefilter/filtered': 2,
+ 'elapsed_time_seconds': 20.906456,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 6, 0, 1, 7, 243798),
+ 'httpcompression/response_bytes': 85365,
+ 'httpcompression/response_count': 3,
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 84,
+ 'log_count/INFO': 11,
+ 'request_depth_max': 2,
+ 'response_received_count': 3,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2022, 12, 6, 0, 0, 46, 337342)}
+INFO: Spider closed (finished)
+INFO: Scrapy 2.7.1 started (bot: scraper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 38.0.4, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'scraper',
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: 0491f4165f4044de
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Attempting to acquire lock 1736992283936 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 1736992283936 acquired on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Attempting to release lock 1736992283936 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 1736992283936 released on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Crawled (200) <GET http://smithgill.com/robots.txt> (referer: None)
+DEBUG: Rule at line 20 without any user agent to enforce it on.
+DEBUG: Rule at line 36 without any user agent to enforce it on.
+DEBUG: Rule at line 228 without any user agent to enforce it on.
+DEBUG: Rule at line 229 without any user agent to enforce it on.
+DEBUG: Rule at line 230 without any user agent to enforce it on.
+DEBUG: Rule at line 238 without any user agent to enforce it on.
+DEBUG: Rule at line 239 without any user agent to enforce it on.
+DEBUG: Rule at line 240 without any user agent to enforce it on.
+DEBUG: Rule at line 241 without any user agent to enforce it on.
+DEBUG: Rule at line 242 without any user agent to enforce it on.
+DEBUG: Rule at line 243 without any user agent to enforce it on.
+DEBUG: Rule at line 244 without any user agent to enforce it on.
+DEBUG: Rule at line 245 without any user agent to enforce it on.
+DEBUG: Rule at line 246 without any user agent to enforce it on.
+DEBUG: Rule at line 247 without any user agent to enforce it on.
+DEBUG: Rule at line 248 without any user agent to enforce it on.
+DEBUG: Rule at line 249 without any user agent to enforce it on.
+DEBUG: Rule at line 250 without any user agent to enforce it on.
+DEBUG: Rule at line 251 without any user agent to enforce it on.
+DEBUG: Rule at line 285 without any user agent to enforce it on.
+DEBUG: Rule at line 291 without any user agent to enforce it on.
+DEBUG: Rule at line 297 without any user agent to enforce it on.
+DEBUG: Rule at line 303 without any user agent to enforce it on.
+DEBUG: Rule at line 309 without any user agent to enforce it on.
+DEBUG: Rule at line 315 without any user agent to enforce it on.
+DEBUG: Rule at line 321 without any user agent to enforce it on.
+DEBUG: Rule at line 327 without any user agent to enforce it on.
+DEBUG: Rule at line 333 without any user agent to enforce it on.
+DEBUG: Rule at line 339 without any user agent to enforce it on.
+DEBUG: Rule at line 353 without any user agent to enforce it on.
+DEBUG: Rule at line 359 without any user agent to enforce it on.
+DEBUG: Rule at line 365 without any user agent to enforce it on.
+DEBUG: Rule at line 371 without any user agent to enforce it on.
+DEBUG: Rule at line 377 without any user agent to enforce it on.
+DEBUG: Rule at line 383 without any user agent to enforce it on.
+DEBUG: Rule at line 389 without any user agent to enforce it on.
+DEBUG: Rule at line 395 without any user agent to enforce it on.
+DEBUG: Rule at line 401 without any user agent to enforce it on.
+DEBUG: Rule at line 407 without any user agent to enforce it on.
+DEBUG: Rule at line 413 without any user agent to enforce it on.
+DEBUG: Rule at line 419 without any user agent to enforce it on.
+DEBUG: Rule at line 440 without any user agent to enforce it on.
+DEBUG: Rule at line 441 without any user agent to enforce it on.
+DEBUG: Rule at line 442 without any user agent to enforce it on.
+DEBUG: Rule at line 443 without any user agent to enforce it on.
+DEBUG: Rule at line 449 without any user agent to enforce it on.
+DEBUG: Rule at line 453 without any user agent to enforce it on.
+DEBUG: Rule at line 454 without any user agent to enforce it on.
+DEBUG: Rule at line 472 without any user agent to enforce it on.
+DEBUG: Rule at line 481 without any user agent to enforce it on.
+DEBUG: Crawled (200) <GET http://smithgill.com/> (referer: None)
+DEBUG: driver not found in PATH, trying Selenium Manager
+DEBUG: Executing: C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome
+DEBUG: Using driver at: C:\Users\moffi\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+DEBUG: Started executable: `chromedriver` in a child process with pid: 26932
+DEBUG: POST http://localhost:49405/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+DEBUG: Starting new HTTP connection (1): localhost:49405
+DEBUG: http://localhost:49405 "POST /session HTTP/1.1" 200 790
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\moffi\\AppData\\Local\\Temp\\scoped_dir26932_346921101"},"goog:chromeOptions":{"debuggerAddress":"localhost:49409"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"8d92a46e2b752e1f3cea941f212e23d1"}} | headers=HTTPHeaderDict({'Content-Length': '790', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:49405/session/8d92a46e2b752e1f3cea941f212e23d1/url {"url": "http://smithgill.com/"}
+DEBUG: http://localhost:49405 "POST /session/8d92a46e2b752e1f3cea941f212e23d1/url HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:49405/session/8d92a46e2b752e1f3cea941f212e23d1/timeouts {"implicit": 10000}
+DEBUG: http://localhost:49405 "POST /session/8d92a46e2b752e1f3cea941f212e23d1/timeouts HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: Filtered duplicate request: <GET http://smithgill.com/contact> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+DEBUG: Scraped from <200 http://smithgill.com/>
+{'facebook': 'https://www.facebook.com/smithgillarch'}
+DEBUG: DELETE http://localhost:49405/session/8d92a46e2b752e1f3cea941f212e23d1 {}
+DEBUG: http://localhost:49405 "DELETE /session/8d92a46e2b752e1f3cea941f212e23d1 HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: Redirecting (301) to <GET http://smithgill.com/contact/> from <GET http://smithgill.com/contact>
+DEBUG: Crawled (200) <GET http://smithgill.com/contact/> (referer: http://smithgill.com/)
+INFO: Closing spider (finished)
+INFO: Stored json feed (1 items) in: website_spider_output.json
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1252,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 18931,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 3,
+ 'downloader/response_status_count/301': 1,
+ 'dupefilter/filtered': 2,
+ 'elapsed_time_seconds': 19.6648,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 6, 0, 2, 22, 805851),
+ 'httpcompression/response_bytes': 85365,
+ 'httpcompression/response_count': 3,
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 84,
+ 'log_count/INFO': 11,
+ 'request_depth_max': 2,
+ 'response_received_count': 3,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2022, 12, 6, 0, 2, 3, 141051)}
+INFO: Spider closed (finished)
+INFO: Scrapy 2.7.1 started (bot: scraper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 38.0.4, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'scraper',
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: ef8661ccd5b45378
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Attempting to acquire lock 1375770288496 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 1375770288496 acquired on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Attempting to release lock 1375770288496 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 1375770288496 released on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Crawled (200) <GET http://smithgill.com/robots.txt> (referer: None)
+DEBUG: Rule at line 20 without any user agent to enforce it on.
+DEBUG: Rule at line 36 without any user agent to enforce it on.
+DEBUG: Rule at line 228 without any user agent to enforce it on.
+DEBUG: Rule at line 229 without any user agent to enforce it on.
+DEBUG: Rule at line 230 without any user agent to enforce it on.
+DEBUG: Rule at line 238 without any user agent to enforce it on.
+DEBUG: Rule at line 239 without any user agent to enforce it on.
+DEBUG: Rule at line 240 without any user agent to enforce it on.
+DEBUG: Rule at line 241 without any user agent to enforce it on.
+DEBUG: Rule at line 242 without any user agent to enforce it on.
+DEBUG: Rule at line 243 without any user agent to enforce it on.
+DEBUG: Rule at line 244 without any user agent to enforce it on.
+DEBUG: Rule at line 245 without any user agent to enforce it on.
+DEBUG: Rule at line 246 without any user agent to enforce it on.
+DEBUG: Rule at line 247 without any user agent to enforce it on.
+DEBUG: Rule at line 248 without any user agent to enforce it on.
+DEBUG: Rule at line 249 without any user agent to enforce it on.
+DEBUG: Rule at line 250 without any user agent to enforce it on.
+DEBUG: Rule at line 251 without any user agent to enforce it on.
+DEBUG: Rule at line 285 without any user agent to enforce it on.
+DEBUG: Rule at line 291 without any user agent to enforce it on.
+DEBUG: Rule at line 297 without any user agent to enforce it on.
+DEBUG: Rule at line 303 without any user agent to enforce it on.
+DEBUG: Rule at line 309 without any user agent to enforce it on.
+DEBUG: Rule at line 315 without any user agent to enforce it on.
+DEBUG: Rule at line 321 without any user agent to enforce it on.
+DEBUG: Rule at line 327 without any user agent to enforce it on.
+DEBUG: Rule at line 333 without any user agent to enforce it on.
+DEBUG: Rule at line 339 without any user agent to enforce it on.
+DEBUG: Rule at line 353 without any user agent to enforce it on.
+DEBUG: Rule at line 359 without any user agent to enforce it on.
+DEBUG: Rule at line 365 without any user agent to enforce it on.
+DEBUG: Rule at line 371 without any user agent to enforce it on.
+DEBUG: Rule at line 377 without any user agent to enforce it on.
+DEBUG: Rule at line 383 without any user agent to enforce it on.
+DEBUG: Rule at line 389 without any user agent to enforce it on.
+DEBUG: Rule at line 395 without any user agent to enforce it on.
+DEBUG: Rule at line 401 without any user agent to enforce it on.
+DEBUG: Rule at line 407 without any user agent to enforce it on.
+DEBUG: Rule at line 413 without any user agent to enforce it on.
+DEBUG: Rule at line 419 without any user agent to enforce it on.
+DEBUG: Rule at line 440 without any user agent to enforce it on.
+DEBUG: Rule at line 441 without any user agent to enforce it on.
+DEBUG: Rule at line 442 without any user agent to enforce it on.
+DEBUG: Rule at line 443 without any user agent to enforce it on.
+DEBUG: Rule at line 449 without any user agent to enforce it on.
+DEBUG: Rule at line 453 without any user agent to enforce it on.
+DEBUG: Rule at line 454 without any user agent to enforce it on.
+DEBUG: Rule at line 472 without any user agent to enforce it on.
+DEBUG: Rule at line 481 without any user agent to enforce it on.
+DEBUG: Crawled (200) <GET http://smithgill.com/> (referer: None)
+DEBUG: driver not found in PATH, trying Selenium Manager
+DEBUG: Executing: C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome
+DEBUG: Using driver at: C:\Users\moffi\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+DEBUG: Started executable: `chromedriver` in a child process with pid: 20428
+DEBUG: POST http://localhost:52074/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+DEBUG: Starting new HTTP connection (1): localhost:52074
+DEBUG: http://localhost:52074 "POST /session HTTP/1.1" 200 790
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\moffi\\AppData\\Local\\Temp\\scoped_dir20428_444834778"},"goog:chromeOptions":{"debuggerAddress":"localhost:52077"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"458b276eb34697e0d41d1d0345d04fc1"}} | headers=HTTPHeaderDict({'Content-Length': '790', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:52074/session/458b276eb34697e0d41d1d0345d04fc1/url {"url": "http://smithgill.com/"}
+DEBUG: http://localhost:52074 "POST /session/458b276eb34697e0d41d1d0345d04fc1/url HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:52074/session/458b276eb34697e0d41d1d0345d04fc1/timeouts {"implicit": 10000}
+DEBUG: http://localhost:52074 "POST /session/458b276eb34697e0d41d1d0345d04fc1/timeouts HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: Filtered duplicate request: <GET http://smithgill.com/contact> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+DEBUG: Scraped from <200 http://smithgill.com/>
+{'facebook': 'https://www.facebook.com/smithgillarch'}
+DEBUG: DELETE http://localhost:52074/session/458b276eb34697e0d41d1d0345d04fc1 {}
+DEBUG: http://localhost:52074 "DELETE /session/458b276eb34697e0d41d1d0345d04fc1 HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: Redirecting (301) to <GET http://smithgill.com/contact/> from <GET http://smithgill.com/contact>
+DEBUG: Crawled (200) <GET http://smithgill.com/contact/> (referer: http://smithgill.com/)
+INFO: Closing spider (finished)
+INFO: Stored json feed (1 items) in: website_spider_output.json
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1252,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 18931,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 3,
+ 'downloader/response_status_count/301': 1,
+ 'dupefilter/filtered': 2,
+ 'elapsed_time_seconds': 17.379686,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 6, 9, 28, 56, 34259),
+ 'httpcompression/response_bytes': 85365,
+ 'httpcompression/response_count': 3,
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 84,
+ 'log_count/INFO': 11,
+ 'request_depth_max': 2,
+ 'response_received_count': 3,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2022, 12, 6, 9, 28, 38, 654573)}
+INFO: Spider closed (finished)
+INFO: Scrapy 2.7.1 started (bot: scraper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 38.0.4, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'scraper',
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: 283762aecb5a140d
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Attempting to acquire lock 2717806405008 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2717806405008 acquired on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Attempting to release lock 2717806405008 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2717806405008 released on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Crawled (200) <GET http://smithgill.com/robots.txt> (referer: None)
+DEBUG: Rule at line 20 without any user agent to enforce it on.
+DEBUG: Rule at line 36 without any user agent to enforce it on.
+DEBUG: Rule at line 228 without any user agent to enforce it on.
+DEBUG: Rule at line 229 without any user agent to enforce it on.
+DEBUG: Rule at line 230 without any user agent to enforce it on.
+DEBUG: Rule at line 238 without any user agent to enforce it on.
+DEBUG: Rule at line 239 without any user agent to enforce it on.
+DEBUG: Rule at line 240 without any user agent to enforce it on.
+DEBUG: Rule at line 241 without any user agent to enforce it on.
+DEBUG: Rule at line 242 without any user agent to enforce it on.
+DEBUG: Rule at line 243 without any user agent to enforce it on.
+DEBUG: Rule at line 244 without any user agent to enforce it on.
+DEBUG: Rule at line 245 without any user agent to enforce it on.
+DEBUG: Rule at line 246 without any user agent to enforce it on.
+DEBUG: Rule at line 247 without any user agent to enforce it on.
+DEBUG: Rule at line 248 without any user agent to enforce it on.
+DEBUG: Rule at line 249 without any user agent to enforce it on.
+DEBUG: Rule at line 250 without any user agent to enforce it on.
+DEBUG: Rule at line 251 without any user agent to enforce it on.
+DEBUG: Rule at line 285 without any user agent to enforce it on.
+DEBUG: Rule at line 291 without any user agent to enforce it on.
+DEBUG: Rule at line 297 without any user agent to enforce it on.
+DEBUG: Rule at line 303 without any user agent to enforce it on.
+DEBUG: Rule at line 309 without any user agent to enforce it on.
+DEBUG: Rule at line 315 without any user agent to enforce it on.
+DEBUG: Rule at line 321 without any user agent to enforce it on.
+DEBUG: Rule at line 327 without any user agent to enforce it on.
+DEBUG: Rule at line 333 without any user agent to enforce it on.
+DEBUG: Rule at line 339 without any user agent to enforce it on.
+DEBUG: Rule at line 353 without any user agent to enforce it on.
+DEBUG: Rule at line 359 without any user agent to enforce it on.
+DEBUG: Rule at line 365 without any user agent to enforce it on.
+DEBUG: Rule at line 371 without any user agent to enforce it on.
+DEBUG: Rule at line 377 without any user agent to enforce it on.
+DEBUG: Rule at line 383 without any user agent to enforce it on.
+DEBUG: Rule at line 389 without any user agent to enforce it on.
+DEBUG: Rule at line 395 without any user agent to enforce it on.
+DEBUG: Rule at line 401 without any user agent to enforce it on.
+DEBUG: Rule at line 407 without any user agent to enforce it on.
+DEBUG: Rule at line 413 without any user agent to enforce it on.
+DEBUG: Rule at line 419 without any user agent to enforce it on.
+DEBUG: Rule at line 440 without any user agent to enforce it on.
+DEBUG: Rule at line 441 without any user agent to enforce it on.
+DEBUG: Rule at line 442 without any user agent to enforce it on.
+DEBUG: Rule at line 443 without any user agent to enforce it on.
+DEBUG: Rule at line 449 without any user agent to enforce it on.
+DEBUG: Rule at line 453 without any user agent to enforce it on.
+DEBUG: Rule at line 454 without any user agent to enforce it on.
+DEBUG: Rule at line 472 without any user agent to enforce it on.
+DEBUG: Rule at line 481 without any user agent to enforce it on.
+DEBUG: Crawled (200) <GET http://smithgill.com/> (referer: None)
+DEBUG: driver not found in PATH, trying Selenium Manager
+DEBUG: Executing: C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome
+DEBUG: Using driver at: C:\Users\moffi\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+DEBUG: Started executable: `chromedriver` in a child process with pid: 14128
+DEBUG: POST http://localhost:52149/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+DEBUG: Starting new HTTP connection (1): localhost:52149
+DEBUG: http://localhost:52149 "POST /session HTTP/1.1" 200 790
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\moffi\\AppData\\Local\\Temp\\scoped_dir14128_447787574"},"goog:chromeOptions":{"debuggerAddress":"localhost:52152"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"8c68d953356ec0a27582a6fd6f727023"}} | headers=HTTPHeaderDict({'Content-Length': '790', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:52149/session/8c68d953356ec0a27582a6fd6f727023/url {"url": "http://smithgill.com/"}
+DEBUG: http://localhost:52149 "POST /session/8c68d953356ec0a27582a6fd6f727023/url HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:52149/session/8c68d953356ec0a27582a6fd6f727023/timeouts {"implicit": 10000}
+DEBUG: http://localhost:52149 "POST /session/8c68d953356ec0a27582a6fd6f727023/timeouts HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: Filtered duplicate request: <GET http://smithgill.com/contact> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+DEBUG: Scraped from <200 http://smithgill.com/>
+{'facebook': 'https://www.facebook.com/smithgillarch'}
+DEBUG: DELETE http://localhost:52149/session/8c68d953356ec0a27582a6fd6f727023 {}
+DEBUG: http://localhost:52149 "DELETE /session/8c68d953356ec0a27582a6fd6f727023 HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: Redirecting (301) to <GET http://smithgill.com/contact/> from <GET http://smithgill.com/contact>
+DEBUG: Crawled (200) <GET http://smithgill.com/contact/> (referer: http://smithgill.com/)
+INFO: Closing spider (finished)
+INFO: Stored json feed (1 items) in: website_spider_output.json
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1252,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 18931,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 3,
+ 'downloader/response_status_count/301': 1,
+ 'dupefilter/filtered': 1,
+ 'elapsed_time_seconds': 16.656587,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 6, 9, 30, 7, 270818),
+ 'httpcompression/response_bytes': 85365,
+ 'httpcompression/response_count': 3,
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 84,
+ 'log_count/INFO': 11,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2022, 12, 6, 9, 29, 50, 614231)}
+INFO: Spider closed (finished)
+INFO: Scrapy 2.7.1 started (bot: scraper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 38.0.4, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'scraper',
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: affc52e95524307e
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Attempting to acquire lock 2350901470368 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2350901470368 acquired on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Attempting to release lock 2350901470368 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2350901470368 released on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Crawled (200) <GET http://smithgill.com/robots.txt> (referer: None)
+DEBUG: Rule at line 20 without any user agent to enforce it on.
+DEBUG: Rule at line 36 without any user agent to enforce it on.
+DEBUG: Rule at line 228 without any user agent to enforce it on.
+DEBUG: Rule at line 229 without any user agent to enforce it on.
+DEBUG: Rule at line 230 without any user agent to enforce it on.
+DEBUG: Rule at line 238 without any user agent to enforce it on.
+DEBUG: Rule at line 239 without any user agent to enforce it on.
+DEBUG: Rule at line 240 without any user agent to enforce it on.
+DEBUG: Rule at line 241 without any user agent to enforce it on.
+DEBUG: Rule at line 242 without any user agent to enforce it on.
+DEBUG: Rule at line 243 without any user agent to enforce it on.
+DEBUG: Rule at line 244 without any user agent to enforce it on.
+DEBUG: Rule at line 245 without any user agent to enforce it on.
+DEBUG: Rule at line 246 without any user agent to enforce it on.
+DEBUG: Rule at line 247 without any user agent to enforce it on.
+DEBUG: Rule at line 248 without any user agent to enforce it on.
+DEBUG: Rule at line 249 without any user agent to enforce it on.
+DEBUG: Rule at line 250 without any user agent to enforce it on.
+DEBUG: Rule at line 251 without any user agent to enforce it on.
+DEBUG: Rule at line 285 without any user agent to enforce it on.
+DEBUG: Rule at line 291 without any user agent to enforce it on.
+DEBUG: Rule at line 297 without any user agent to enforce it on.
+DEBUG: Rule at line 303 without any user agent to enforce it on.
+DEBUG: Rule at line 309 without any user agent to enforce it on.
+DEBUG: Rule at line 315 without any user agent to enforce it on.
+DEBUG: Rule at line 321 without any user agent to enforce it on.
+DEBUG: Rule at line 327 without any user agent to enforce it on.
+DEBUG: Rule at line 333 without any user agent to enforce it on.
+DEBUG: Rule at line 339 without any user agent to enforce it on.
+DEBUG: Rule at line 353 without any user agent to enforce it on.
+DEBUG: Rule at line 359 without any user agent to enforce it on.
+DEBUG: Rule at line 365 without any user agent to enforce it on.
+DEBUG: Rule at line 371 without any user agent to enforce it on.
+DEBUG: Rule at line 377 without any user agent to enforce it on.
+DEBUG: Rule at line 383 without any user agent to enforce it on.
+DEBUG: Rule at line 389 without any user agent to enforce it on.
+DEBUG: Rule at line 395 without any user agent to enforce it on.
+DEBUG: Rule at line 401 without any user agent to enforce it on.
+DEBUG: Rule at line 407 without any user agent to enforce it on.
+DEBUG: Rule at line 413 without any user agent to enforce it on.
+DEBUG: Rule at line 419 without any user agent to enforce it on.
+DEBUG: Rule at line 440 without any user agent to enforce it on.
+DEBUG: Rule at line 441 without any user agent to enforce it on.
+DEBUG: Rule at line 442 without any user agent to enforce it on.
+DEBUG: Rule at line 443 without any user agent to enforce it on.
+DEBUG: Rule at line 449 without any user agent to enforce it on.
+DEBUG: Rule at line 453 without any user agent to enforce it on.
+DEBUG: Rule at line 454 without any user agent to enforce it on.
+DEBUG: Rule at line 472 without any user agent to enforce it on.
+DEBUG: Rule at line 481 without any user agent to enforce it on.
+DEBUG: Crawled (200) <GET http://smithgill.com/> (referer: None)
+DEBUG: driver not found in PATH, trying Selenium Manager
+DEBUG: Executing: C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome
+DEBUG: Using driver at: C:\Users\moffi\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+DEBUG: Started executable: `chromedriver` in a child process with pid: 25104
+DEBUG: POST http://localhost:52217/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+DEBUG: Starting new HTTP connection (1): localhost:52217
+DEBUG: http://localhost:52217 "POST /session HTTP/1.1" 200 791
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\moffi\\AppData\\Local\\Temp\\scoped_dir25104_1910651868"},"goog:chromeOptions":{"debuggerAddress":"localhost:52220"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"fcaa33da4510af84b4fe84ed93dd7630"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:52217/session/fcaa33da4510af84b4fe84ed93dd7630/url {"url": "http://smithgill.com/"}
+DEBUG: http://localhost:52217 "POST /session/fcaa33da4510af84b4fe84ed93dd7630/url HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:52217/session/fcaa33da4510af84b4fe84ed93dd7630/timeouts {"implicit": 10000}
+DEBUG: http://localhost:52217 "POST /session/fcaa33da4510af84b4fe84ed93dd7630/timeouts HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: Scraped from <200 http://smithgill.com/>
+{'facebook': 'https://www.facebook.com/smithgillarch'}
+DEBUG: DELETE http://localhost:52217/session/fcaa33da4510af84b4fe84ed93dd7630 {}
+DEBUG: http://localhost:52217 "DELETE /session/fcaa33da4510af84b4fe84ed93dd7630 HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+INFO: Closing spider (finished)
+INFO: Stored json feed (1 items) in: website_spider_output.json
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 501,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 12533,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 15.835927,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 6, 9, 30, 43, 405514),
+ 'httpcompression/response_bytes': 59820,
+ 'httpcompression/response_count': 2,
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 81,
+ 'log_count/INFO': 11,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 12, 6, 9, 30, 27, 569587)}
+INFO: Spider closed (finished)
+INFO: Scrapy 2.7.1 started (bot: scraper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 38.0.4, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'scraper',
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: 5b20fedc61d40384
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Attempting to acquire lock 2433226155408 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2433226155408 acquired on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Attempting to release lock 2433226155408 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2433226155408 released on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Crawled (200) <GET http://smithgill.com/robots.txt> (referer: None)
+DEBUG: Rule at line 20 without any user agent to enforce it on.
+DEBUG: Rule at line 36 without any user agent to enforce it on.
+DEBUG: Rule at line 228 without any user agent to enforce it on.
+DEBUG: Rule at line 229 without any user agent to enforce it on.
+DEBUG: Rule at line 230 without any user agent to enforce it on.
+DEBUG: Rule at line 238 without any user agent to enforce it on.
+DEBUG: Rule at line 239 without any user agent to enforce it on.
+DEBUG: Rule at line 240 without any user agent to enforce it on.
+DEBUG: Rule at line 241 without any user agent to enforce it on.
+DEBUG: Rule at line 242 without any user agent to enforce it on.
+DEBUG: Rule at line 243 without any user agent to enforce it on.
+DEBUG: Rule at line 244 without any user agent to enforce it on.
+DEBUG: Rule at line 245 without any user agent to enforce it on.
+DEBUG: Rule at line 246 without any user agent to enforce it on.
+DEBUG: Rule at line 247 without any user agent to enforce it on.
+DEBUG: Rule at line 248 without any user agent to enforce it on.
+DEBUG: Rule at line 249 without any user agent to enforce it on.
+DEBUG: Rule at line 250 without any user agent to enforce it on.
+DEBUG: Rule at line 251 without any user agent to enforce it on.
+DEBUG: Rule at line 285 without any user agent to enforce it on.
+DEBUG: Rule at line 291 without any user agent to enforce it on.
+DEBUG: Rule at line 297 without any user agent to enforce it on.
+DEBUG: Rule at line 303 without any user agent to enforce it on.
+DEBUG: Rule at line 309 without any user agent to enforce it on.
+DEBUG: Rule at line 315 without any user agent to enforce it on.
+DEBUG: Rule at line 321 without any user agent to enforce it on.
+DEBUG: Rule at line 327 without any user agent to enforce it on.
+DEBUG: Rule at line 333 without any user agent to enforce it on.
+DEBUG: Rule at line 339 without any user agent to enforce it on.
+DEBUG: Rule at line 353 without any user agent to enforce it on.
+DEBUG: Rule at line 359 without any user agent to enforce it on.
+DEBUG: Rule at line 365 without any user agent to enforce it on.
+DEBUG: Rule at line 371 without any user agent to enforce it on.
+DEBUG: Rule at line 377 without any user agent to enforce it on.
+DEBUG: Rule at line 383 without any user agent to enforce it on.
+DEBUG: Rule at line 389 without any user agent to enforce it on.
+DEBUG: Rule at line 395 without any user agent to enforce it on.
+DEBUG: Rule at line 401 without any user agent to enforce it on.
+DEBUG: Rule at line 407 without any user agent to enforce it on.
+DEBUG: Rule at line 413 without any user agent to enforce it on.
+DEBUG: Rule at line 419 without any user agent to enforce it on.
+DEBUG: Rule at line 440 without any user agent to enforce it on.
+DEBUG: Rule at line 441 without any user agent to enforce it on.
+DEBUG: Rule at line 442 without any user agent to enforce it on.
+DEBUG: Rule at line 443 without any user agent to enforce it on.
+DEBUG: Rule at line 449 without any user agent to enforce it on.
+DEBUG: Rule at line 453 without any user agent to enforce it on.
+DEBUG: Rule at line 454 without any user agent to enforce it on.
+DEBUG: Rule at line 472 without any user agent to enforce it on.
+DEBUG: Rule at line 481 without any user agent to enforce it on.
+DEBUG: Crawled (200) <GET http://smithgill.com/> (referer: None)
+DEBUG: driver not found in PATH, trying Selenium Manager
+DEBUG: Executing: C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome
+DEBUG: Using driver at: C:\Users\moffi\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+DEBUG: Started executable: `chromedriver` in a child process with pid: 3816
+DEBUG: POST http://localhost:52282/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+DEBUG: Starting new HTTP connection (1): localhost:52282
+DEBUG: http://localhost:52282 "POST /session HTTP/1.1" 200 790
+DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.73","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"C:\\Users\\moffi\\AppData\\Local\\Temp\\scoped_dir3816_1587810755"},"goog:chromeOptions":{"debuggerAddress":"localhost:52285"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"6174ffa3da4c5914c9d832214c1526ff"}} | headers=HTTPHeaderDict({'Content-Length': '790', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:52282/session/6174ffa3da4c5914c9d832214c1526ff/url {"url": "http://smithgill.com/"}
+DEBUG: http://localhost:52282 "POST /session/6174ffa3da4c5914c9d832214c1526ff/url HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: POST http://localhost:52282/session/6174ffa3da4c5914c9d832214c1526ff/timeouts {"implicit": 10000}
+DEBUG: http://localhost:52282 "POST /session/6174ffa3da4c5914c9d832214c1526ff/timeouts HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: Filtered duplicate request: <GET http://smithgill.com/contact> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+DEBUG: Scraped from <200 http://smithgill.com/>
+{'facebook': 'https://www.facebook.com/smithgillarch'}
+DEBUG: DELETE http://localhost:52282/session/6174ffa3da4c5914c9d832214c1526ff {}
+DEBUG: http://localhost:52282 "DELETE /session/6174ffa3da4c5914c9d832214c1526ff HTTP/1.1" 200 14
+DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG: Finished Request
+DEBUG: Redirecting (301) to <GET http://smithgill.com/contact/> from <GET http://smithgill.com/contact>
+DEBUG: Crawled (200) <GET http://smithgill.com/contact/> (referer: http://smithgill.com/)
+INFO: Closing spider (finished)
+INFO: Stored json feed (1 items) in: website_spider_output.json
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1252,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 18931,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 3,
+ 'downloader/response_status_count/301': 1,
+ 'dupefilter/filtered': 2,
+ 'elapsed_time_seconds': 17.05021,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 6, 9, 31, 29, 714641),
+ 'httpcompression/response_bytes': 85365,
+ 'httpcompression/response_count': 3,
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 84,
+ 'log_count/INFO': 11,
+ 'request_depth_max': 2,
+ 'response_received_count': 3,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2022, 12, 6, 9, 31, 12, 664431)}
+INFO: Spider closed (finished)
