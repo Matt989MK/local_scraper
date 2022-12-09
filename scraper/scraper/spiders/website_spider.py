@@ -1,7 +1,7 @@
 
 import traceback
-
-from selenium import webdriver
+import csv
+import pandas as pd
 from logzero import logfile, logger
 import scrapy
 import re
@@ -20,98 +20,77 @@ class WebsiteSpider(scrapy.Spider):
     # Initializing log file
     logfile("../../../openaq_spider.log", maxBytes=1e6, backupCount=3)
     name = "website_spider"
-
+    record_number = 0
 
     # Using a dummy website to start scrapy request
     def start_requests(self):
-        url = "http://smithgill.com/"
-        yield scrapy.Request(url=url, callback=self.parse_website)
+        # Open the CSV file for reading
+        with open("data.csv") as csvfile:
+            # Create a CSV reader
+            reader = csv.reader(csvfile)
+            next(reader)
+
+            # Iterate over the rows in the CSV file
+            for row in reader:
+                WebsiteSpider.record_number+=1
+                # Get the URL from the first column of the row
+                url = row[1]
+                print("URL IS ",url)
+                # Generate a request for the URL
+                yield scrapy.Request(url=url, callback=self.parse_website)
+
 
     def parse_website(self, response):
-        # driver = webdriver.Chrome()  # To open a new browser window and navigate it
 
-        # Use headless option to not open a new browser window
-        options = webdriver.ChromeOptions()
-        options.add_argument("headless")
-        desired_capabilities = options.to_capabilities()
-        driver = webdriver.Chrome(desired_capabilities=desired_capabilities)
-
-        # Getting website link
-        driver.get("http://smithgill.com/")
-
-        # Implicit wait
-        driver.implicitly_wait(10)
-
-        # Explicit wait
-        #wait = WebDriverWait(driver, 5)
-       # wait.until(EC.presence_of_element_located((By.CLASS_NAME, "card__title")))
-        link  = "http://smithgill.com/"
         # Extracting country names
         hrefs_xpath = "//a/@href[contains(., 'facebook') or contains(.,'contact') or contains(.,'instagram') or contains(.,'twitter') or contains(.,'linkedin')]"
         hrefs = response.xpath(hrefs_xpath).extract()
+
+        hrefs_xpath2 = "//a/@href[contains(.,'contact') or contains(.,'about me')]"
+        hrefs2 = response.xpath(hrefs_xpath2).extract()
         # Using Scrapy's yield to store output instead of explicitly writing to a JSON file
+
+        facebook_link=""
+        instagram_link=""
+        twitter_link=""
+        linkedin_link=""
         for href in hrefs:
 
             try:
                 if "facebook" in href:
                     facebook_link = href
-                    print("facebook: ",facebook_link)
-                    # check ads + recent posts engagement ratio + posts on ads engagement ratio
                 if "instagram" in href:
-                    # check ads + recent posts engagement ratio + posts on ads engagement ratio
-
                     instagram_link = href
-                    print("instagram: ",instagram_link)
-
                 if "twitter" in href:
-                    #idk what yet
                     twitter_link = href
-                    print("twitter: ",twitter_link)
                 if "linkedin" in href:
                     linkedin_link = href
-                    print("linkedin: ",linkedin_link)
-                try:
-                    if "contact" in href:
-                        contact_link = href
-                        print("contact link", contact_link)
-                        yield scrapy.Request(url=contact_link, callback=self.parse_contact,
-                                             meta={'contact': contact_link})
-
-
-                        emails = response.meta['emails']
-                        print("emails",response.meta['emails'])
-                except Exception as e:
-                    print("error with yield is:", e)
 
             except Exception as e:
                 print(traceback.format_exc())
-        #meta_contact = {'facebook': facebook_link, 'instagram': instagram_link, 'twitter': twitter_link, 'linkedin': linkedin_link,'emails': emails}
 
-        item = SocialMediaLinks()
-        item["facebook"] = facebook_link
-        #item["instagram"] = instagram_link
-        # item["twitter"] = twitter_link
-        #item["linkedin"] = linkedin_link
-        #item["emails"] = emails
+        for href in hrefs2:
 
-        yield item
+            try:
+                if "contact"  or "about" in href:
+                    contact_link = href
+                    print("contact link", contact_link)
+                    yield scrapy.Request(url=contact_link, callback=self.parse_contact,
+                                         meta={'facebook': facebook_link, 'instagram': instagram_link, 'twitter': twitter_link, 'linkedin': linkedin_link})
 
-        driver.quit()
+
+            except Exception as e:
+                print("error with yield is:", e)
+
         logger.info(f"Total number of links in website: {len(hrefs)}")
 
-    def parse_testing(self, response):
-        print("parse testing")
-        yield
+
     def parse_contact(self, response):
-        #test_var_contact = "contact Doesnt work"
-        #link = response.meta['link']
-        print("meta test", response.meta['contact'])
-        link = response.meta['contact']
-        print('link is',link)
-        emails="test var"
+
+
+
         try:
-            test_var_contact = " contact works"
-            print("contact key")
+
             emails = re.findall(r'[\w\.-]+@[\w\.-]+', response.text)
             set_emails = set(emails)
             emails = list(set_emails)
@@ -119,14 +98,27 @@ class WebsiteSpider(scrapy.Spider):
             for item in list(emails):
                 if ".com" not in item:
                     emails.remove((item))
+            print(emails)
+            item = SocialMediaLinks()
+            item["facebook"] = response.meta['facebook']
+            item["instagram"] = response.meta['instagram']
+            item["twitter"] = response.meta['twitter']
+            item["linkedin"] = response.meta['linkedin']
+            item["emails"] = emails
 
-            meta_data = {'emails': emails}
-            print("meta data",meta_data)
-            # yield scrapy(url="http://smithgill.com/", callback=self.parse_testing,
-            #                      meta={'contact_key': "str(emails)"})
-            yield scrapy.Request(url="http://smithgill.com/", callback=self.parse_testing,
-                                 )
-            #print("meta_contact", meta_contact)
+            # reading the csv file
+            df = pd.read_csv("data.csv")
+            print("RECORD NUMBER",WebsiteSpider.record_number)
+            df.loc[WebsiteSpider.record_number, 'facebook'] = response.meta['facebook']
+            df.loc[WebsiteSpider.record_number, 'instagram'] = response.meta['instagram']
+            df.loc[WebsiteSpider.record_number, 'twitter'] = response.meta['twitter']
+            df.loc[WebsiteSpider.record_number, 'linkedin'] = response.meta['linkedin']
+            df.loc[WebsiteSpider.record_number, 'emails'] = emails
+            # writing into the file
+            df.to_csv("data.csv", index=False)
+            print(item)
+            yield item
+
         except Exception as e:
             print("Exception",e)
 
