@@ -16,9 +16,9 @@ driver.get("https://www.facebook.com/ads/library/?active_status=all&ad_type=all&
 ads_count = driver.find_element("xpath","//div[@class='x8t9es0.x1uxerd5.xrohxju.x108nfp6.xq9mrsl.x1h4wwuj.x117nqv4.xeuugli']").get_property("text")
 print(ads_count)
 # sleep(10)
-# driver.find_element("xpath","//input[@class = 'inputtext _55r1 _6luy']").send_keys("matt@oppymedia.com")
+# driver.find_element("xpath","//input[@class = 'inputtext _55r1 _6luy']").send_keys("")
 # sleep(2)
-# driver.find_element("xpath","//input[@class = 'inputtext _55r1 _6luy _9npi']").send_keys("ZAQ13wsx")
+# driver.find_element("xpath","//input[@class = 'inputtext _55r1 _6luy _9npi']").send_keys("")
 # sleep(2)
 
 
