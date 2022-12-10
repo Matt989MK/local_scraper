@@ -132,15 +132,15 @@ class WebsiteSpider(scrapy.Spider):
             item["emails"] = emails
 
             # reading the csv file
-            df = pd.read_csv("data.csv")
-            print("RECORD NUMBER",test_number)
+            df = pd.read_csv("data4.csv")
+            print("WEBSITE ",response.url," RECORD NUMBER",test_number ,"FACEBOOK: ",response.meta['facebook']," INSTAGRAM: ",response.meta['instagram'])
             df.loc[test_number, 'facebook'] = response.meta['facebook']
             df.loc[test_number, 'instagram'] = response.meta['instagram']
             df.loc[test_number, 'twitter'] = response.meta['twitter']
             df.loc[test_number, 'linkedin'] = response.meta['linkedin']
             df.loc[test_number, 'emails'] = str(emails)
             # writing into the file
-            df.to_csv("data.csv", index=False)
+            df.to_csv("data4.csv", index=False)
             #WebsiteSpider.record_number += 1
 
             yield item #Data seems to be correct but its saving it in the wrong row

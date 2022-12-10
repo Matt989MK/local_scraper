@@ -28605,3 +28605,1999 @@ INFO: Dumping Scrapy stats:
  'scheduler/enqueued/memory': 162,
  'start_time': datetime.datetime(2022, 12, 9, 16, 38, 14, 454191)}
 INFO: Spider closed (finished)
+INFO: Scrapy 2.7.1 started (bot: scraper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 38.0.4, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'scraper',
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: 20872f6c95403dc3
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\scrapy\core\engine.py", line 152, in _next_request
+    request = next(self.slot.start_requests)
+  File "C:\Users\moffi\PycharmProjects\scraping_web\scraper\scraper\spiders\website_spider.py", line 31, in start_requests
+    with open("data.csv") as csvfile: #read out data from .csv file and go through each link positioned in 2nd row
+FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.004,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 9, 18, 43, 23, 950865),
+ 'log_count/DEBUG': 3,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'start_time': datetime.datetime(2022, 12, 9, 18, 43, 23, 946865)}
+INFO: Spider closed (finished)
+INFO: Scrapy 2.7.1 started (bot: scraper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 38.0.4, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'scraper',
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: 4cf4f6a6cfde7789
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Redirecting (301) to <GET https://www.cal-a-vie.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing> from <GET http://www.cal-a-vie.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing>
+DEBUG: Redirecting (301) to <GET https://kellysspa.com/> from <GET http://kellysspa.com/>
+DEBUG: Attempting to acquire lock 2203508364080 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2203508364080 acquired on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Attempting to release lock 2203508364080 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2203508364080 released on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Redirecting (301) to <GET https://cadayspa.com/> from <GET http://cadayspa.com/>
+DEBUG: Redirecting (301) to <GET https://locations.woodhousespas.com/dir/ca/walnut-creek/1636-cypress-st> from <GET http://walnutcreek.woodhousespas.com/?utm_source=google&utm_medium=yext>
+DEBUG: Redirecting (301) to <GET https://www.kellysspa.com/> from <GET https://kellysspa.com/>
+DEBUG: Redirecting (301) to <GET https://www.goldenhaven.com/> from <GET http://www.goldenhaven.com/>
+DEBUG: Crawled (200) <GET https://cadayspa.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.glenivy.com/> from <GET http://www.glenivy.com/>
+DEBUG: Redirecting (301) to <GET http://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D> from <GET https://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa/?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D>
+DEBUG: Redirecting (301) to <GET https://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D> from <GET http://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D>
+DEBUG: Crawled (200) <GET https://www.kellysspa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.fourseasons.com/westlakevillage/spa/?seo=google_local_wes6_amer> (referer: None)
+DEBUG: Crawled (200) <GET https://locations.woodhousespas.com/dir/ca/walnut-creek/1636-cypress-st> (referer: None)
+DEBUG: Crawled (200) <GET https://cadayspa.com/contact-us> (referer: https://cadayspa.com/)
+DEBUG: Redirecting (301) to <GET http://aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website> from <GET https://aubergeresorts.com/solage/wellness/spa?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website>
+DEBUG: Crawled (200) <GET https://www.madonnainn.com/spa> (referer: None)
+DEBUG: Crawled (200) <GET https://www.cal-a-vie.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing> (referer: None)
+DEBUG: Crawled (200) <GET https://www.kellysspa.com/contact-location> (referer: https://www.kellysspa.com/)
+DEBUG: Crawled (200) <GET https://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website> from <GET http://aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website>
+DEBUG: Crawled (200) <GET https://goldendoor.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.fourseasons.com/contact-us/> (referer: https://www.fourseasons.com/westlakevillage/spa/?seo=google_local_wes6_amer)
+DEBUG: Crawled (200) <GET https://www.goldenhaven.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.ritzcarlton.com/en/hotels/california/los-angeles/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2> from <GET http://www.ritzcarlton.com/en/hotels/california/los-angeles/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2>
+DEBUG: Crawled (200) <GET https://www.cal-a-vie.com/contact-us> (referer: https://www.cal-a-vie.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing)
+DEBUG: Redirecting (301) to <GET https://www.mytrilogylife.com/monarchdunes/spa/> from <GET http://www.mytrilogylife.com/monarchdunes/spa/>
+DEBUG: Crawled (200) <GET https://www.osmosis.com/?y_source=1_MjI1MDUzNzItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D> (referer: None)
+DEBUG: Crawled (200) <GET https://montereyplazahotel.com/spa/vista-blue-spa/?utm_source=google&utm_medium=bizlisting&utm_campaign=google_places> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.ritzcarlton.com/en/hotels/california/santa-barbara/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2> from <GET http://www.ritzcarlton.com/en/hotels/california/santa-barbara/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2>
+DEBUG: Redirecting (301) to <GET https://www.laquintaresort.com/> from <GET http://www.laquintaresort.com/>
+DEBUG: Redirecting (301) to <GET https://www.boonhotels.com/> from <GET http://www.boonhotels.com/>
+DEBUG: Crawled (200) <GET https://goldendoor.com/contact-us/> (referer: https://goldendoor.com/)
+DEBUG: Crawled (200) <GET https://www.ritzcarlton.com/en/hotels/california/los-angeles/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2> (referer: None)
+DEBUG: Crawled (200) <GET https://www.purpleorchid.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.wispausa.com/> from <GET http://www.wispausa.com/>
+DEBUG: Crawled (200) <GET https://www.aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.southcoastwinery.com/spa/> from <GET https://www.southcoastwinery.com/spa>
+DEBUG: Crawled (200) <GET https://the-spring.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.ritzcarlton.com/en/hotels/california/santa-barbara/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2> (referer: None)
+DEBUG: Crawled (200) <GET https://www.osmosis.com/contact/> (referer: https://www.osmosis.com/?y_source=1_MjI1MDUzNzItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D)
+DEBUG: Crawled (200) <GET https://www.silveradoresort.com/napa-valley-spa?utm_medium=organic&utm_source=google&utm_campaign=spabusinesslisting> (referer: None)
+DEBUG: Crawled (200) <GET https://www.mytrilogylife.com/monarchdunes/spa/> (referer: None)
+DEBUG: Retrying <GET https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html> (failed 1 times): 429 Unknown Status
+DEBUG: Crawled (200) <GET https://www.purpleorchid.com/contact-us/> (referer: https://www.purpleorchid.com/)
+DEBUG: Crawled (200) <GET https://ranchovalencia.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://glenivy.com/> from <GET https://www.glenivy.com/>
+DEBUG: Crawled (200) <GET https://www.aubergeresorts.com/solage/contact-us/> (referer: https://www.aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website)
+DEBUG: Crawled (200) <GET https://www.omnihotels.com/hotels/san-diego-la-costa/spa?utm_source=GMBlisting&utm_medium=organic> (referer: None)
+DEBUG: Retrying <GET https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html> (failed 2 times): 429 Unknown Status
+DEBUG: Crawled (403) <GET https://www.constantcontact.com/legal/service-provider> (referer: https://the-spring.com/)
+DEBUG: Redirecting (301) to <GET https://boonhotels.com/> from <GET https://www.boonhotels.com/>
+DEBUG: Crawled (200) <GET https://www.chaminade.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb> (referer: None)
+INFO: Ignoring response <403 https://www.constantcontact.com/legal/service-provider>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://www.southcoastwinery.com/spa/> (referer: None)
+ERROR: Gave up retrying <GET https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html> (failed 3 times): 429 Unknown Status
+DEBUG: Crawled (429) <GET https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html> (referer: None)
+DEBUG: Crawled (200) <GET https://www.urbanretreatspa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.mytrilogylife.com/monarchdunes/spa/#contacts> (referer: https://www.mytrilogylife.com/monarchdunes/spa/)
+INFO: Ignoring response <429 https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html>: HTTP status code is not handled or not allowed
+DEBUG: Redirecting (301) to <GET https://www.evo-spa.com/> from <GET http://www.evo-spa.com/>
+DEBUG: Crawled (200) <GET https://www.silveradoresort.com/contact-us> (referer: https://www.silveradoresort.com/napa-valley-spa?utm_medium=organic&utm_source=google&utm_campaign=spabusinesslisting)
+DEBUG: Crawled (200) <GET https://www.terranea.com/offers?utm_source=google-knowledge-graph&utm_medium=organic&utm_campaign=my_business_page> (referer: None)
+DEBUG: Crawled (200) <GET https://montereyplazahotel.com/hotel/contact> (referer: https://montereyplazahotel.com/spa/vista-blue-spa/?utm_source=google&utm_medium=bizlisting&utm_campaign=google_places)
+DEBUG: Redirecting (301) to <GET https://www.sycamoresprings.com/> from <GET http://www.sycamoresprings.com/>
+DEBUG: Crawled (200) <GET https://www.urbanretreatspa.com/contact> (referer: https://www.urbanretreatspa.com/)
+DEBUG: Crawled (200) <GET https://www.southcoastwinery.com/contact> (referer: https://www.southcoastwinery.com/spa/)
+DEBUG: Redirecting (301) to <GET https://www.ranchovalencia.com/> from <GET http://www.ranchovalencia.com/>
+DEBUG: Crawled (200) <GET https://boonhotels.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://thesisleyspa.com/los-angeles/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.terranea.com/contact-us> (referer: https://www.terranea.com/offers?utm_source=google-knowledge-graph&utm_medium=organic&utm_campaign=my_business_page)
+DEBUG: Crawled (200) <GET https://www.sycamoresprings.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.omnihotels.com/forms/contact-us> (referer: https://www.omnihotels.com/hotels/san-diego-la-costa/spa?utm_source=GMBlisting&utm_medium=organic)
+DEBUG: Redirecting (301) to <GET https://sweetwaterspa.com/> from <GET http://www.sweetwaterspa.com/>
+DEBUG: Crawled (200) <GET https://www.evo-spa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.sycamoresprings.com/contact> (referer: https://www.sycamoresprings.com/)
+DEBUG: Crawled (200) <GET https://azurepalmhotsprings.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.lapeauspafresno.com/> from <GET http://www.lapeauspafresno.com/>
+DEBUG: Crawled (200) <GET https://www.canyonranch.com/woodside/northern-california-retreat/?utm_source=googlemybusiness&utm_medium=organic&utm_campaign=woodsidegmb&utm_term=googlemybusiness> (referer: None)
+DEBUG: Crawled (200) <GET https://ranchovalencia.com/contact-us/> (referer: https://ranchovalencia.com/)
+DEBUG: Crawled (200) <GET https://boonhotels.com/contact/> (referer: https://boonhotels.com/)
+DEBUG: Redirecting (301) to <GET https://wecarespa.com/> from <GET http://www.wecarespa.com/>
+DEBUG: Redirecting (301) to <GET https://lagunacanyonspa.com/> from <GET http://www.lagunacanyonspa.com/>
+DEBUG: Crawled (200) <GET https://davidrubensteinforum.uchicago.edu/contact/> (referer: https://www.chaminade.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb)
+DEBUG: Crawled (200) <GET https://lagunacanyonspa.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.carnerosresort.com/> from <GET http://www.carnerosresort.com/>
+DEBUG: Crawled (200) <GET https://paradisepoint.com/california-resort-spa/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.lapeauspafresno.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://glenivy.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://ranchovalencia.com/> from <GET https://www.ranchovalencia.com/>
+DEBUG: Crawled (200) <GET https://lagunacanyonspa.com/contact-us> (referer: https://lagunacanyonspa.com/)
+DEBUG: Redirecting (301) to <GET https://wispausa.com/> from <GET https://www.wispausa.com/>
+DEBUG: Crawled (200) <GET https://www.estanciadayspa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.indianspringscalistoga.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing> (referer: None)
+DEBUG: Redirecting (301) to <GET http://beverlyhotsprings.com/> from <GET http://www.beverlyhotsprings.com/>
+DEBUG: Crawled (200) <GET https://www.canyonranch.com/contact-us/> (referer: https://www.canyonranch.com/)
+DEBUG: Crawled (200) <GET https://www.laquintaresort.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://paradisepoint.com/contact-us/> (referer: https://paradisepoint.com/california-resort-spa/)
+DEBUG: Redirecting (301) to <GET http://carnerosresort.com/> from <GET https://www.carnerosresort.com/>
+DEBUG: Crawled (200) <GET https://www.lapeauspafresno.com/contact> (referer: https://www.lapeauspafresno.com/)
+DEBUG: Crawled (200) <GET https://wecarespa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://carmelvalleyranch.com/spa/spa-aiyana/> (referer: None)
+DEBUG: Crawled (404) <GET https://azurepalmhotsprings.com/dev/contact-us/> (referer: https://azurepalmhotsprings.com/)
+DEBUG: Crawled (200) <GET https://www.indianspringscalistoga.com/contact-us> (referer: https://www.indianspringscalistoga.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing)
+DEBUG: Redirecting (301) to <GET https://carnerosresort.com/> from <GET http://carnerosresort.com/>
+DEBUG: Crawled (200) <GET https://amenitiesspa.com/> (referer: None)
+INFO: Ignoring response <404 https://azurepalmhotsprings.com/dev/contact-us/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://wispausa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://thesisleyspa.com/contact-us/> (referer: https://thesisleyspa.com/los-angeles/)
+DEBUG: Crawled (200) <GET https://www.ranchobernardoinn.com/spa/overview?utm_source=gmb&utm_medium=yext> (referer: None)
+DEBUG: Redirecting (301) to <GET https://wecarespa.com/contact-us/> from <GET https://wecarespa.com/contact/>
+DEBUG: Crawled (200) <GET https://www.cavallopoint.com/spa?utm_source=google-gmb&utm_medium=organic&utm_campaign=gmb> (referer: None)
+DEBUG: Crawled (200) <GET https://theravenspa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://ranchovalencia.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://glenivy.com/contact-info/> (referer: https://glenivy.com/)
+DEBUG: Crawled (200) <GET http://beverlyhotsprings.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.sweetwaterspa.com/> from <GET https://sweetwaterspa.com/>
+DEBUG: Crawled (200) <GET https://www.laquintaresort.com/map-and-contact/> (referer: https://www.laquintaresort.com/)
+DEBUG: Redirecting (301) to <GET https://www.trilogyspa.com/> from <GET http://www.trilogyspa.com/>
+DEBUG: Crawled (200) <GET https://thehealingcornerca.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://carmelvalleyranch.com/contact/> (referer: https://carmelvalleyranch.com/spa/spa-aiyana/)
+DEBUG: Crawled (200) <GET https://wecarespa.com/contact-us/> (referer: https://wecarespa.com/)
+DEBUG: Redirecting (301) to <GET https://www.missioninn.com/> from <GET http://www.missioninn.com/>
+DEBUG: Crawled (200) <GET https://www.sweetwaterspa.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.thebluedoorhanford.com/> from <GET http://www.thebluedoorhanford.com/>
+DEBUG: Crawled (200) <GET https://www.cavallopoint.com/contact-us> (referer: https://www.cavallopoint.com/spa?utm_source=google-gmb&utm_medium=organic&utm_campaign=gmb)
+DEBUG: Crawled (200) <GET https://theravenspa.com/contact/> (referer: https://theravenspa.com/)
+DEBUG: Crawled (200) <GET https://www.paseahotel.com/?utm_medium=organic&utm_source=google&utm_campaign=business-listing> (referer: None)
+DEBUG: Crawled (200) <GET http://beverlyhotsprings.com/contact/> (referer: http://beverlyhotsprings.com/)
+DEBUG: Crawled (200) <GET https://www.thelandingtahoe.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://ranchovalencia.com/contact-us/> (referer: https://ranchovalencia.com/)
+DEBUG: Crawled (200) <GET https://carnerosresort.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.ranchobernardoinn.com/contact-us/> from <GET https://www.ranchobernardoinn.com/contact-us>
+DEBUG: Crawled (200) <GET https://www.missioninn.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.teahousespa.com/> from <GET http://www.teahousespa.com/>
+DEBUG: Redirecting (301) to <GET https://harbin.org/> from <GET http://www.harbin.org/>
+DEBUG: Crawled (200) <GET https://wispausa.com/contact/> (referer: https://wispausa.com/)
+DEBUG: Crawled (200) <GET https://www.sweetwaterspa.com/> (referer: None)
+DEBUG: Crawled (403) <GET https://www.montagehotels.com/lagunabeach/> (referer: None)
+ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\scrapy\core\engine.py", line 152, in _next_request
+    request = next(self.slot.start_requests)
+  File "C:\Users\moffi\PycharmProjects\scraping_web\scraper\scraper\spiders\website_spider.py", line 37, in start_requests
+    for row in reader:
+  File "C:\Users\moffi\AppData\Local\Programs\Python\Python310\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 7784: character maps to <undefined>
+DEBUG: Crawled (200) <GET https://www.missioninn.com/contact> (referer: https://www.missioninn.com/)
+INFO: Ignoring response <403 https://www.montagehotels.com/lagunabeach/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://www.silveradoresort.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.bardessono.com/> from <GET https://bardessono.com/>
+DEBUG: Crawled (200) <GET https://www.trilogyspa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.thebluedoorhanford.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.ranchobernardoinn.com/contact-us/> (referer: https://www.ranchobernardoinn.com/spa/overview?utm_source=gmb&utm_medium=yext)
+DEBUG: Redirecting (301) to <GET https://mysheerbliss.com/> from <GET https://www.mysheerbliss.com/>
+DEBUG: Crawled (200) <GET https://www.teahousespa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.paseahotel.com/contact/press-room> (referer: https://www.paseahotel.com/?utm_medium=organic&utm_source=google&utm_campaign=business-listing)
+DEBUG: Crawled (200) <GET https://www.teahousespa.com/contact-join-our-team> (referer: https://www.teahousespa.com/)
+DEBUG: Redirecting (301) to <GET https://doubleeagle.com/> from <GET http://doubleeagle.com/>
+DEBUG: Crawled (200) <GET https://www.estancialajolla.com/spa/?utm_source=gmb-spa&utm_medium=organic&utm_campaign=gmb> (referer: None)
+DEBUG: Crawled (200) <GET https://mysheerbliss.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.silveradoresort.com/contact-us> (referer: https://www.silveradoresort.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing)
+DEBUG: Crawled (200) <GET https://harbin.org/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.miraclesprings.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.estancialajolla.com/contact/> (referer: https://www.estancialajolla.com/spa/?utm_source=gmb-spa&utm_medium=organic&utm_campaign=gmb)
+DEBUG: Crawled (200) <GET https://www.bardessono.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://mysheerbliss.com/pages/contact-us-spa-policy> (referer: https://mysheerbliss.com/)
+INFO: Received SIGINT, shutting down gracefully. Send again to force 
+INFO: Closing spider (shutdown)
+DEBUG: Crawled (200) <GET https://www.sweetwaterspa.com/contact-us/#sweetwater-location> (referer: https://www.sweetwaterspa.com/)
+DEBUG: Crawled (200) <GET https://www.bardessono.com/contact.htm> (referer: https://www.bardessono.com/)
+INFO: Received SIGINT twice, forcing unclean shutdown
+DEBUG: Crawled (200) <GET https://harbin.org/contact-us/> (referer: https://harbin.org/)
+DEBUG: Retrying <GET http://www.athenaspa-mv.com/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG: Retrying <GET https://doubleeagle.com/> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+INFO: Scrapy 2.7.1 started (bot: scraper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 38.0.4, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'scraper',
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: f0c912b289b46f0a
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Redirecting (301) to <GET https://kellysspa.com/> from <GET http://kellysspa.com/>
+DEBUG: Attempting to acquire lock 2806106620736 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2806106620736 acquired on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Attempting to release lock 2806106620736 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2806106620736 released on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Redirecting (301) to <GET https://cadayspa.com/> from <GET http://cadayspa.com/>
+DEBUG: Redirecting (301) to <GET http://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D> from <GET https://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa/?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D>
+DEBUG: Crawled (200) <GET https://www.omnihotels.com/hotels/san-diego-la-costa/spa?utm_source=GMBlisting&utm_medium=organic> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.cal-a-vie.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing> from <GET http://www.cal-a-vie.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing>
+DEBUG: Redirecting (301) to <GET https://locations.woodhousespas.com/dir/ca/walnut-creek/1636-cypress-st> from <GET http://walnutcreek.woodhousespas.com/?utm_source=google&utm_medium=yext>
+DEBUG: Crawled (200) <GET https://www.fourseasons.com/westlakevillage/spa/?seo=google_local_wes6_amer> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.goldenhaven.com/> from <GET http://www.goldenhaven.com/>
+DEBUG: Redirecting (301) to <GET https://www.kellysspa.com/> from <GET https://kellysspa.com/>
+DEBUG: Crawled (200) <GET https://www.omnihotels.com/forms/contact-us> (referer: https://www.omnihotels.com/hotels/san-diego-la-costa/spa?utm_source=GMBlisting&utm_medium=organic)
+DEBUG: Crawled (200) <GET https://locations.woodhousespas.com/dir/ca/walnut-creek/1636-cypress-st> (referer: None)
+DEBUG: Crawled (200) <GET https://cadayspa.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.glenivy.com/> from <GET http://www.glenivy.com/>
+DEBUG: Crawled (200) <GET https://www.kellysspa.com/> (referer: None)
+DEBUG: Scraped from <200 https://www.omnihotels.com/forms/contact-us>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/omnihotels/',
+ 'instagram': 'https://www.instagram.com/omnihotels/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/omnihotels?lang=en'}
+DEBUG: Crawled (200) <GET https://goldendoor.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D> from <GET http://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D>
+DEBUG: Crawled (200) <GET https://www.kellysspa.com/contact-location> (referer: https://www.kellysspa.com/)
+DEBUG: Crawled (200) <GET https://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D> (referer: None)
+DEBUG: Redirecting (301) to <GET http://aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website> from <GET https://aubergeresorts.com/solage/wellness/spa?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website>
+DEBUG: Crawled (200) <GET https://www.cal-a-vie.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.mytrilogylife.com/monarchdunes/spa/> from <GET http://www.mytrilogylife.com/monarchdunes/spa/>
+DEBUG: Crawled (200) <GET https://www.madonnainn.com/spa> (referer: None)
+DEBUG: Crawled (200) <GET https://cadayspa.com/contact-us> (referer: https://cadayspa.com/)
+DEBUG: Scraped from <200 https://www.kellysspa.com/contact-location>
+{'emails': ['SpaDirector@Missioninn.com', 'spadirector@missioninn.com'],
+ 'facebook': 'https://www.facebook.com/TheMissionInn',
+ 'instagram': 'https://www.instagram.com/kellys_spa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://montereyplazahotel.com/spa/vista-blue-spa/?utm_source=google&utm_medium=bizlisting&utm_campaign=google_places> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.ritzcarlton.com/en/hotels/california/los-angeles/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2> from <GET http://www.ritzcarlton.com/en/hotels/california/los-angeles/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2>
+DEBUG: Scraped from <200 https://cadayspa.com/contact-us>
+{'emails': ['team@latofonts.com',
+            'impallari@gmail.com',
+            'ron@cadayspa.com',
+            'filler@godaddy.com'],
+ 'facebook': 'https://www.facebook.com/californiadayspa',
+ 'instagram': 'https://www.instagram.com/cadayspa',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://www.twitter.com/califadayspa'}
+DEBUG: Crawled (200) <GET https://www.ritzcarlton.com/en/hotels/california/los-angeles/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2> (referer: None)
+DEBUG: Crawled (200) <GET https://goldendoor.com/contact-us/> (referer: https://goldendoor.com/)
+DEBUG: Crawled (200) <GET https://www.fourseasons.com/contact-us/> (referer: https://www.fourseasons.com/westlakevillage/spa/?seo=google_local_wes6_amer)
+DEBUG: Redirecting (301) to <GET https://www.ritzcarlton.com/en/hotels/california/santa-barbara/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2> from <GET http://www.ritzcarlton.com/en/hotels/california/santa-barbara/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2>
+DEBUG: Scraped from <200 https://goldendoor.com/contact-us/>
+{'emails': ['molly@thestoriedgroup.com',
+            'guestservices@goldendoor.com.',
+            'shop@goldendoor.com',
+            'guestservices@goldendoor.com'],
+ 'facebook': 'https://www.facebook.com/Goldendoorspa/',
+ 'instagram': 'https://www.instagram.com/thegoldendoor/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/goldendoor'}
+DEBUG: Crawled (200) <GET https://www.osmosis.com/?y_source=1_MjI1MDUzNzItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D> (referer: None)
+DEBUG: Crawled (200) <GET https://www.ritzcarlton.com/en/hotels/california/santa-barbara/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2> (referer: None)
+DEBUG: Scraped from <200 https://www.fourseasons.com/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/FourSeasons',
+ 'instagram': 'https://www.instagram.com/fourseasons/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/FourSeasons'}
+DEBUG: Redirecting (301) to <GET https://www.aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website> from <GET http://aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website>
+DEBUG: Crawled (200) <GET https://www.goldenhaven.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.purpleorchid.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.cal-a-vie.com/contact-us> (referer: https://www.cal-a-vie.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing)
+DEBUG: Redirecting (301) to <GET https://www.laquintaresort.com/> from <GET http://www.laquintaresort.com/>
+DEBUG: Redirecting (301) to <GET https://www.boonhotels.com/> from <GET http://www.boonhotels.com/>
+DEBUG: Scraped from <200 https://www.cal-a-vie.com/contact-us>
+{'emails': ['cavinfo@cal-a-vie.com'],
+ 'facebook': 'https://www.facebook.com/CalaVie',
+ 'instagram': 'https://www.instagram.com/calaviespa',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/calaviespa'}
+DEBUG: Redirecting (301) to <GET https://www.wispausa.com/> from <GET http://www.wispausa.com/>
+DEBUG: Retrying <GET https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html> (failed 1 times): 429 Unknown Status
+DEBUG: Crawled (200) <GET https://www.silveradoresort.com/napa-valley-spa?utm_medium=organic&utm_source=google&utm_campaign=spabusinesslisting> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.southcoastwinery.com/spa/> from <GET https://www.southcoastwinery.com/spa>
+DEBUG: Redirecting (301) to <GET https://boonhotels.com/> from <GET https://www.boonhotels.com/>
+DEBUG: Crawled (200) <GET https://www.purpleorchid.com/contact-us/> (referer: https://www.purpleorchid.com/)
+DEBUG: Crawled (200) <GET https://www.urbanretreatspa.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET http://beverlyhotsprings.com/> from <GET http://www.beverlyhotsprings.com/>
+DEBUG: Crawled (200) <GET https://montereyplazahotel.com/hotel/contact> (referer: https://montereyplazahotel.com/spa/vista-blue-spa/?utm_source=google&utm_medium=bizlisting&utm_campaign=google_places)
+DEBUG: Crawled (200) <GET https://www.mytrilogylife.com/monarchdunes/spa/> (referer: None)
+DEBUG: Scraped from <200 https://www.purpleorchid.com/contact-us/>
+{'emails': ['rhiannon@purpleorchid.com',
+            'spa@purpleorchid.com',
+            'info@purpleorchid.com'],
+ 'facebook': 'https://www.facebook.com/ThePurpleOrchid',
+ 'instagram': 'https://www.instagram.com/thepurpleorchid/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/purpleorchidcom'}
+DEBUG: Retrying <GET https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html> (failed 2 times): 429 Unknown Status
+DEBUG: Scraped from <200 https://montereyplazahotel.com/hotel/contact>
+{'emails': ['weddings@montereyplazahotel.com',
+            'forms@tambourine.com',
+            'sales@montereyplazahotel.com',
+            'housekeeping@montereyplazahotel.com',
+            'coastalcurator@montereyplazahotel.com'],
+ 'facebook': 'https://www.facebook.com/montereyplazahotel',
+ 'instagram': 'https://www.instagram.com/montereyplaza/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.osmosis.com/contact/> (referer: https://www.osmosis.com/?y_source=1_MjI1MDUzNzItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D)
+DEBUG: Crawled (200) <GET https://the-spring.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.terranea.com/offers?utm_source=google-knowledge-graph&utm_medium=organic&utm_campaign=my_business_page> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.evo-spa.com/> from <GET http://www.evo-spa.com/>
+DEBUG: Crawled (200) <GET https://www.urbanretreatspa.com/contact> (referer: https://www.urbanretreatspa.com/)
+DEBUG: Scraped from <200 https://www.osmosis.com/contact/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/OsmosisDaySpaSanctuary',
+ 'instagram': 'https://www.instagram.com/osmosisdayspa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/osmosisspa'}
+DEBUG: Crawled (200) <GET https://www.aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website> (referer: None)
+DEBUG: Redirecting (301) to <GET https://glenivy.com/> from <GET https://www.glenivy.com/>
+DEBUG: Crawled (200) <GET https://ranchovalencia.com/> (referer: None)
+DEBUG: Scraped from <200 https://www.urbanretreatspa.com/contact>
+{'emails': ['contact@urbanretreatspa.com'],
+ 'facebook': 'https://www.facebook.com/pages/Urban-Retreat-Day-Spa/69993009232?ref=hl',
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/URDaySpa'}
+DEBUG: Crawled (200) <GET https://www.chaminade.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.sycamoresprings.com/> from <GET http://www.sycamoresprings.com/>
+DEBUG: Crawled (200) <GET https://boonhotels.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.southcoastwinery.com/spa/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.mytrilogylife.com/monarchdunes/spa/#contacts> (referer: https://www.mytrilogylife.com/monarchdunes/spa/)
+DEBUG: Crawled (200) <GET https://www.silveradoresort.com/contact-us> (referer: https://www.silveradoresort.com/napa-valley-spa?utm_medium=organic&utm_source=google&utm_campaign=spabusinesslisting)
+DEBUG: Redirecting (301) to <GET https://sweetwaterspa.com/> from <GET http://www.sweetwaterspa.com/>
+ERROR: Gave up retrying <GET https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html> (failed 3 times): 429 Unknown Status
+DEBUG: Crawled (429) <GET https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html> (referer: None)
+DEBUG: Scraped from <200 https://www.mytrilogylife.com/monarchdunes/spa/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/sandalwoodtrilogy/',
+ 'instagram': 'https://www.instagram.com/sandalwood_spa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/monarch_club/'}
+DEBUG: Crawled (200) <GET https://www.aubergeresorts.com/solage/contact-us/> (referer: https://www.aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website)
+DEBUG: Crawled (403) <GET https://www.constantcontact.com/legal/service-provider> (referer: https://the-spring.com/)
+DEBUG: Scraped from <200 https://www.silveradoresort.com/contact-us>
+{'emails': ['jeff.vanparis@silveradoresort.com',
+            'golf@silveradoresort.com',
+            'spa@silveradoresort.com',
+            'silverado.concierge@silveradoresort.com',
+            'heather.mckenna@silveradoresort.com',
+            'resv@silveradoresort.com',
+            'tennis@silveradoresort.com',
+            'sales@silveradoresort.com',
+            'silveradodining@silveradoresort.com',
+            'loren.bates@silveradoresort.com',
+            'info@silveradoresort.com'],
+ 'facebook': 'https://www.facebook.com/silveradoresort',
+ 'instagram': 'https://www.instagram.com/silveradoresort',
+ 'linkedin': 'https://www.linkedin.com/company/silverado-resort',
+ 'twitter': 'https://twitter.com/silveradoresort'}
+DEBUG: Crawled (200) <GET https://www.terranea.com/contact-us> (referer: https://www.terranea.com/offers?utm_source=google-knowledge-graph&utm_medium=organic&utm_campaign=my_business_page)
+DEBUG: Crawled (200) <GET https://thesisleyspa.com/los-angeles/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.sycamoresprings.com/> (referer: None)
+INFO: Ignoring response <429 https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html>: HTTP status code is not handled or not allowed
+INFO: Ignoring response <403 https://www.constantcontact.com/legal/service-provider>: HTTP status code is not handled or not allowed
+DEBUG: Scraped from <200 https://www.aubergeresorts.com/solage/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/SolageResort/',
+ 'instagram': 'https://www.instagram.com/solageauberge/?hl=en',
+ 'linkedin': 'https://www.linkedin.com/company/auberge-resorts/',
+ 'twitter': 'https://twitter.com/solageauberge'}
+DEBUG: Crawled (200) <GET https://www.evo-spa.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.ranchovalencia.com/> from <GET http://www.ranchovalencia.com/>
+DEBUG: Crawled (200) <GET https://boonhotels.com/contact/> (referer: https://boonhotels.com/)
+DEBUG: Scraped from <200 https://www.terranea.com/contact-us>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/Terranea',
+ 'instagram': 'http://instagram.com/terranearesort',
+ 'linkedin': 'https://www.linkedin.com/company/terranea-resort',
+ 'twitter': 'https://twitter.com/TerraneaResort'}
+DEBUG: Crawled (200) <GET https://www.southcoastwinery.com/contact> (referer: https://www.southcoastwinery.com/spa/)
+DEBUG: Scraped from <200 https://boonhotels.com/contact/>
+{'emails': ['info@boonhotels.com'],
+ 'facebook': 'http://www.facebook.com/boonhotelspa',
+ 'instagram': 'https://www.instagram.com/boonhotelspa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/boonhotelspa'}
+DEBUG: Scraped from <200 https://www.southcoastwinery.com/contact>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/SouthCoastWinery',
+ 'instagram': 'https://www.instagram.com/southcoastwineryresort/',
+ 'linkedin': 'https://www.linkedin.com/company/south-coast-winery-&-spa/',
+ 'twitter': 'https://twitter.com/SCWinery'}
+DEBUG: Redirecting (301) to <GET https://www.lapeauspafresno.com/> from <GET http://www.lapeauspafresno.com/>
+DEBUG: Crawled (200) <GET http://beverlyhotsprings.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://wecarespa.com/> from <GET http://www.wecarespa.com/>
+DEBUG: Crawled (200) <GET https://thesisleyspa.com/contact-us/> (referer: https://thesisleyspa.com/los-angeles/)
+DEBUG: Redirecting (301) to <GET https://wispausa.com/> from <GET https://www.wispausa.com/>
+DEBUG: Redirecting (301) to <GET https://lagunacanyonspa.com/> from <GET http://www.lagunacanyonspa.com/>
+DEBUG: Scraped from <200 https://thesisleyspa.com/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/SisleySpaUSA/',
+ 'instagram': 'https://www.instagram.com/sisleyspausa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://www.sweetwaterspa.com/> from <GET https://sweetwaterspa.com/>
+DEBUG: Crawled (200) <GET https://www.canyonranch.com/woodside/northern-california-retreat/?utm_source=googlemybusiness&utm_medium=organic&utm_campaign=woodsidegmb&utm_term=googlemybusiness> (referer: None)
+DEBUG: Crawled (200) <GET https://lagunacanyonspa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.laquintaresort.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://azurepalmhotsprings.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.indianspringscalistoga.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing> (referer: None)
+DEBUG: Crawled (200) <GET http://beverlyhotsprings.com/contact/> (referer: http://beverlyhotsprings.com/)
+DEBUG: Crawled (200) <GET https://paradisepoint.com/california-resort-spa/> (referer: None)
+DEBUG: Crawled (200) <GET https://lagunacanyonspa.com/contact-us> (referer: https://lagunacanyonspa.com/)
+DEBUG: Crawled (200) <GET https://www.sycamoresprings.com/contact> (referer: https://www.sycamoresprings.com/)
+DEBUG: Crawled (200) <GET https://ranchovalencia.com/contact-us/> (referer: https://ranchovalencia.com/)
+DEBUG: Crawled (200) <GET https://www.canyonranch.com/contact-us/> (referer: https://www.canyonranch.com/)
+DEBUG: Crawled (200) <GET https://davidrubensteinforum.uchicago.edu/contact/> (referer: https://www.chaminade.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb)
+DEBUG: Redirecting (301) to <GET https://www.carnerosresort.com/> from <GET http://www.carnerosresort.com/>
+DEBUG: Scraped from <200 http://beverlyhotsprings.com/contact/>
+{'emails': ['beverlyhotsprings@gmail.com'],
+ 'facebook': 'https://www.facebook.com/beverlyhotsprings',
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/BHSdayspa'}
+DEBUG: Scraped from <200 https://lagunacanyonspa.com/contact-us>
+{'emails': ['hello@rfuenzalida.com',
+            'info@ndiscovered.com',
+            'impallari@gmail.com',
+            'filler@godaddy.com'],
+ 'facebook': 'https://www.facebook.com/103690430994',
+ 'instagram': 'https://www.instagram.com/lagunacanyonspa',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://www.twitter.com/lagunacanyonspa/'}
+DEBUG: Scraped from <200 https://www.sycamoresprings.com/contact>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/sycamoremineralsprings',
+ 'instagram': 'https://instagram.com/sycamoresprings',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/sycamoresprings'}
+DEBUG: Crawled (200) <GET https://www.cavallopoint.com/spa?utm_source=google-gmb&utm_medium=organic&utm_campaign=gmb> (referer: None)
+DEBUG: Scraped from <200 https://ranchovalencia.com/contact-us/>
+{'emails': ['villas@ranchovalencia.com',
+            'info@villasranchovalencia.com',
+            'tennis@ranchovalencia.com',
+            'concierge@ranchovalencia.com'],
+ 'facebook': 'https://www.facebook.com/RanchoValencia',
+ 'instagram': 'https://www.instagram.com/ranchovalencia/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/RanchoValencia'}
+DEBUG: Scraped from <200 https://www.canyonranch.com/contact-us/>
+{'emails': ['Tucson-Sales@canyonranch.com',
+            'media@canyonranch.com',
+            'lchesloff@williampitt.com',
+            'nikki.field@sothebyshomes.com',
+            'Woodside-Sales@canyonranch.com',
+            'Lenox-Sales@canyonranch.com',
+            'Las-Vegas-Sales@canyonranch.com',
+            'gmontgomery@williampitt.com',
+            'jzimmermann@canyonranch.com'],
+ 'facebook': 'https://www.facebook.com/CanyonRanch',
+ 'instagram': 'https://www.instagram.com/canyonranch/',
+ 'linkedin': 'https://www.linkedin.com/company/canyon-ranch',
+ 'twitter': 'https://twitter.com/CanyonRanch'}
+DEBUG: Scraped from <200 https://davidrubensteinforum.uchicago.edu/contact/>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.lapeauspafresno.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://glenivy.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://amenitiesspa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://wispausa.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://ranchovalencia.com/> from <GET https://www.ranchovalencia.com/>
+DEBUG: Crawled (200) <GET https://www.laquintaresort.com/map-and-contact/> (referer: https://www.laquintaresort.com/)
+DEBUG: Crawled (200) <GET https://www.estanciadayspa.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET http://carnerosresort.com/> from <GET https://www.carnerosresort.com/>
+DEBUG: Crawled (200) <GET https://wecarespa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.cavallopoint.com/contact-us> (referer: https://www.cavallopoint.com/spa?utm_source=google-gmb&utm_medium=organic&utm_campaign=gmb)
+DEBUG: Scraped from <200 https://www.laquintaresort.com/map-and-contact/>
+{'emails': ['resinquiry@laquintaresort.com',
+            'information@laquintaresort.com',
+            'weddings@laquintaresort.com'],
+ 'facebook': 'https://www.facebook.com/laquintaresort',
+ 'instagram': 'http://instagram.com/laquintaresort',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/laquintaresort'}
+DEBUG: Crawled (200) <GET https://www.lapeauspafresno.com/contact> (referer: https://www.lapeauspafresno.com/)
+DEBUG: Crawled (200) <GET https://paradisepoint.com/contact-us/> (referer: https://paradisepoint.com/california-resort-spa/)
+DEBUG: Redirecting (301) to <GET https://carnerosresort.com/> from <GET http://carnerosresort.com/>
+DEBUG: Crawled (200) <GET https://www.indianspringscalistoga.com/contact-us> (referer: https://www.indianspringscalistoga.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing)
+DEBUG: Scraped from <200 https://www.cavallopoint.com/contact-us>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/CavalloPoint',
+ 'instagram': 'https://www.instagram.com/cavallopoint/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/CavalloPoint'}
+DEBUG: Crawled (200) <GET https://carmelvalleyranch.com/spa/spa-aiyana/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.trilogyspa.com/> from <GET http://www.trilogyspa.com/>
+DEBUG: Scraped from <200 https://www.lapeauspafresno.com/contact>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/lapeauspa/?fref=ts',
+ 'instagram': 'https://www.instagram.com/lapeauspa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Scraped from <200 https://paradisepoint.com/contact-us/>
+{'emails': ['weddings@paradisepoint.com',
+            'marketing@paradisepoint.com',
+            'sales@paradisepoint.com'],
+ 'facebook': 'https://www.facebook.com/paradisepointsd',
+ 'instagram': 'https://www.instagram.com/paradisepointsd/',
+ 'linkedin': 'https://www.linkedin.com/company/paradise-point-resort-&-spa',
+ 'twitter': 'https://twitter.com/paradisepointsd'}
+DEBUG: Scraped from <200 https://www.indianspringscalistoga.com/contact-us>
+{'emails': ['inquiries@indianspringscalistoga.com', 'forms@tambourine.com'],
+ 'facebook': 'https://www.facebook.com/ISRNAPA/',
+ 'instagram': 'https://www.instagram.com/indianspringscalistoga/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://www.thebluedoorhanford.com/> from <GET http://www.thebluedoorhanford.com/>
+DEBUG: Crawled (200) <GET https://theravenspa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.sweetwaterspa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://thehealingcornerca.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://wecarespa.com/contact-us/> from <GET https://wecarespa.com/contact/>
+DEBUG: Crawled (404) <GET https://azurepalmhotsprings.com/dev/contact-us/> (referer: https://azurepalmhotsprings.com/)
+DEBUG: Redirecting (301) to <GET https://doubleeagle.com/> from <GET http://doubleeagle.com/>
+DEBUG: Crawled (200) <GET https://www.ranchobernardoinn.com/spa/overview?utm_source=gmb&utm_medium=yext> (referer: None)
+DEBUG: Crawled (200) <GET https://www.sweetwaterspa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://ranchovalencia.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://carnerosresort.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://wispausa.com/contact/> (referer: https://wispausa.com/)
+DEBUG: Crawled (200) <GET https://glenivy.com/contact-info/> (referer: https://glenivy.com/)
+INFO: Ignoring response <404 https://azurepalmhotsprings.com/dev/contact-us/>: HTTP status code is not handled or not allowed
+DEBUG: Scraped from <200 https://wispausa.com/contact/>
+{'emails': ['info@wispausa.com'],
+ 'facebook': 'https://www.facebook.com/wispa.usa',
+ 'instagram': 'https://www.instagram.com/wispa_usa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/WiSpa_USA'}
+DEBUG: Scraped from <200 https://glenivy.com/contact-info/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/GlenIvyHotSprings',
+ 'instagram': 'https://instagram.com/glenivy_spa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/GlenIvySpas'}
+DEBUG: Redirecting (301) to <GET https://harbin.org/> from <GET http://www.harbin.org/>
+DEBUG: Crawled (200) <GET https://www.trilogyspa.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.teahousespa.com/> from <GET http://www.teahousespa.com/>
+DEBUG: Crawled (200) <GET https://theravenspa.com/contact/> (referer: https://theravenspa.com/)
+DEBUG: Crawled (200) <GET https://www.thebluedoorhanford.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://carmelvalleyranch.com/contact/> (referer: https://carmelvalleyranch.com/spa/spa-aiyana/)
+DEBUG: Crawled (403) <GET https://www.montagehotels.com/lagunabeach/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.missioninn.com/> from <GET http://www.missioninn.com/>
+DEBUG: Crawled (200) <GET https://www.thelandingtahoe.com/> (referer: None)
+DEBUG: Scraped from <200 https://theravenspa.com/contact/>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Scraped from <200 https://carmelvalleyranch.com/contact/>
+{'emails': ['cvrmembership@carmelvalleyranch.com',
+            'cvrriverranch@carmelvalleyranch.com',
+            'cvrvalleykitchen@carmelvalleyranch.com',
+            'cvrwedding@carmelvalleyranch.com',
+            'cvrclubhouse@carmelvalleyranch.com',
+            'spa@carmelvalleyranch.com',
+            'guestservices@carmelvalleyranch.com',
+            'cvrgolf@carmelvalleyranch.com',
+            'tennis@carmelvalleyranch.com'],
+ 'facebook': 'https://www.facebook.com/carmelvalleyranch/',
+ 'instagram': 'https://www.instagram.com/carmelvranch',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.miraclesprings.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.silveradoresort.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.ranchobernardoinn.com/contact-us/> from <GET https://www.ranchobernardoinn.com/contact-us>
+DEBUG: Crawled (200) <GET https://www.paseahotel.com/?utm_medium=organic&utm_source=google&utm_campaign=business-listing> (referer: None)
+DEBUG: Crawled (200) <GET https://www.sweetwaterspa.com/contact-us/#sweetwater-location> (referer: https://www.sweetwaterspa.com/)
+DEBUG: Crawled (200) <GET https://ranchovalencia.com/contact-us/> (referer: https://ranchovalencia.com/)
+DEBUG: Redirecting (301) to <GET https://www.doubleeagle.com/> from <GET https://doubleeagle.com/>
+INFO: Ignoring response <403 https://www.montagehotels.com/lagunabeach/>: HTTP status code is not handled or not allowed
+ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\scrapy\core\engine.py", line 152, in _next_request
+    request = next(self.slot.start_requests)
+  File "C:\Users\moffi\PycharmProjects\scraping_web\scraper\scraper\spiders\website_spider.py", line 37, in start_requests
+    for row in reader:
+  File "C:\Users\moffi\AppData\Local\Programs\Python\Python310\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 7784: character maps to <undefined>
+DEBUG: Crawled (200) <GET https://www.sweetwaterspa.com/contact-us/#sweetwater-location> (referer: https://www.sweetwaterspa.com/)
+DEBUG: Crawled (200) <GET https://www.missioninn.com/> (referer: None)
+DEBUG: Scraped from <200 https://www.sweetwaterspa.com/contact-us/>
+{'emails': ['lodging@sweetwaterspa.com'],
+ 'facebook': 'https://www.facebook.com/SweetwaterInnandSpa/',
+ 'instagram': 'https://www.instagram.com/sweetwaterinnspa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/SweetwaterInnCA'}
+DEBUG: Scraped from <200 https://ranchovalencia.com/contact-us/>
+{'emails': ['villas@ranchovalencia.com',
+            'info@villasranchovalencia.com',
+            'tennis@ranchovalencia.com',
+            'concierge@ranchovalencia.com'],
+ 'facebook': 'https://www.facebook.com/RanchoValencia',
+ 'instagram': 'https://www.instagram.com/ranchovalencia/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/RanchoValencia'}
+DEBUG: Scraped from <200 https://www.sweetwaterspa.com/contact-us/>
+{'emails': ['lodging@sweetwaterspa.com'],
+ 'facebook': 'https://www.facebook.com/SweetwaterInnandSpa/',
+ 'instagram': 'https://www.instagram.com/sweetwaterinnspa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/SweetwaterInnCA'}
+DEBUG: Crawled (200) <GET https://www.ranchobernardoinn.com/contact-us/> (referer: https://www.ranchobernardoinn.com/spa/overview?utm_source=gmb&utm_medium=yext)
+DEBUG: Redirecting (301) to <GET https://mysheerbliss.com/> from <GET https://www.mysheerbliss.com/>
+DEBUG: Crawled (200) <GET http://www.athenaspa-mv.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.estancialajolla.com/spa/?utm_source=gmb-spa&utm_medium=organic&utm_campaign=gmb> (referer: None)
+DEBUG: Crawled (200) <GET https://www.missioninn.com/contact> (referer: https://www.missioninn.com/)
+DEBUG: Scraped from <200 https://www.ranchobernardoinn.com/contact-us/>
+{'emails': ['rbiweddings@jcresorts.com',
+            'ranchobernardoinn@jcresorts.com',
+            'rbibilling@jcresorts.com',
+            'rbijobs@jcresorts.com'],
+ 'facebook': 'https://www.facebook.com/RBInn',
+ 'instagram': 'https://instagram.com/ranchobernardoinn/',
+ 'linkedin': 'https://www.linkedin.com/company/rancho-bernardo-inn?trk=biz-brand-tree-co-logo',
+ 'twitter': 'https://twitter.com/rbernardoinn'}
+DEBUG: Crawled (200) <GET https://mysheerbliss.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.bardessono.com/> from <GET https://bardessono.com/>
+DEBUG: Crawled (200) <GET https://www.teahousespa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.silveradoresort.com/contact-us> (referer: https://www.silveradoresort.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing)
+DEBUG: Scraped from <200 https://www.missioninn.com/contact>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/TheMissionInn/',
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/missioninnhotel?lang=en'}
+DEBUG: Crawled (200) <GET https://harbin.org/> (referer: None)
+DEBUG: Scraped from <200 https://www.silveradoresort.com/contact-us>
+{'emails': ['jeff.vanparis@silveradoresort.com',
+            'golf@silveradoresort.com',
+            'spa@silveradoresort.com',
+            'silverado.concierge@silveradoresort.com',
+            'heather.mckenna@silveradoresort.com',
+            'resv@silveradoresort.com',
+            'tennis@silveradoresort.com',
+            'sales@silveradoresort.com',
+            'silveradodining@silveradoresort.com',
+            'loren.bates@silveradoresort.com',
+            'info@silveradoresort.com'],
+ 'facebook': 'https://www.facebook.com/silveradoresort',
+ 'instagram': 'https://www.instagram.com/silveradoresort',
+ 'linkedin': 'https://www.linkedin.com/company/silverado-resort',
+ 'twitter': 'https://twitter.com/silveradoresort'}
+DEBUG: Crawled (200) <GET https://wecarespa.com/contact-us/> (referer: https://wecarespa.com/)
+DEBUG: Crawled (200) <GET https://www.estancialajolla.com/contact/> (referer: https://www.estancialajolla.com/spa/?utm_source=gmb-spa&utm_medium=organic&utm_campaign=gmb)
+DEBUG: Crawled (200) <GET https://www.paseahotel.com/contact/press-room> (referer: https://www.paseahotel.com/?utm_medium=organic&utm_source=google&utm_campaign=business-listing)
+DEBUG: Crawled (200) <GET https://mysheerbliss.com/pages/contact-us-spa-policy> (referer: https://mysheerbliss.com/)
+DEBUG: Scraped from <200 https://wecarespa.com/contact-us/>
+{'emails': ['info@wecarespa.com'],
+ 'facebook': 'https://www.facebook.com/WeCareSpa',
+ 'instagram': 'https://www.instagram.com/wecarespaca/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/wecarespa'}
+DEBUG: Crawled (200) <GET https://www.teahousespa.com/contact-join-our-team> (referer: https://www.teahousespa.com/)
+DEBUG: Scraped from <200 https://www.estancialajolla.com/contact/>
+{'emails': ['rsv@estancialajolla.com',
+            'sales@estancialajolla.com',
+            'spa@estancialajolla.com',
+            'elj@20twostudio.com',
+            'EstanciaConcierge@EstanciaLaJolla.com',
+            'bookzoe@noblehousehotels.com'],
+ 'facebook': 'https://www.facebook.com/EstanciaLaJolla/',
+ 'instagram': 'https://www.instagram.com/estancialajolla/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Scraped from <200 https://www.paseahotel.com/contact/press-room>
+{'emails': ['frontdesk@paseahotel.com',
+            'forms@tambourine.com',
+            'marketing@paseahotel.com'],
+ 'facebook': 'https://www.facebook.com/PaseaHotel/',
+ 'instagram': 'https://www.instagram.com/paseahotel/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Scraped from <200 https://mysheerbliss.com/pages/contact-us-spa-policy>
+{'emails': ['info@mysheerbliss.com', 'glow@mysheerbliss.com'],
+ 'facebook': 'https://www.facebook.com/fresnoorganicspa/',
+ 'instagram': 'https://www.instagram.com/sheerblissspa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://harbin.org/contact-us/> (referer: https://harbin.org/)
+DEBUG: Crawled (200) <GET https://www.miraclesprings.com/contact/> (referer: https://www.miraclesprings.com/)
+DEBUG: Scraped from <200 https://www.teahousespa.com/contact-join-our-team>
+{'emails': ['TeaHouseSpaManagement@gmail.com', 'reception@teahousespa.com'],
+ 'facebook': 'https://www.facebook.com/theteahousespa',
+ 'instagram': 'https://www.instagram.com/theteahousespa/?hl=en',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Scraped from <200 https://harbin.org/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/harbinhotsprings',
+ 'instagram': 'https://www.instagram.com/harbin_hot_springs/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Scraped from <200 https://www.miraclesprings.com/contact/>
+{'emails': ['catering@miraclesprings.com', 'spa@miraclesprings.com'],
+ 'facebook': 'https://www.facebook.com/miraclesprings',
+ 'instagram': 'https://www.instagram.com/miraclespringsresort/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/ResortMiracle'}
+DEBUG: Crawled (200) <GET https://www.bardessono.com/> (referer: None)
+DEBUG: Crawled (200) <GET http://www.athenaspa-mv.com/contact-us> (referer: http://www.athenaspa-mv.com/)
+DEBUG: Scraped from <200 http://www.athenaspa-mv.com/contact-us>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.bardessono.com/contact.htm> (referer: https://www.bardessono.com/)
+DEBUG: Scraped from <200 https://www.bardessono.com/contact.htm>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/bardessonohotelspa/',
+ 'instagram': 'https://www.instagram.com/bardessonoyountville/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/BardessonoHotel'}
+DEBUG: Crawled (200) <GET https://www.doubleeagle.com/> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 46881,
+ 'downloader/request_count': 162,
+ 'downloader/request_method_count/GET': 162,
+ 'downloader/response_bytes': 5821695,
+ 'downloader/response_count': 162,
+ 'downloader/response_status_count/200': 111,
+ 'downloader/response_status_count/301': 45,
+ 'downloader/response_status_count/403': 2,
+ 'downloader/response_status_count/404': 1,
+ 'downloader/response_status_count/429': 3,
+ 'elapsed_time_seconds': 12.104421,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 9, 18, 44, 3, 780409),
+ 'httpcompression/response_bytes': 20349184,
+ 'httpcompression/response_count': 111,
+ 'httperror/response_ignored_count': 4,
+ 'httperror/response_ignored_status_count/403': 2,
+ 'httperror/response_ignored_status_count/404': 1,
+ 'httperror/response_ignored_status_count/429': 1,
+ 'item_scraped_count': 47,
+ 'log_count/DEBUG': 216,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 14,
+ 'request_depth_max': 1,
+ 'response_received_count': 115,
+ 'retry/count': 2,
+ 'retry/max_reached': 1,
+ 'retry/reason_count/429 Unknown Status': 2,
+ 'scheduler/dequeued': 162,
+ 'scheduler/dequeued/memory': 162,
+ 'scheduler/enqueued': 162,
+ 'scheduler/enqueued/memory': 162,
+ 'start_time': datetime.datetime(2022, 12, 9, 18, 43, 51, 675988)}
+INFO: Spider closed (finished)
+INFO: Scrapy 2.7.1 started (bot: scraper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 38.0.4, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'scraper',
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: 1e88e36df1236c79
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Attempting to acquire lock 1299262477536 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 1299262477536 acquired on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Attempting to release lock 1299262477536 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 1299262477536 released on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Crawled (200) <GET https://www.omnihotels.com/hotels/san-diego-la-costa/spa?utm_source=GMBlisting&utm_medium=organic> (referer: None)
+DEBUG: Redirecting (301) to <GET https://kellysspa.com/> from <GET http://kellysspa.com/>
+DEBUG: Redirecting (301) to <GET https://cadayspa.com/> from <GET http://cadayspa.com/>
+DEBUG: Redirecting (301) to <GET https://locations.woodhousespas.com/dir/ca/walnut-creek/1636-cypress-st> from <GET http://walnutcreek.woodhousespas.com/?utm_source=google&utm_medium=yext>
+DEBUG: Redirecting (301) to <GET http://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D> from <GET https://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa/?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D>
+DEBUG: Redirecting (301) to <GET https://www.cal-a-vie.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing> from <GET http://www.cal-a-vie.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing>
+DEBUG: Redirecting (301) to <GET https://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D> from <GET http://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D>
+DEBUG: Redirecting (301) to <GET https://www.kellysspa.com/> from <GET https://kellysspa.com/>
+DEBUG: Crawled (200) <GET https://www.fourseasons.com/westlakevillage/spa/?seo=google_local_wes6_amer> (referer: None)
+DEBUG: Crawled (200) <GET https://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D> (referer: None)
+DEBUG: Crawled (200) <GET https://locations.woodhousespas.com/dir/ca/walnut-creek/1636-cypress-st> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.goldenhaven.com/> from <GET http://www.goldenhaven.com/>
+DEBUG: Crawled (200) <GET https://www.omnihotels.com/forms/contact-us> (referer: https://www.omnihotels.com/hotels/san-diego-la-costa/spa?utm_source=GMBlisting&utm_medium=organic)
+DEBUG: Crawled (200) <GET https://cadayspa.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.glenivy.com/> from <GET http://www.glenivy.com/>
+DEBUG: Crawled (200) <GET https://www.kellysspa.com/> (referer: None)
+DEBUG: Scraped from <200 https://www.omnihotels.com/forms/contact-us>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/omnihotels/',
+ 'instagram': 'https://www.instagram.com/omnihotels/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/omnihotels?lang=en'}
+DEBUG: Crawled (200) <GET https://www.cal-a-vie.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing> (referer: None)
+DEBUG: Crawled (200) <GET https://goldendoor.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.madonnainn.com/spa> (referer: None)
+DEBUG: Crawled (200) <GET https://www.fourseasons.com/contact-us/> (referer: https://www.fourseasons.com/westlakevillage/spa/?seo=google_local_wes6_amer)
+DEBUG: Redirecting (301) to <GET http://aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website> from <GET https://aubergeresorts.com/solage/wellness/spa?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website>
+DEBUG: Crawled (200) <GET https://www.kellysspa.com/contact-location> (referer: https://www.kellysspa.com/)
+DEBUG: Redirecting (301) to <GET https://www.mytrilogylife.com/monarchdunes/spa/> from <GET http://www.mytrilogylife.com/monarchdunes/spa/>
+DEBUG: Crawled (200) <GET https://cadayspa.com/contact-us> (referer: https://cadayspa.com/)
+DEBUG: Redirecting (301) to <GET https://www.ritzcarlton.com/en/hotels/california/los-angeles/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2> from <GET http://www.ritzcarlton.com/en/hotels/california/los-angeles/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2>
+DEBUG: Crawled (200) <GET https://www.ritzcarlton.com/en/hotels/california/los-angeles/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2> (referer: None)
+DEBUG: Scraped from <200 https://www.fourseasons.com/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/FourSeasons',
+ 'instagram': 'https://www.instagram.com/fourseasons/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/FourSeasons'}
+DEBUG: Scraped from <200 https://www.kellysspa.com/contact-location>
+{'emails': ['SpaDirector@Missioninn.com', 'spadirector@missioninn.com'],
+ 'facebook': 'https://www.facebook.com/TheMissionInn',
+ 'instagram': 'https://www.instagram.com/kellys_spa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Scraped from <200 https://cadayspa.com/contact-us>
+{'emails': ['filler@godaddy.com',
+            'impallari@gmail.com',
+            'team@latofonts.com',
+            'ron@cadayspa.com'],
+ 'facebook': 'https://www.facebook.com/californiadayspa',
+ 'instagram': 'https://www.instagram.com/cadayspa',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://www.twitter.com/califadayspa'}
+DEBUG: Redirecting (301) to <GET https://www.aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website> from <GET http://aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website>
+DEBUG: Crawled (200) <GET https://www.cal-a-vie.com/contact-us> (referer: https://www.cal-a-vie.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing)
+DEBUG: Redirecting (301) to <GET https://www.boonhotels.com/> from <GET http://www.boonhotels.com/>
+DEBUG: Crawled (200) <GET https://www.osmosis.com/?y_source=1_MjI1MDUzNzItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D> (referer: None)
+DEBUG: Crawled (200) <GET https://www.goldenhaven.com/> (referer: None)
+DEBUG: Scraped from <200 https://www.cal-a-vie.com/contact-us>
+{'emails': ['cavinfo@cal-a-vie.com'],
+ 'facebook': 'https://www.facebook.com/CalaVie',
+ 'instagram': 'https://www.instagram.com/calaviespa',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/calaviespa'}
+DEBUG: Redirecting (301) to <GET https://www.ritzcarlton.com/en/hotels/california/santa-barbara/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2> from <GET http://www.ritzcarlton.com/en/hotels/california/santa-barbara/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2>
+DEBUG: Redirecting (301) to <GET https://www.laquintaresort.com/> from <GET http://www.laquintaresort.com/>
+DEBUG: Crawled (200) <GET https://www.ritzcarlton.com/en/hotels/california/santa-barbara/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2> (referer: None)
+DEBUG: Crawled (200) <GET https://www.purpleorchid.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://montereyplazahotel.com/spa/vista-blue-spa/?utm_source=google&utm_medium=bizlisting&utm_campaign=google_places> (referer: None)
+DEBUG: Crawled (200) <GET https://goldendoor.com/contact-us/> (referer: https://goldendoor.com/)
+DEBUG: Retrying <GET https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html> (failed 1 times): 429 Unknown Status
+DEBUG: Redirecting (301) to <GET https://www.wispausa.com/> from <GET http://www.wispausa.com/>
+DEBUG: Scraped from <200 https://goldendoor.com/contact-us/>
+{'emails': ['molly@thestoriedgroup.com',
+            'guestservices@goldendoor.com',
+            'guestservices@goldendoor.com.',
+            'shop@goldendoor.com'],
+ 'facebook': 'https://www.facebook.com/Goldendoorspa/',
+ 'instagram': 'https://www.instagram.com/thegoldendoor/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/goldendoor'}
+DEBUG: Redirecting (301) to <GET https://www.southcoastwinery.com/spa/> from <GET https://www.southcoastwinery.com/spa>
+DEBUG: Crawled (200) <GET https://www.osmosis.com/contact/> (referer: https://www.osmosis.com/?y_source=1_MjI1MDUzNzItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D)
+DEBUG: Scraped from <200 https://www.osmosis.com/contact/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/OsmosisDaySpaSanctuary',
+ 'instagram': 'https://www.instagram.com/osmosisdayspa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/osmosisspa'}
+DEBUG: Crawled (200) <GET https://www.mytrilogylife.com/monarchdunes/spa/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.purpleorchid.com/contact-us/> (referer: https://www.purpleorchid.com/)
+DEBUG: Redirecting (301) to <GET https://boonhotels.com/> from <GET https://www.boonhotels.com/>
+DEBUG: Crawled (200) <GET https://www.aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website> (referer: None)
+DEBUG: Scraped from <200 https://www.purpleorchid.com/contact-us/>
+{'emails': ['info@purpleorchid.com',
+            'spa@purpleorchid.com',
+            'rhiannon@purpleorchid.com'],
+ 'facebook': 'https://www.facebook.com/ThePurpleOrchid',
+ 'instagram': 'https://www.instagram.com/thepurpleorchid/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/purpleorchidcom'}
+DEBUG: Retrying <GET https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html> (failed 2 times): 429 Unknown Status
+DEBUG: Crawled (200) <GET https://www.urbanretreatspa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://the-spring.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.terranea.com/offers?utm_source=google-knowledge-graph&utm_medium=organic&utm_campaign=my_business_page> (referer: None)
+DEBUG: Redirecting (301) to <GET http://beverlyhotsprings.com/> from <GET http://www.beverlyhotsprings.com/>
+DEBUG: Redirecting (301) to <GET https://www.evo-spa.com/> from <GET http://www.evo-spa.com/>
+ERROR: Gave up retrying <GET https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html> (failed 3 times): 429 Unknown Status
+DEBUG: Crawled (429) <GET https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html> (referer: None)
+DEBUG: Crawled (200) <GET https://montereyplazahotel.com/hotel/contact> (referer: https://montereyplazahotel.com/spa/vista-blue-spa/?utm_source=google&utm_medium=bizlisting&utm_campaign=google_places)
+DEBUG: Crawled (200) <GET https://boonhotels.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://glenivy.com/> from <GET https://www.glenivy.com/>
+DEBUG: Crawled (200) <GET https://www.southcoastwinery.com/spa/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.mytrilogylife.com/monarchdunes/spa/#contacts> (referer: https://www.mytrilogylife.com/monarchdunes/spa/)
+INFO: Ignoring response <429 https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html>: HTTP status code is not handled or not allowed
+DEBUG: Scraped from <200 https://montereyplazahotel.com/hotel/contact>
+{'emails': ['forms@tambourine.com',
+            'housekeeping@montereyplazahotel.com',
+            'coastalcurator@montereyplazahotel.com',
+            'sales@montereyplazahotel.com',
+            'weddings@montereyplazahotel.com'],
+ 'facebook': 'https://www.facebook.com/montereyplazahotel',
+ 'instagram': 'https://www.instagram.com/montereyplaza/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.urbanretreatspa.com/contact> (referer: https://www.urbanretreatspa.com/)
+DEBUG: Crawled (200) <GET https://www.aubergeresorts.com/solage/contact-us/> (referer: https://www.aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website)
+DEBUG: Crawled (200) <GET https://www.chaminade.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb> (referer: None)
+DEBUG: Crawled (200) <GET https://ranchovalencia.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.sycamoresprings.com/> from <GET http://www.sycamoresprings.com/>
+DEBUG: Scraped from <200 https://www.mytrilogylife.com/monarchdunes/spa/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/sandalwoodtrilogy/',
+ 'instagram': 'https://www.instagram.com/sandalwood_spa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/monarch_club/'}
+DEBUG: Scraped from <200 https://www.urbanretreatspa.com/contact>
+{'emails': ['contact@urbanretreatspa.com'],
+ 'facebook': 'https://www.facebook.com/pages/Urban-Retreat-Day-Spa/69993009232?ref=hl',
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/URDaySpa'}
+DEBUG: Scraped from <200 https://www.aubergeresorts.com/solage/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/SolageResort/',
+ 'instagram': 'https://www.instagram.com/solageauberge/?hl=en',
+ 'linkedin': 'https://www.linkedin.com/company/auberge-resorts/',
+ 'twitter': 'https://twitter.com/solageauberge'}
+DEBUG: Crawled (403) <GET https://www.constantcontact.com/legal/service-provider> (referer: https://the-spring.com/)
+DEBUG: Redirecting (301) to <GET https://www.ranchovalencia.com/> from <GET http://www.ranchovalencia.com/>
+DEBUG: Crawled (200) <GET https://boonhotels.com/contact/> (referer: https://boonhotels.com/)
+DEBUG: Redirecting (301) to <GET https://sweetwaterspa.com/> from <GET http://www.sweetwaterspa.com/>
+DEBUG: Crawled (200) <GET https://www.southcoastwinery.com/contact> (referer: https://www.southcoastwinery.com/spa/)
+INFO: Ignoring response <403 https://www.constantcontact.com/legal/service-provider>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://www.terranea.com/contact-us> (referer: https://www.terranea.com/offers?utm_source=google-knowledge-graph&utm_medium=organic&utm_campaign=my_business_page)
+DEBUG: Crawled (200) <GET https://www.sycamoresprings.com/> (referer: None)
+DEBUG: Scraped from <200 https://boonhotels.com/contact/>
+{'emails': ['info@boonhotels.com'],
+ 'facebook': 'http://www.facebook.com/boonhotelspa',
+ 'instagram': 'https://www.instagram.com/boonhotelspa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/boonhotelspa'}
+DEBUG: Scraped from <200 https://www.southcoastwinery.com/contact>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/SouthCoastWinery',
+ 'instagram': 'https://www.instagram.com/southcoastwineryresort/',
+ 'linkedin': 'https://www.linkedin.com/company/south-coast-winery-&-spa/',
+ 'twitter': 'https://twitter.com/SCWinery'}
+DEBUG: Scraped from <200 https://www.terranea.com/contact-us>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/Terranea',
+ 'instagram': 'http://instagram.com/terranearesort',
+ 'linkedin': 'https://www.linkedin.com/company/terranea-resort',
+ 'twitter': 'https://twitter.com/TerraneaResort'}
+DEBUG: Crawled (200) <GET https://thesisleyspa.com/los-angeles/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.evo-spa.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://wecarespa.com/> from <GET http://www.wecarespa.com/>
+DEBUG: Redirecting (301) to <GET https://wispausa.com/> from <GET https://www.wispausa.com/>
+DEBUG: Redirecting (301) to <GET https://www.lapeauspafresno.com/> from <GET http://www.lapeauspafresno.com/>
+DEBUG: Crawled (200) <GET http://beverlyhotsprings.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.sweetwaterspa.com/> from <GET https://sweetwaterspa.com/>
+DEBUG: Crawled (200) <GET https://azurepalmhotsprings.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.canyonranch.com/woodside/northern-california-retreat/?utm_source=googlemybusiness&utm_medium=organic&utm_campaign=woodsidegmb&utm_term=googlemybusiness> (referer: None)
+DEBUG: Crawled (200) <GET https://www.sycamoresprings.com/contact> (referer: https://www.sycamoresprings.com/)
+DEBUG: Crawled (200) <GET https://thesisleyspa.com/contact-us/> (referer: https://thesisleyspa.com/los-angeles/)
+DEBUG: Crawled (200) <GET https://davidrubensteinforum.uchicago.edu/contact/> (referer: https://www.chaminade.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb)
+DEBUG: Scraped from <200 https://www.sycamoresprings.com/contact>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/sycamoremineralsprings',
+ 'instagram': 'https://instagram.com/sycamoresprings',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/sycamoresprings'}
+DEBUG: Crawled (200) <GET https://www.laquintaresort.com/> (referer: None)
+DEBUG: Scraped from <200 https://thesisleyspa.com/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/SisleySpaUSA/',
+ 'instagram': 'https://www.instagram.com/sisleyspausa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://lagunacanyonspa.com/> from <GET http://www.lagunacanyonspa.com/>
+DEBUG: Scraped from <200 https://davidrubensteinforum.uchicago.edu/contact/>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://amenitiesspa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://glenivy.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://paradisepoint.com/california-resort-spa/> (referer: None)
+DEBUG: Crawled (200) <GET https://wispausa.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://ranchovalencia.com/> from <GET https://www.ranchovalencia.com/>
+DEBUG: Crawled (200) <GET https://ranchovalencia.com/contact-us/> (referer: https://ranchovalencia.com/)
+DEBUG: Crawled (200) <GET https://wecarespa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://lagunacanyonspa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.sweetwaterspa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.lapeauspafresno.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.canyonranch.com/contact-us/> (referer: https://www.canyonranch.com/)
+DEBUG: Crawled (200) <GET https://www.cavallopoint.com/spa?utm_source=google-gmb&utm_medium=organic&utm_campaign=gmb> (referer: None)
+DEBUG: Crawled (200) <GET http://beverlyhotsprings.com/contact/> (referer: http://beverlyhotsprings.com/)
+DEBUG: Scraped from <200 https://ranchovalencia.com/contact-us/>
+{'emails': ['tennis@ranchovalencia.com',
+            'info@villasranchovalencia.com',
+            'villas@ranchovalencia.com',
+            'concierge@ranchovalencia.com'],
+ 'facebook': 'https://www.facebook.com/RanchoValencia',
+ 'instagram': 'https://www.instagram.com/ranchovalencia/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/RanchoValencia'}
+DEBUG: Redirecting (301) to <GET https://www.carnerosresort.com/> from <GET http://www.carnerosresort.com/>
+DEBUG: Crawled (200) <GET https://www.sweetwaterspa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.estanciadayspa.com/> (referer: None)
+DEBUG: Scraped from <200 https://www.canyonranch.com/contact-us/>
+{'emails': ['Tucson-Sales@canyonranch.com',
+            'gmontgomery@williampitt.com',
+            'media@canyonranch.com',
+            'Lenox-Sales@canyonranch.com',
+            'nikki.field@sothebyshomes.com',
+            'lchesloff@williampitt.com',
+            'Woodside-Sales@canyonranch.com',
+            'jzimmermann@canyonranch.com',
+            'Las-Vegas-Sales@canyonranch.com'],
+ 'facebook': 'https://www.facebook.com/CanyonRanch',
+ 'instagram': 'https://www.instagram.com/canyonranch/',
+ 'linkedin': 'https://www.linkedin.com/company/canyon-ranch',
+ 'twitter': 'https://twitter.com/CanyonRanch'}
+DEBUG: Scraped from <200 http://beverlyhotsprings.com/contact/>
+{'emails': ['beverlyhotsprings@gmail.com'],
+ 'facebook': 'https://www.facebook.com/beverlyhotsprings',
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/BHSdayspa'}
+DEBUG: Crawled (200) <GET https://wispausa.com/contact/> (referer: https://wispausa.com/)
+DEBUG: Crawled (200) <GET https://www.silveradoresort.com/napa-valley-spa?utm_medium=organic&utm_source=google&utm_campaign=spabusinesslisting> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.trilogyspa.com/> from <GET http://www.trilogyspa.com/>
+DEBUG: Crawled (200) <GET https://www.ranchobernardoinn.com/spa/overview?utm_source=gmb&utm_medium=yext> (referer: None)
+DEBUG: Crawled (200) <GET https://paradisepoint.com/contact-us/> (referer: https://paradisepoint.com/california-resort-spa/)
+DEBUG: Crawled (200) <GET https://www.laquintaresort.com/map-and-contact/> (referer: https://www.laquintaresort.com/)
+DEBUG: Crawled (200) <GET https://lagunacanyonspa.com/contact-us> (referer: https://lagunacanyonspa.com/)
+DEBUG: Crawled (404) <GET https://azurepalmhotsprings.com/dev/contact-us/> (referer: https://azurepalmhotsprings.com/)
+DEBUG: Crawled (200) <GET https://www.lapeauspafresno.com/contact> (referer: https://www.lapeauspafresno.com/)
+DEBUG: Crawled (200) <GET https://www.cavallopoint.com/contact-us> (referer: https://www.cavallopoint.com/spa?utm_source=google-gmb&utm_medium=organic&utm_campaign=gmb)
+DEBUG: Scraped from <200 https://wispausa.com/contact/>
+{'emails': ['info@wispausa.com'],
+ 'facebook': 'https://www.facebook.com/wispa.usa',
+ 'instagram': 'https://www.instagram.com/wispa_usa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/WiSpa_USA'}
+DEBUG: Scraped from <200 https://paradisepoint.com/contact-us/>
+{'emails': ['marketing@paradisepoint.com',
+            'weddings@paradisepoint.com',
+            'sales@paradisepoint.com'],
+ 'facebook': 'https://www.facebook.com/paradisepointsd',
+ 'instagram': 'https://www.instagram.com/paradisepointsd/',
+ 'linkedin': 'https://www.linkedin.com/company/paradise-point-resort-&-spa',
+ 'twitter': 'https://twitter.com/paradisepointsd'}
+DEBUG: Scraped from <200 https://www.laquintaresort.com/map-and-contact/>
+{'emails': ['resinquiry@laquintaresort.com',
+            'information@laquintaresort.com',
+            'weddings@laquintaresort.com'],
+ 'facebook': 'https://www.facebook.com/laquintaresort',
+ 'instagram': 'http://instagram.com/laquintaresort',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/laquintaresort'}
+DEBUG: Crawled (200) <GET https://theravenspa.com/> (referer: None)
+INFO: Ignoring response <404 https://azurepalmhotsprings.com/dev/contact-us/>: HTTP status code is not handled or not allowed
+DEBUG: Scraped from <200 https://lagunacanyonspa.com/contact-us>
+{'emails': ['filler@godaddy.com',
+            'impallari@gmail.com',
+            'hello@rfuenzalida.com',
+            'info@ndiscovered.com'],
+ 'facebook': 'https://www.facebook.com/103690430994',
+ 'instagram': 'https://www.instagram.com/lagunacanyonspa',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://www.twitter.com/lagunacanyonspa/'}
+DEBUG: Scraped from <200 https://www.lapeauspafresno.com/contact>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/lapeauspa/?fref=ts',
+ 'instagram': 'https://www.instagram.com/lapeauspa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Scraped from <200 https://www.cavallopoint.com/contact-us>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/CavalloPoint',
+ 'instagram': 'https://www.instagram.com/cavallopoint/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/CavalloPoint'}
+DEBUG: Redirecting (301) to <GET https://wecarespa.com/contact-us/> from <GET https://wecarespa.com/contact/>
+DEBUG: Crawled (200) <GET https://glenivy.com/contact-info/> (referer: https://glenivy.com/)
+DEBUG: Redirecting (301) to <GET https://www.thebluedoorhanford.com/> from <GET http://www.thebluedoorhanford.com/>
+DEBUG: Crawled (200) <GET https://carmelvalleyranch.com/spa/spa-aiyana/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.ranchobernardoinn.com/contact-us/> from <GET https://www.ranchobernardoinn.com/contact-us>
+DEBUG: Scraped from <200 https://glenivy.com/contact-info/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/GlenIvyHotSprings',
+ 'instagram': 'https://instagram.com/glenivy_spa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/GlenIvySpas'}
+DEBUG: Crawled (200) <GET https://www.trilogyspa.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET http://carnerosresort.com/> from <GET https://www.carnerosresort.com/>
+DEBUG: Redirecting (301) to <GET https://harbin.org/> from <GET http://www.harbin.org/>
+DEBUG: Crawled (200) <GET https://www.silveradoresort.com/contact-us> (referer: https://www.silveradoresort.com/napa-valley-spa?utm_medium=organic&utm_source=google&utm_campaign=spabusinesslisting)
+DEBUG: Crawled (200) <GET https://www.indianspringscalistoga.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing> (referer: None)
+DEBUG: Crawled (200) <GET https://thehealingcornerca.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://theravenspa.com/contact/> (referer: https://theravenspa.com/)
+DEBUG: Crawled (200) <GET https://www.ranchobernardoinn.com/contact-us/> (referer: https://www.ranchobernardoinn.com/spa/overview?utm_source=gmb&utm_medium=yext)
+DEBUG: Crawled (200) <GET https://ranchovalencia.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://doubleeagle.com/> from <GET http://doubleeagle.com/>
+DEBUG: Crawled (200) <GET https://wecarespa.com/contact-us/> (referer: https://wecarespa.com/)
+DEBUG: Crawled (200) <GET https://www.sweetwaterspa.com/contact-us/#sweetwater-location> (referer: https://www.sweetwaterspa.com/)
+DEBUG: Scraped from <200 https://www.silveradoresort.com/contact-us>
+{'emails': ['silveradodining@silveradoresort.com',
+            'tennis@silveradoresort.com',
+            'heather.mckenna@silveradoresort.com',
+            'silverado.concierge@silveradoresort.com',
+            'spa@silveradoresort.com',
+            'resv@silveradoresort.com',
+            'golf@silveradoresort.com',
+            'jeff.vanparis@silveradoresort.com',
+            'loren.bates@silveradoresort.com',
+            'info@silveradoresort.com',
+            'sales@silveradoresort.com'],
+ 'facebook': 'https://www.facebook.com/silveradoresort',
+ 'instagram': 'https://www.instagram.com/silveradoresort',
+ 'linkedin': 'https://www.linkedin.com/company/silverado-resort',
+ 'twitter': 'https://twitter.com/silveradoresort'}
+DEBUG: Scraped from <200 https://theravenspa.com/contact/>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Scraped from <200 https://www.ranchobernardoinn.com/contact-us/>
+{'emails': ['rbijobs@jcresorts.com',
+            'ranchobernardoinn@jcresorts.com',
+            'rbibilling@jcresorts.com',
+            'rbiweddings@jcresorts.com'],
+ 'facebook': 'https://www.facebook.com/RBInn',
+ 'instagram': 'https://instagram.com/ranchobernardoinn/',
+ 'linkedin': 'https://www.linkedin.com/company/rancho-bernardo-inn?trk=biz-brand-tree-co-logo',
+ 'twitter': 'https://twitter.com/rbernardoinn'}
+DEBUG: Redirecting (301) to <GET https://www.teahousespa.com/> from <GET http://www.teahousespa.com/>
+DEBUG: Scraped from <200 https://wecarespa.com/contact-us/>
+{'emails': ['info@wecarespa.com'],
+ 'facebook': 'https://www.facebook.com/WeCareSpa',
+ 'instagram': 'https://www.instagram.com/wecarespaca/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/wecarespa'}
+DEBUG: Redirecting (301) to <GET https://www.missioninn.com/> from <GET http://www.missioninn.com/>
+DEBUG: Scraped from <200 https://www.sweetwaterspa.com/contact-us/>
+{'emails': ['lodging@sweetwaterspa.com'],
+ 'facebook': 'https://www.facebook.com/SweetwaterInnandSpa/',
+ 'instagram': 'https://www.instagram.com/sweetwaterinnspa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/SweetwaterInnCA'}
+DEBUG: Crawled (200) <GET https://www.thebluedoorhanford.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.sweetwaterspa.com/contact-us/#sweetwater-location> (referer: https://www.sweetwaterspa.com/)
+DEBUG: Redirecting (301) to <GET https://carnerosresort.com/> from <GET http://carnerosresort.com/>
+DEBUG: Crawled (200) <GET https://www.thelandingtahoe.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://carmelvalleyranch.com/contact/> (referer: https://carmelvalleyranch.com/spa/spa-aiyana/)
+DEBUG: Crawled (403) <GET https://www.montagehotels.com/lagunabeach/> (referer: None)
+ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\scrapy\core\engine.py", line 152, in _next_request
+    request = next(self.slot.start_requests)
+  File "C:\Users\moffi\PycharmProjects\scraping_web\scraper\scraper\spiders\website_spider.py", line 37, in start_requests
+    for row in reader:
+  File "C:\Users\moffi\AppData\Local\Programs\Python\Python310\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 7781: character maps to <undefined>
+DEBUG: Scraped from <200 https://www.sweetwaterspa.com/contact-us/>
+{'emails': ['lodging@sweetwaterspa.com'],
+ 'facebook': 'https://www.facebook.com/SweetwaterInnandSpa/',
+ 'instagram': 'https://www.instagram.com/sweetwaterinnspa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/SweetwaterInnCA'}
+DEBUG: Crawled (200) <GET https://www.missioninn.com/> (referer: None)
+INFO: Ignoring response <403 https://www.montagehotels.com/lagunabeach/>: HTTP status code is not handled or not allowed
+DEBUG: Scraped from <200 https://carmelvalleyranch.com/contact/>
+{'emails': ['cvrwedding@carmelvalleyranch.com',
+            'spa@carmelvalleyranch.com',
+            'guestservices@carmelvalleyranch.com',
+            'cvrriverranch@carmelvalleyranch.com',
+            'cvrgolf@carmelvalleyranch.com',
+            'cvrmembership@carmelvalleyranch.com',
+            'tennis@carmelvalleyranch.com',
+            'cvrclubhouse@carmelvalleyranch.com',
+            'cvrvalleykitchen@carmelvalleyranch.com'],
+ 'facebook': 'https://www.facebook.com/carmelvalleyranch/',
+ 'instagram': 'https://www.instagram.com/carmelvranch',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://carnerosresort.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://mysheerbliss.com/> from <GET https://www.mysheerbliss.com/>
+DEBUG: Crawled (200) <GET https://www.silveradoresort.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing> (referer: None)
+DEBUG: Crawled (200) <GET https://www.miraclesprings.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://harbin.org/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.doubleeagle.com/> from <GET https://doubleeagle.com/>
+DEBUG: Crawled (200) <GET https://www.indianspringscalistoga.com/contact-us> (referer: https://www.indianspringscalistoga.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing)
+DEBUG: Crawled (200) <GET https://ranchovalencia.com/contact-us/> (referer: https://ranchovalencia.com/)
+DEBUG: Crawled (200) <GET https://www.missioninn.com/contact> (referer: https://www.missioninn.com/)
+DEBUG: Crawled (200) <GET https://www.teahousespa.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.bardessono.com/> from <GET https://bardessono.com/>
+DEBUG: Crawled (200) <GET http://www.athenaspa-mv.com/> (referer: None)
+DEBUG: Scraped from <200 https://www.indianspringscalistoga.com/contact-us>
+{'emails': ['forms@tambourine.com', 'inquiries@indianspringscalistoga.com'],
+ 'facebook': 'https://www.facebook.com/ISRNAPA/',
+ 'instagram': 'https://www.instagram.com/indianspringscalistoga/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Scraped from <200 https://ranchovalencia.com/contact-us/>
+{'emails': ['tennis@ranchovalencia.com',
+            'info@villasranchovalencia.com',
+            'villas@ranchovalencia.com',
+            'concierge@ranchovalencia.com'],
+ 'facebook': 'https://www.facebook.com/RanchoValencia',
+ 'instagram': 'https://www.instagram.com/ranchovalencia/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/RanchoValencia'}
+DEBUG: Crawled (200) <GET https://mysheerbliss.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.paseahotel.com/?utm_medium=organic&utm_source=google&utm_campaign=business-listing> (referer: None)
+DEBUG: Scraped from <200 https://www.missioninn.com/contact>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/TheMissionInn/',
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/missioninnhotel?lang=en'}
+DEBUG: Crawled (200) <GET https://www.estancialajolla.com/spa/?utm_source=gmb-spa&utm_medium=organic&utm_campaign=gmb> (referer: None)
+DEBUG: Crawled (200) <GET http://www.athenaspa-mv.com/contact-us> (referer: http://www.athenaspa-mv.com/)
+DEBUG: Crawled (200) <GET https://mysheerbliss.com/pages/contact-us-spa-policy> (referer: https://mysheerbliss.com/)
+DEBUG: Crawled (200) <GET https://www.teahousespa.com/contact-join-our-team> (referer: https://www.teahousespa.com/)
+DEBUG: Crawled (200) <GET https://www.silveradoresort.com/contact-us> (referer: https://www.silveradoresort.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing)
+DEBUG: Scraped from <200 http://www.athenaspa-mv.com/contact-us>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Scraped from <200 https://mysheerbliss.com/pages/contact-us-spa-policy>
+{'emails': ['info@mysheerbliss.com', 'glow@mysheerbliss.com'],
+ 'facebook': 'https://www.facebook.com/fresnoorganicspa/',
+ 'instagram': 'https://www.instagram.com/sheerblissspa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Scraped from <200 https://www.teahousespa.com/contact-join-our-team>
+{'emails': ['reception@teahousespa.com', 'TeaHouseSpaManagement@gmail.com'],
+ 'facebook': 'https://www.facebook.com/theteahousespa',
+ 'instagram': 'https://www.instagram.com/theteahousespa/?hl=en',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://harbin.org/contact-us/> (referer: https://harbin.org/)
+DEBUG: Scraped from <200 https://www.silveradoresort.com/contact-us>
+{'emails': ['silveradodining@silveradoresort.com',
+            'tennis@silveradoresort.com',
+            'heather.mckenna@silveradoresort.com',
+            'silverado.concierge@silveradoresort.com',
+            'spa@silveradoresort.com',
+            'resv@silveradoresort.com',
+            'golf@silveradoresort.com',
+            'jeff.vanparis@silveradoresort.com',
+            'loren.bates@silveradoresort.com',
+            'info@silveradoresort.com',
+            'sales@silveradoresort.com'],
+ 'facebook': 'https://www.facebook.com/silveradoresort',
+ 'instagram': 'https://www.instagram.com/silveradoresort',
+ 'linkedin': 'https://www.linkedin.com/company/silverado-resort',
+ 'twitter': 'https://twitter.com/silveradoresort'}
+DEBUG: Crawled (200) <GET https://www.estancialajolla.com/contact/> (referer: https://www.estancialajolla.com/spa/?utm_source=gmb-spa&utm_medium=organic&utm_campaign=gmb)
+DEBUG: Scraped from <200 https://harbin.org/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/harbinhotsprings',
+ 'instagram': 'https://www.instagram.com/harbin_hot_springs/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Scraped from <200 https://www.estancialajolla.com/contact/>
+{'emails': ['bookzoe@noblehousehotels.com',
+            'rsv@estancialajolla.com',
+            'elj@20twostudio.com',
+            'sales@estancialajolla.com',
+            'spa@estancialajolla.com',
+            'EstanciaConcierge@EstanciaLaJolla.com'],
+ 'facebook': 'https://www.facebook.com/EstanciaLaJolla/',
+ 'instagram': 'https://www.instagram.com/estancialajolla/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.bardessono.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.miraclesprings.com/contact/> (referer: https://www.miraclesprings.com/)
+DEBUG: Crawled (200) <GET https://www.paseahotel.com/contact/press-room> (referer: https://www.paseahotel.com/?utm_medium=organic&utm_source=google&utm_campaign=business-listing)
+DEBUG: Scraped from <200 https://www.miraclesprings.com/contact/>
+{'emails': ['catering@miraclesprings.com', 'spa@miraclesprings.com'],
+ 'facebook': 'https://www.facebook.com/miraclesprings',
+ 'instagram': 'https://www.instagram.com/miraclespringsresort/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/ResortMiracle'}
+DEBUG: Scraped from <200 https://www.paseahotel.com/contact/press-room>
+{'emails': ['forms@tambourine.com',
+            'frontdesk@paseahotel.com',
+            'marketing@paseahotel.com'],
+ 'facebook': 'https://www.facebook.com/PaseaHotel/',
+ 'instagram': 'https://www.instagram.com/paseahotel/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.bardessono.com/contact.htm> (referer: https://www.bardessono.com/)
+DEBUG: Scraped from <200 https://www.bardessono.com/contact.htm>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/bardessonohotelspa/',
+ 'instagram': 'https://www.instagram.com/bardessonoyountville/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/BardessonoHotel'}
+DEBUG: Crawled (200) <GET https://www.doubleeagle.com/> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 46893,
+ 'downloader/request_count': 162,
+ 'downloader/request_method_count/GET': 162,
+ 'downloader/response_bytes': 5780416,
+ 'downloader/response_count': 162,
+ 'downloader/response_status_count/200': 111,
+ 'downloader/response_status_count/301': 45,
+ 'downloader/response_status_count/403': 2,
+ 'downloader/response_status_count/404': 1,
+ 'downloader/response_status_count/429': 3,
+ 'elapsed_time_seconds': 12.283953,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 9, 18, 44, 39, 953614),
+ 'httpcompression/response_bytes': 19831180,
+ 'httpcompression/response_count': 111,
+ 'httperror/response_ignored_count': 4,
+ 'httperror/response_ignored_status_count/403': 2,
+ 'httperror/response_ignored_status_count/404': 1,
+ 'httperror/response_ignored_status_count/429': 1,
+ 'item_scraped_count': 47,
+ 'log_count/DEBUG': 216,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 14,
+ 'request_depth_max': 1,
+ 'response_received_count': 115,
+ 'retry/count': 2,
+ 'retry/max_reached': 1,
+ 'retry/reason_count/429 Unknown Status': 2,
+ 'scheduler/dequeued': 162,
+ 'scheduler/dequeued/memory': 162,
+ 'scheduler/enqueued': 162,
+ 'scheduler/enqueued/memory': 162,
+ 'start_time': datetime.datetime(2022, 12, 9, 18, 44, 27, 669661)}
+INFO: Spider closed (finished)
+INFO: Scrapy 2.7.1 started (bot: scraper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 38.0.4, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'scraper',
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: 313610d49ba65d4b
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Redirecting (301) to <GET https://kellysspa.com/> from <GET http://kellysspa.com/>
+DEBUG: Attempting to acquire lock 2971926052976 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2971926052976 acquired on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Attempting to release lock 2971926052976 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2971926052976 released on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Redirecting (301) to <GET https://cadayspa.com/> from <GET http://cadayspa.com/>
+DEBUG: Redirecting (301) to <GET https://www.cal-a-vie.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing> from <GET http://www.cal-a-vie.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing>
+DEBUG: Redirecting (301) to <GET http://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D> from <GET https://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa/?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D>
+DEBUG: Redirecting (301) to <GET https://locations.woodhousespas.com/dir/ca/walnut-creek/1636-cypress-st> from <GET http://walnutcreek.woodhousespas.com/?utm_source=google&utm_medium=yext>
+DEBUG: Redirecting (301) to <GET https://www.kellysspa.com/> from <GET https://kellysspa.com/>
+DEBUG: Redirecting (301) to <GET https://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D> from <GET http://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D>
+DEBUG: Redirecting (301) to <GET https://www.goldenhaven.com/> from <GET http://www.goldenhaven.com/>
+DEBUG: Crawled (200) <GET https://www.ritzcarlton.com/en/hotels/california/half-moon-bay/spa?scid=45f93f1b-bd77-45c9-8dab-83b6a417f6fe&y_source=1_MTY0OTQwNC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D> (referer: None)
+DEBUG: Crawled (200) <GET https://cadayspa.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.glenivy.com/> from <GET http://www.glenivy.com/>
+DEBUG: Crawled (200) <GET https://locations.woodhousespas.com/dir/ca/walnut-creek/1636-cypress-st> (referer: None)
+DEBUG: Crawled (200) <GET https://www.fourseasons.com/westlakevillage/spa/?seo=google_local_wes6_amer> (referer: None)
+DEBUG: Crawled (200) <GET https://cadayspa.com/contact-us> (referer: https://cadayspa.com/)
+DEBUG: Crawled (200) <GET https://www.kellysspa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.cal-a-vie.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing> (referer: None)
+DEBUG: Crawled (200) <GET https://www.madonnainn.com/spa> (referer: None)
+DEBUG: Redirecting (301) to <GET http://aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website> from <GET https://aubergeresorts.com/solage/wellness/spa?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website>
+DEBUG: Crawled (200) <GET https://goldendoor.com/> (referer: None)
+DEBUG: Scraped from <200 https://cadayspa.com/contact-us>
+{'emails': ['impallari@gmail.com',
+            'filler@godaddy.com',
+            'team@latofonts.com',
+            'ron@cadayspa.com'],
+ 'facebook': 'https://www.facebook.com/californiadayspa',
+ 'instagram': 'https://www.instagram.com/cadayspa',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://www.twitter.com/califadayspa'}
+DEBUG: Crawled (200) <GET https://www.kellysspa.com/contact-location> (referer: https://www.kellysspa.com/)
+DEBUG: Redirecting (301) to <GET https://www.mytrilogylife.com/monarchdunes/spa/> from <GET http://www.mytrilogylife.com/monarchdunes/spa/>
+DEBUG: Scraped from <200 https://www.kellysspa.com/contact-location>
+{'emails': ['SpaDirector@Missioninn.com', 'spadirector@missioninn.com'],
+ 'facebook': 'https://www.facebook.com/TheMissionInn',
+ 'instagram': 'https://www.instagram.com/kellys_spa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://www.aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website> from <GET http://aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website>
+DEBUG: Crawled (200) <GET https://www.omnihotels.com/hotels/san-diego-la-costa/spa?utm_source=GMBlisting&utm_medium=organic> (referer: None)
+DEBUG: Crawled (200) <GET https://goldendoor.com/contact-us/> (referer: https://goldendoor.com/)
+DEBUG: Crawled (200) <GET https://www.osmosis.com/?y_source=1_MjI1MDUzNzItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.ritzcarlton.com/en/hotels/california/los-angeles/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2> from <GET http://www.ritzcarlton.com/en/hotels/california/los-angeles/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2>
+DEBUG: Crawled (200) <GET https://www.goldenhaven.com/> (referer: None)
+DEBUG: Scraped from <200 https://goldendoor.com/contact-us/>
+{'emails': ['guestservices@goldendoor.com.',
+            'guestservices@goldendoor.com',
+            'shop@goldendoor.com',
+            'molly@thestoriedgroup.com'],
+ 'facebook': 'https://www.facebook.com/Goldendoorspa/',
+ 'instagram': 'https://www.instagram.com/thegoldendoor/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/goldendoor'}
+DEBUG: Crawled (200) <GET https://www.purpleorchid.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.ritzcarlton.com/en/hotels/california/los-angeles/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.ritzcarlton.com/en/hotels/california/santa-barbara/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2> from <GET http://www.ritzcarlton.com/en/hotels/california/santa-barbara/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2>
+DEBUG: Crawled (200) <GET https://www.fourseasons.com/contact-us/> (referer: https://www.fourseasons.com/westlakevillage/spa/?seo=google_local_wes6_amer)
+DEBUG: Crawled (200) <GET https://www.cal-a-vie.com/contact-us> (referer: https://www.cal-a-vie.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing)
+DEBUG: Crawled (200) <GET https://www.ritzcarlton.com/en/hotels/california/santa-barbara/spa?scid=bb1a189a-fec3-4d19-a255-54ba596febe2> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.laquintaresort.com/> from <GET http://www.laquintaresort.com/>
+DEBUG: Scraped from <200 https://www.fourseasons.com/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/FourSeasons',
+ 'instagram': 'https://www.instagram.com/fourseasons/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/FourSeasons'}
+DEBUG: Scraped from <200 https://www.cal-a-vie.com/contact-us>
+{'emails': ['cavinfo@cal-a-vie.com'],
+ 'facebook': 'https://www.facebook.com/CalaVie',
+ 'instagram': 'https://www.instagram.com/calaviespa',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/calaviespa'}
+DEBUG: Redirecting (301) to <GET https://www.wispausa.com/> from <GET http://www.wispausa.com/>
+DEBUG: Crawled (200) <GET https://www.osmosis.com/contact/> (referer: https://www.osmosis.com/?y_source=1_MjI1MDUzNzItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D)
+DEBUG: Redirecting (301) to <GET https://www.boonhotels.com/> from <GET http://www.boonhotels.com/>
+DEBUG: Scraped from <200 https://www.osmosis.com/contact/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/OsmosisDaySpaSanctuary',
+ 'instagram': 'https://www.instagram.com/osmosisdayspa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/osmosisspa'}
+DEBUG: Retrying <GET https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html> (failed 1 times): 429 Unknown Status
+DEBUG: Crawled (200) <GET https://www.purpleorchid.com/contact-us/> (referer: https://www.purpleorchid.com/)
+DEBUG: Scraped from <200 https://www.purpleorchid.com/contact-us/>
+{'emails': ['spa@purpleorchid.com',
+            'info@purpleorchid.com',
+            'rhiannon@purpleorchid.com'],
+ 'facebook': 'https://www.facebook.com/ThePurpleOrchid',
+ 'instagram': 'https://www.instagram.com/thepurpleorchid/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/purpleorchidcom'}
+DEBUG: Crawled (200) <GET https://www.silveradoresort.com/napa-valley-spa?utm_medium=organic&utm_source=google&utm_campaign=spabusinesslisting> (referer: None)
+DEBUG: Retrying <GET https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html> (failed 2 times): 429 Unknown Status
+DEBUG: Crawled (200) <GET https://www.aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website> (referer: None)
+DEBUG: Crawled (200) <GET https://www.mytrilogylife.com/monarchdunes/spa/> (referer: None)
+DEBUG: Crawled (200) <GET https://the-spring.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://montereyplazahotel.com/spa/vista-blue-spa/?utm_source=google&utm_medium=bizlisting&utm_campaign=google_places> (referer: None)
+DEBUG: Redirecting (301) to <GET https://glenivy.com/> from <GET https://www.glenivy.com/>
+ERROR: Gave up retrying <GET https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html> (failed 3 times): 429 Unknown Status
+DEBUG: Crawled (429) <GET https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.southcoastwinery.com/spa/> from <GET https://www.southcoastwinery.com/spa>
+DEBUG: Crawled (200) <GET https://www.terranea.com/offers?utm_source=google-knowledge-graph&utm_medium=organic&utm_campaign=my_business_page> (referer: None)
+DEBUG: Crawled (200) <GET https://www.omnihotels.com/forms/contact-us> (referer: https://www.omnihotels.com/hotels/san-diego-la-costa/spa?utm_source=GMBlisting&utm_medium=organic)
+INFO: Ignoring response <429 https://www.hyatt.com/en-US/spas/Pacific-Waters-Spa/home.html>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://www.chaminade.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.sycamoresprings.com/> from <GET http://www.sycamoresprings.com/>
+DEBUG: Redirecting (301) to <GET https://boonhotels.com/> from <GET https://www.boonhotels.com/>
+DEBUG: Scraped from <200 https://www.omnihotels.com/forms/contact-us>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/omnihotels/',
+ 'instagram': 'https://www.instagram.com/omnihotels/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/omnihotels?lang=en'}
+DEBUG: Redirecting (301) to <GET https://www.evo-spa.com/> from <GET http://www.evo-spa.com/>
+DEBUG: Crawled (403) <GET https://www.constantcontact.com/legal/service-provider> (referer: https://the-spring.com/)
+DEBUG: Crawled (200) <GET https://ranchovalencia.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.urbanretreatspa.com/> (referer: None)
+INFO: Ignoring response <403 https://www.constantcontact.com/legal/service-provider>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://www.mytrilogylife.com/monarchdunes/spa/#contacts> (referer: https://www.mytrilogylife.com/monarchdunes/spa/)
+DEBUG: Redirecting (301) to <GET http://beverlyhotsprings.com/> from <GET http://www.beverlyhotsprings.com/>
+DEBUG: Crawled (200) <GET https://www.aubergeresorts.com/solage/contact-us/> (referer: https://www.aubergeresorts.com/solage/wellness/spa/?utm_source=google%20my%20business&utm_medium=listing&utm_campaign=visit%20website)
+DEBUG: Crawled (200) <GET https://www.sycamoresprings.com/> (referer: None)
+DEBUG: Scraped from <200 https://www.mytrilogylife.com/monarchdunes/spa/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/sandalwoodtrilogy/',
+ 'instagram': 'https://www.instagram.com/sandalwood_spa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/monarch_club/'}
+DEBUG: Scraped from <200 https://www.aubergeresorts.com/solage/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/SolageResort/',
+ 'instagram': 'https://www.instagram.com/solageauberge/?hl=en',
+ 'linkedin': 'https://www.linkedin.com/company/auberge-resorts/',
+ 'twitter': 'https://twitter.com/solageauberge'}
+DEBUG: Crawled (200) <GET https://www.urbanretreatspa.com/contact> (referer: https://www.urbanretreatspa.com/)
+DEBUG: Crawled (200) <GET https://thesisleyspa.com/los-angeles/> (referer: None)
+DEBUG: Crawled (200) <GET https://montereyplazahotel.com/hotel/contact> (referer: https://montereyplazahotel.com/spa/vista-blue-spa/?utm_source=google&utm_medium=bizlisting&utm_campaign=google_places)
+DEBUG: Crawled (200) <GET https://www.terranea.com/contact-us> (referer: https://www.terranea.com/offers?utm_source=google-knowledge-graph&utm_medium=organic&utm_campaign=my_business_page)
+DEBUG: Crawled (200) <GET https://www.southcoastwinery.com/spa/> (referer: None)
+DEBUG: Scraped from <200 https://www.urbanretreatspa.com/contact>
+{'emails': ['contact@urbanretreatspa.com'],
+ 'facebook': 'https://www.facebook.com/pages/Urban-Retreat-Day-Spa/69993009232?ref=hl',
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/URDaySpa'}
+DEBUG: Redirecting (301) to <GET https://sweetwaterspa.com/> from <GET http://www.sweetwaterspa.com/>
+DEBUG: Scraped from <200 https://montereyplazahotel.com/hotel/contact>
+{'emails': ['coastalcurator@montereyplazahotel.com',
+            'housekeeping@montereyplazahotel.com',
+            'sales@montereyplazahotel.com',
+            'forms@tambourine.com',
+            'weddings@montereyplazahotel.com'],
+ 'facebook': 'https://www.facebook.com/montereyplazahotel',
+ 'instagram': 'https://www.instagram.com/montereyplaza/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Scraped from <200 https://www.terranea.com/contact-us>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/Terranea',
+ 'instagram': 'http://instagram.com/terranearesort',
+ 'linkedin': 'https://www.linkedin.com/company/terranea-resort',
+ 'twitter': 'https://twitter.com/TerraneaResort'}
+DEBUG: Crawled (200) <GET https://www.sycamoresprings.com/contact> (referer: https://www.sycamoresprings.com/)
+DEBUG: Crawled (200) <GET https://www.evo-spa.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.ranchovalencia.com/> from <GET http://www.ranchovalencia.com/>
+DEBUG: Crawled (200) <GET https://boonhotels.com/> (referer: None)
+DEBUG: Scraped from <200 https://www.sycamoresprings.com/contact>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/sycamoremineralsprings',
+ 'instagram': 'https://instagram.com/sycamoresprings',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/sycamoresprings'}
+DEBUG: Redirecting (301) to <GET https://wispausa.com/> from <GET https://www.wispausa.com/>
+DEBUG: Crawled (200) <GET https://www.silveradoresort.com/contact-us> (referer: https://www.silveradoresort.com/napa-valley-spa?utm_medium=organic&utm_source=google&utm_campaign=spabusinesslisting)
+DEBUG: Redirecting (301) to <GET https://www.lapeauspafresno.com/> from <GET http://www.lapeauspafresno.com/>
+DEBUG: Scraped from <200 https://www.silveradoresort.com/contact-us>
+{'emails': ['info@silveradoresort.com',
+            'loren.bates@silveradoresort.com',
+            'jeff.vanparis@silveradoresort.com',
+            'golf@silveradoresort.com',
+            'silveradodining@silveradoresort.com',
+            'silverado.concierge@silveradoresort.com',
+            'sales@silveradoresort.com',
+            'heather.mckenna@silveradoresort.com',
+            'resv@silveradoresort.com',
+            'spa@silveradoresort.com',
+            'tennis@silveradoresort.com'],
+ 'facebook': 'https://www.facebook.com/silveradoresort',
+ 'instagram': 'https://www.instagram.com/silveradoresort',
+ 'linkedin': 'https://www.linkedin.com/company/silverado-resort',
+ 'twitter': 'https://twitter.com/silveradoresort'}
+DEBUG: Crawled (200) <GET https://www.southcoastwinery.com/contact> (referer: https://www.southcoastwinery.com/spa/)
+DEBUG: Crawled (200) <GET https://boonhotels.com/contact/> (referer: https://boonhotels.com/)
+DEBUG: Redirecting (301) to <GET https://wecarespa.com/> from <GET http://www.wecarespa.com/>
+DEBUG: Crawled (200) <GET https://www.laquintaresort.com/> (referer: None)
+DEBUG: Crawled (200) <GET http://beverlyhotsprings.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://thesisleyspa.com/contact-us/> (referer: https://thesisleyspa.com/los-angeles/)
+ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\scrapy\core\engine.py", line 152, in _next_request
+    request = next(self.slot.start_requests)
+  File "C:\Users\moffi\PycharmProjects\scraping_web\scraper\scraper\spiders\website_spider.py", line 40, in start_requests
+    url = row[1]
+IndexError: list index out of range
+DEBUG: Scraped from <200 https://www.southcoastwinery.com/contact>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/SouthCoastWinery',
+ 'instagram': 'https://www.instagram.com/southcoastwineryresort/',
+ 'linkedin': 'https://www.linkedin.com/company/south-coast-winery-&-spa/',
+ 'twitter': 'https://twitter.com/SCWinery'}
+DEBUG: Scraped from <200 https://boonhotels.com/contact/>
+{'emails': ['info@boonhotels.com'],
+ 'facebook': 'http://www.facebook.com/boonhotelspa',
+ 'instagram': 'https://www.instagram.com/boonhotelspa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/boonhotelspa'}
+DEBUG: Crawled (200) <GET https://www.canyonranch.com/woodside/northern-california-retreat/?utm_source=googlemybusiness&utm_medium=organic&utm_campaign=woodsidegmb&utm_term=googlemybusiness> (referer: None)
+DEBUG: Redirecting (301) to <GET https://lagunacanyonspa.com/> from <GET http://www.lagunacanyonspa.com/>
+DEBUG: Crawled (200) <GET https://davidrubensteinforum.uchicago.edu/contact/> (referer: https://www.chaminade.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb)
+DEBUG: Scraped from <200 https://thesisleyspa.com/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/SisleySpaUSA/',
+ 'instagram': 'https://www.instagram.com/sisleyspausa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://glenivy.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://azurepalmhotsprings.com/> (referer: None)
+DEBUG: Scraped from <200 https://davidrubensteinforum.uchicago.edu/contact/>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://lagunacanyonspa.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.carnerosresort.com/> from <GET http://www.carnerosresort.com/>
+DEBUG: Crawled (200) <GET https://lagunacanyonspa.com/contact-us> (referer: https://lagunacanyonspa.com/)
+DEBUG: Crawled (200) <GET https://wispausa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://ranchovalencia.com/contact-us/> (referer: https://ranchovalencia.com/)
+DEBUG: Crawled (200) <GET http://beverlyhotsprings.com/contact/> (referer: http://beverlyhotsprings.com/)
+DEBUG: Crawled (200) <GET https://www.lapeauspafresno.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.canyonranch.com/contact-us/> (referer: https://www.canyonranch.com/)
+DEBUG: Scraped from <200 https://lagunacanyonspa.com/contact-us>
+{'emails': ['impallari@gmail.com',
+            'filler@godaddy.com',
+            'info@ndiscovered.com',
+            'hello@rfuenzalida.com'],
+ 'facebook': 'https://www.facebook.com/103690430994',
+ 'instagram': 'https://www.instagram.com/lagunacanyonspa',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://www.twitter.com/lagunacanyonspa/'}
+DEBUG: Crawled (200) <GET https://www.laquintaresort.com/map-and-contact/> (referer: https://www.laquintaresort.com/)
+DEBUG: Scraped from <200 https://ranchovalencia.com/contact-us/>
+{'emails': ['concierge@ranchovalencia.com',
+            'villas@ranchovalencia.com',
+            'info@villasranchovalencia.com',
+            'tennis@ranchovalencia.com'],
+ 'facebook': 'https://www.facebook.com/RanchoValencia',
+ 'instagram': 'https://www.instagram.com/ranchovalencia/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/RanchoValencia'}
+DEBUG: Scraped from <200 http://beverlyhotsprings.com/contact/>
+{'emails': ['beverlyhotsprings@gmail.com'],
+ 'facebook': 'https://www.facebook.com/beverlyhotsprings',
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/BHSdayspa'}
+DEBUG: Scraped from <200 https://www.canyonranch.com/contact-us/>
+{'emails': ['gmontgomery@williampitt.com',
+            'Tucson-Sales@canyonranch.com',
+            'nikki.field@sothebyshomes.com',
+            'media@canyonranch.com',
+            'jzimmermann@canyonranch.com',
+            'lchesloff@williampitt.com',
+            'Lenox-Sales@canyonranch.com',
+            'Las-Vegas-Sales@canyonranch.com',
+            'Woodside-Sales@canyonranch.com'],
+ 'facebook': 'https://www.facebook.com/CanyonRanch',
+ 'instagram': 'https://www.instagram.com/canyonranch/',
+ 'linkedin': 'https://www.linkedin.com/company/canyon-ranch',
+ 'twitter': 'https://twitter.com/CanyonRanch'}
+DEBUG: Scraped from <200 https://www.laquintaresort.com/map-and-contact/>
+{'emails': ['weddings@laquintaresort.com',
+            'resinquiry@laquintaresort.com',
+            'information@laquintaresort.com'],
+ 'facebook': 'https://www.facebook.com/laquintaresort',
+ 'instagram': 'http://instagram.com/laquintaresort',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/laquintaresort'}
+DEBUG: Redirecting (301) to <GET https://ranchovalencia.com/> from <GET https://www.ranchovalencia.com/>
+DEBUG: Crawled (200) <GET https://paradisepoint.com/california-resort-spa/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.lapeauspafresno.com/contact> (referer: https://www.lapeauspafresno.com/)
+DEBUG: Redirecting (301) to <GET http://carnerosresort.com/> from <GET https://www.carnerosresort.com/>
+DEBUG: Crawled (200) <GET https://wecarespa.com/> (referer: None)
+DEBUG: Scraped from <200 https://www.lapeauspafresno.com/contact>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/lapeauspa/?fref=ts',
+ 'instagram': 'https://www.instagram.com/lapeauspa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://wispausa.com/contact/> (referer: https://wispausa.com/)
+DEBUG: Crawled (200) <GET https://www.indianspringscalistoga.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing> (referer: None)
+DEBUG: Scraped from <200 https://wispausa.com/contact/>
+{'emails': ['info@wispausa.com'],
+ 'facebook': 'https://www.facebook.com/wispa.usa',
+ 'instagram': 'https://www.instagram.com/wispa_usa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/WiSpa_USA'}
+DEBUG: Redirecting (301) to <GET https://carnerosresort.com/> from <GET http://carnerosresort.com/>
+DEBUG: Crawled (200) <GET https://glenivy.com/contact-info/> (referer: https://glenivy.com/)
+DEBUG: Crawled (200) <GET https://amenitiesspa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://paradisepoint.com/contact-us/> (referer: https://paradisepoint.com/california-resort-spa/)
+DEBUG: Scraped from <200 https://glenivy.com/contact-info/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/GlenIvyHotSprings',
+ 'instagram': 'https://instagram.com/glenivy_spa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/GlenIvySpas'}
+DEBUG: Scraped from <200 https://paradisepoint.com/contact-us/>
+{'emails': ['marketing@paradisepoint.com',
+            'weddings@paradisepoint.com',
+            'sales@paradisepoint.com'],
+ 'facebook': 'https://www.facebook.com/paradisepointsd',
+ 'instagram': 'https://www.instagram.com/paradisepointsd/',
+ 'linkedin': 'https://www.linkedin.com/company/paradise-point-resort-&-spa',
+ 'twitter': 'https://twitter.com/paradisepointsd'}
+DEBUG: Crawled (404) <GET https://azurepalmhotsprings.com/dev/contact-us/> (referer: https://azurepalmhotsprings.com/)
+DEBUG: Redirecting (301) to <GET https://wecarespa.com/contact-us/> from <GET https://wecarespa.com/contact/>
+INFO: Ignoring response <404 https://azurepalmhotsprings.com/dev/contact-us/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://wecarespa.com/contact-us/> (referer: https://wecarespa.com/)
+DEBUG: Redirecting (301) to <GET https://www.sweetwaterspa.com/> from <GET https://sweetwaterspa.com/>
+DEBUG: Scraped from <200 https://wecarespa.com/contact-us/>
+{'emails': ['info@wecarespa.com'],
+ 'facebook': 'https://www.facebook.com/WeCareSpa',
+ 'instagram': 'https://www.instagram.com/wecarespaca/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/wecarespa'}
+DEBUG: Crawled (200) <GET https://www.indianspringscalistoga.com/contact-us> (referer: https://www.indianspringscalistoga.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing)
+DEBUG: Scraped from <200 https://www.indianspringscalistoga.com/contact-us>
+{'emails': ['forms@tambourine.com', 'inquiries@indianspringscalistoga.com'],
+ 'facebook': 'https://www.facebook.com/ISRNAPA/',
+ 'instagram': 'https://www.instagram.com/indianspringscalistoga/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://carnerosresort.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.sweetwaterspa.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://ranchovalencia.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.sweetwaterspa.com/contact-us/#sweetwater-location> (referer: https://www.sweetwaterspa.com/)
+DEBUG: Scraped from <200 https://www.sweetwaterspa.com/contact-us/>
+{'emails': ['lodging@sweetwaterspa.com'],
+ 'facebook': 'https://www.facebook.com/SweetwaterInnandSpa/',
+ 'instagram': 'https://www.instagram.com/sweetwaterinnspa/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/SweetwaterInnCA'}
+DEBUG: Crawled (200) <GET https://ranchovalencia.com/contact-us/> (referer: https://ranchovalencia.com/)
+DEBUG: Scraped from <200 https://ranchovalencia.com/contact-us/>
+{'emails': ['concierge@ranchovalencia.com',
+            'villas@ranchovalencia.com',
+            'info@villasranchovalencia.com',
+            'tennis@ranchovalencia.com'],
+ 'facebook': 'https://www.facebook.com/RanchoValencia',
+ 'instagram': 'https://www.instagram.com/ranchovalencia/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/RanchoValencia'}
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 33201,
+ 'downloader/request_count': 115,
+ 'downloader/request_method_count/GET': 115,
+ 'downloader/response_bytes': 2772701,
+ 'downloader/response_count': 115,
+ 'downloader/response_status_count/200': 75,
+ 'downloader/response_status_count/301': 35,
+ 'downloader/response_status_count/403': 1,
+ 'downloader/response_status_count/404': 1,
+ 'downloader/response_status_count/429': 3,
+ 'elapsed_time_seconds': 8.138622,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 9, 18, 54, 37, 821154),
+ 'httpcompression/response_bytes': 9658270,
+ 'httpcompression/response_count': 74,
+ 'httperror/response_ignored_count': 3,
+ 'httperror/response_ignored_status_count/403': 1,
+ 'httperror/response_ignored_status_count/404': 1,
+ 'httperror/response_ignored_status_count/429': 1,
+ 'item_scraped_count': 32,
+ 'log_count/DEBUG': 154,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 13,
+ 'request_depth_max': 1,
+ 'response_received_count': 78,
+ 'retry/count': 2,
+ 'retry/max_reached': 1,
+ 'retry/reason_count/429 Unknown Status': 2,
+ 'scheduler/dequeued': 115,
+ 'scheduler/dequeued/memory': 115,
+ 'scheduler/enqueued': 115,
+ 'scheduler/enqueued/memory': 115,
+ 'start_time': datetime.datetime(2022, 12, 9, 18, 54, 29, 682532)}
+INFO: Spider closed (finished)
+INFO: Scrapy 2.7.1 started (bot: scraper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 38.0.4, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'scraper',
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: 698938bfa22db82f
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\scrapy\core\engine.py", line 152, in _next_request
+    request = next(self.slot.start_requests)
+  File "C:\Users\moffi\PycharmProjects\scraping_web\scraper\scraper\spiders\website_spider.py", line 44, in start_requests
+    yield scrapy.Request(url=url, callback=self.parse_website,meta={'test_number':test_number})
+  File "C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\scrapy\http\request\__init__.py", line 60, in __init__
+    self._set_url(url)
+  File "C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\scrapy\http\request\__init__.py", line 108, in _set_url
+    raise ValueError(f'Missing scheme in request url: {self._url}')
+ValueError: Missing scheme in request url: 
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.005002,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 9, 18, 55, 18, 591227),
+ 'log_count/DEBUG': 3,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'start_time': datetime.datetime(2022, 12, 9, 18, 55, 18, 586225)}
+INFO: Spider closed (finished)
