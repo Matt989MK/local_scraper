@@ -1,3 +1,5 @@
+import sys
+import traceback
 from time import time, sleep
 from ssl import DER_cert_to_PEM_cert
 from selenium import webdriver
@@ -28,15 +30,10 @@ data = [
 #niche = input("niche: ")
 #driver.get("https://www.google.com/search?q="+city+"+"+niche) #I commented it out for now to not have to input each time
 #print("https://www.google.com/search?q="+city+"+"+niche)
-search_bar=driver.get("https://www.google.com/search?q=spa+in+california") #Going to google searching for that
+search_bar=driver.get("https://www.google.com/search?q=tree+works+in+california") #Going to google searching for that
 
 
 start = time.perf_counter()
-# try:
-
-#     driver.find_element("xpath","//button[@id='W0wltc']").click()
-# except Exception as e:
-#     print(e)
 element = '//span[@class="wUrVib OSrXXb"]'
 
 # Use the WebDriverWait class to wait for the element to appear
@@ -56,8 +53,12 @@ page_num=1
 
 def FindBusiness(count_var):
     count_var+=1
-    sleep(5)
-    google_places = driver.find_elements("xpath", "//div[@class='rllt__details']")
+    sleep(4)
+
+    try:
+        google_places = driver.find_elements("xpath", "//div[@class='rllt__details']")
+    except StaleElementReferenceException:
+        google_places = driver.find_elements("xpath", "//div[@class='rllt__details']")
 
     print("google places", len(google_places))
     #sleep(0.3)
@@ -67,24 +68,45 @@ def FindBusiness(count_var):
     phone_number=""
     review=""
     review_amount=""
+    list_counter=0
+
     for place in google_places:
         print("place",place)
         #sleep(2)
-        place.click() #1 for each place we click the element it does not work when there is an extra button like "schedule"
-        sleep(0.7)
-
+        try:
+            place.click() #1 for each place we click the element it does not work when there is an extra button like "schedule"
+            sleep(0.6)
+        except StaleElementReferenceException:
+            sleep(4)
+            place.click()
         print("gmb works")
         try:
             element_present = EC.presence_of_element_located((By.XPATH, "//div[@class='immersive-container']"))
             WebDriverWait(driver, 6).until(element_present)
             gmb_container = driver.find_element("xpath", "//div[@class='immersive-container']")  # it has all the business info inside
-            list_of_elements = gmb_container.find_elements("xpath",
+
+            try:
+                list_of_elements = gmb_container.find_elements("xpath",
                                                            "//div[@class='zloOqf PZPZlf']")  # list of 1. address 2. hours 3. phone number
+            except StaleElementReferenceException:
+                sleep(1)
+                list_of_elements = gmb_container.find_elements("xpath",
+                                                               "//div[@class='zloOqf PZPZlf']")
+                print("AVOIDED STALE")
+
+
             # print(len(list_of_elements))
             print("list of elements works")
-            test_website = gmb_container.find_elements("xpath",
-                                                       "//a[@class='dHS6jb']")  # contains 1. website 2. directions 3. save 4. call
-            print("test website works")
+            try:
+                test_website = gmb_container.find_elements("xpath",
+                                                           "//a[@class='dHS6jb']")  # contains 1. website 2. directions 3. save 4. call
+                print("test website works")
+            except StaleElementReferenceException:
+                sleep(1)
+                test_website = gmb_container.find_elements("xpath",
+                                                           "//a[@class='dHS6jb']")  # contains 1. website 2. directions 3. save 4. call
+                print("test website works BUT WAS STALE")
+
             try:
                 name = driver.find_element("xpath", "//div[@class='SPZz6b']").text
             except Exception as e:
@@ -98,17 +120,18 @@ def FindBusiness(count_var):
             try:
                 test_review = gmb_container.find_elements("xpath",
                                                           "//span[@class='NdWbqe Y0A0hc']")  # it has all reviews thats why we look for it in the gmb container
+                split_review = test_review[len(test_review) - 1].text.split(
+                    "\n")  # test review contains both review and review amount so we split it
+                review = split_review[0]
+                review_amount_raw = split_review[1]
+                if "(" in review_amount_raw and ")" in review_amount_raw:
+                    # If it does, remove the text between them
+                    review_amount = review_amount_raw.replace('(', "").replace(')', "")
+                print('review: ', review, "review amount", review_amount)
             except Exception as e:
                 print(e)
 
-            split_review = test_review[len(test_review) - 1].text.split(
-                "\n")  # test review contains both review and review amount so we split it
-            review = split_review[0]
-            review_amount_raw = split_review[1]
-            if "(" in review_amount_raw and ")" in review_amount_raw:
-                # If it does, remove the text between them
-                review_amount = review_amount_raw.replace('(',"").replace(')',"")
-            print('review: ', review, "review amount", review_amount)
+
 
             for item in list_of_elements:
                 try:
@@ -131,6 +154,7 @@ def FindBusiness(count_var):
                         if website == None:
                             no_website = gmb_container.find_element("xpath", "//span[@class='qe9kJc']").text
                             print("no website found", no_website)
+
                 except Exception as e:
                     print("no website: ", e)
 
@@ -140,7 +164,8 @@ def FindBusiness(count_var):
         except (HttpError, DNSLookupError, TimeoutError, TCPTimedOutError):
             # Handle any errors that occur while waiting for the element
             pass
-
+        print("element: ", list_counter, " out of ", len(google_places))
+        list_counter+=1
 
 
 
@@ -149,15 +174,31 @@ def FindBusiness(count_var):
 
         #with each of the below like "Adres" or "Strona" we need to make it normalized to browser language "Adres" means Address in my lang "Strona" means website
 
+
     try:
         sleep(1)
 
         driver.find_element("xpath", "//a[@id='pnnext']").click() #Takes us to next google page, once its ran out script ends
         print("PAGE NUMBER:", count_var)
         FindBusiness(count_var)
+    except BaseException as ex:
+        # Get current system exception
+        ex_type, ex_value, ex_traceback = sys.exc_info()
 
-    except Exception  as e:
-        print("finito",e)
+        # Extract unformatter stack traces as tuples
+        trace_back = traceback.extract_tb(ex_traceback)
+
+        # Format stacktrace
+        stack_trace = list()
+
+        for trace in trace_back:
+            stack_trace.append(
+                "File : %s , Line : %d, Func.Name : %s, Message : %s" % (trace[0], trace[1], trace[2], trace[3]))
+
+        print("Exception type : %s " % ex_type.__name__)
+        print("Exception message : %s" % ex_value)
+        print("Stack trace : %s" % stack_trace)
+
 
 def SaveData():
     with open("scraper/scraper/spiders/data.csv", "w", encoding="utf-8", newline="") as csvfile:
