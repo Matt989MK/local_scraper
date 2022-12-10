@@ -1,8 +1,6 @@
-
 import traceback
 import csv
 from urllib.parse import urljoin
-
 import pandas as pd
 from logzero import logfile, logger
 import scrapy
@@ -23,7 +21,7 @@ class WebsiteSpider(scrapy.Spider):
     logfile("../../../openaq_spider.log", maxBytes=1e6, backupCount=3)
     name = "website_spider"
     #record_number = 0
-
+    info_list =[]
     # Using a dummy website to start scrapy request
     def start_requests(self):
         # Open the CSV file for reading
@@ -38,11 +36,23 @@ class WebsiteSpider(scrapy.Spider):
                 test_number+=1
                 # Get the URL from the first column of the row
                 url = row[1]
-                print("URL IS ",url)
+                #print("URL IS ",url)
                 # Generate a request for the URL
+                #print("this is the list of items:", len(WebsiteSpider.info_list))
 
                 yield scrapy.Request(url=url, callback=self.parse_website,meta={'test_number':test_number})
 
+            # with open("items.csv", "w") as csvfile:
+            #     # Create a CSV writer
+            #     writer = csv.DictWriter(csvfile,
+            #                             fieldnames=["index", "facebook", "instagram", "twitter", "linkedin", "emails"])
+            #
+            #     # Write the header row
+            #     writer.writeheader()
+            #     print("this is the list of items:", len(WebsiteSpider.info_list))
+            #     # Write the data rows
+            #     for item in WebsiteSpider.info_list:
+            #         writer.writerow(item)
 
     def parse_website(self, response):
         print("PARSING WEBSITE URL:", response.url)
@@ -125,6 +135,7 @@ class WebsiteSpider(scrapy.Spider):
                 #         emails.remove((item))
             #print(emails)
             item = SocialMediaLinks()
+            #item["index"] = test_number
             item["facebook"] = response.meta['facebook']
             item["instagram"] = response.meta['instagram']
             item["twitter"] = response.meta['twitter']
@@ -134,6 +145,7 @@ class WebsiteSpider(scrapy.Spider):
             # reading the csv file
             df = pd.read_csv("data.csv")
             print("WEBSITE ",response.url," RECORD NUMBER",test_number ,"FACEBOOK: ",response.meta['facebook']," INSTAGRAM: ",response.meta['instagram'])
+
             df.loc[test_number, 'facebook'] = response.meta['facebook']
             df.loc[test_number, 'instagram'] = response.meta['instagram']
             df.loc[test_number, 'twitter'] = response.meta['twitter']
@@ -142,6 +154,8 @@ class WebsiteSpider(scrapy.Spider):
             # writing into the file
             df.to_csv("data.csv", index=False)
             #WebsiteSpider.record_number += 1
+            #WebsiteSpider.info_list.append(item)
+            #print(WebsiteSpider.info_list)
 
             yield item #Data seems to be correct but its saving it in the wrong row
 
@@ -153,12 +167,12 @@ class WebsiteSpider(scrapy.Spider):
 
 
 def clear_bad_emails(emails):
-    print("called clear bad emails")
+    #print("called clear bad emails")
     for item in list(emails):
        # print("ITEM",item)
         try:
             if "careers" in item or "reservations" in item or "donations" in item or "events" in item or "activities" in item:
-                print('removeing email', item)
+                #print('removeing email', item)
                 emails.remove((item))
             if ".com" not in item:
                 emails.remove((item))

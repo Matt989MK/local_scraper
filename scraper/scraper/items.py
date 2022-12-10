@@ -12,6 +12,7 @@ class ScraperItem(scrapy.Item):
     pass
 
 class SocialMediaLinks(scrapy.Item):
+    index = scrapy.Field()
     facebook= scrapy.Field()
     instagram= scrapy.Field()
     linkedin= scrapy.Field()
