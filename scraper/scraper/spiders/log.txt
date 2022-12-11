@@ -42351,3 +42351,1870 @@ INFO: Dumping Scrapy stats:
  'scheduler/enqueued/memory': 213,
  'start_time': datetime.datetime(2022, 12, 10, 17, 21, 30, 55448)}
 INFO: Spider closed (finished)
+INFO: Scrapy 2.7.1 started (bot: scraper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 38.0.4, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'scraper',
+ 'CONCURRENT_REQUESTS': 1,
+ 'DEPTH_PRIORITY': 1,
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SCHEDULER_DISK_QUEUE': 'scrapy.squeues.PickleFifoDiskQueue',
+ 'SCHEDULER_MEMORY_QUEUE': 'scrapy.squeues.FifoMemoryQueue',
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: 19b5237c3ce6fcfe
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Redirecting (301) to <GET http://www.isaacstreeservice.com/> from <GET http://isaacstreeservice.com/>
+DEBUG: Crawled (403) <GET http://www.isaacstreeservice.com/> (referer: None)
+INFO: Ignoring response <403 http://www.isaacstreeservice.com/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://timberline-tree-works.business.site/> (referer: None)
+DEBUG: Crawled (200) <GET https://octreeservices.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.tiptoparborists.com/?utm_source=google&utm_medium=organic&utm_campaign=gmbavwebsite> (referer: None)
+DEBUG: Crawled (200) <GET https://octreeservices.com/contact-us/> (referer: https://octreeservices.com/)
+DEBUG: Scraped from <200 https://octreeservices.com/contact-us/>
+{'emails': ['octreeservices1@gmail.com'],
+ 'facebook': 'N/A',
+ 'index': 3,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.tiptoparborists.com/contact/privacy/> (referer: https://www.tiptoparborists.com/?utm_source=google&utm_medium=organic&utm_campaign=gmbavwebsite)
+DEBUG: Scraped from <200 https://www.tiptoparborists.com/contact/privacy/>
+{'emails': ['privacy@reachlocal.com.'],
+ 'facebook': 'https://www.facebook.com/pg/Tip-Top-Arborists-Inc-608355719230396/reviews/',
+ 'index': 4,
+ 'instagram': 'https://www.instagram.com/tip_top_arborists/',
+ 'linkedin': 'https://www.linkedin.com/company/tip-top-arborists',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://arborworksinc.com/> (referer: None)
+DEBUG: Crawled (403) <GET https://www.modestotreetrimming.com/> (referer: None)
+INFO: Ignoring response <403 https://www.modestotreetrimming.com/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://arborworksinc.com/contact/> (referer: https://arborworksinc.com/)
+DEBUG: Scraped from <200 https://arborworksinc.com/contact/>
+{'emails': ['information@arborworksinc.com'],
+ 'facebook': 'https://www.facebook.com/arborworks1/',
+ 'index': 5,
+ 'instagram': 'https://www.instagram.com/arborworksllc/',
+ 'linkedin': 'https://www.linkedin.com/company/arborworksinc',
+ 'twitter': 'N/A'}
+DEBUG: Attempting to acquire lock 2359472550384 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2359472550384 acquired on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Attempting to release lock 2359472550384 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2359472550384 released on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Redirecting (301) to <GET https://www.herculestreeservice.com/> from <GET http://www.herculestreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.herculestreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET http://www.petersonstreeworks.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.herculestreeservice.com/contact/> (referer: https://www.herculestreeservice.com/)
+INFO: Received SIGINT, shutting down gracefully. Send again to force 
+DEBUG: Scraped from <200 https://www.herculestreeservice.com/contact/>
+{'emails': ['info@herculestreeservice.com'],
+ 'facebook': 'https://www.facebook.com/510799tree/',
+ 'index': 7,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET http://www.petersonstreeworks.com/contact-us.html> (referer: http://www.petersonstreeworks.com/)
+INFO: Closing spider (shutdown)
+DEBUG: Scraped from <200 http://www.petersonstreeworks.com/contact-us.html>
+{'emails': ['petersonstrees@icloud.com'],
+ 'facebook': 'N/A',
+ 'index': 8,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3889,
+ 'downloader/request_count': 15,
+ 'downloader/request_method_count/GET': 15,
+ 'downloader/response_bytes': 561588,
+ 'downloader/response_count': 15,
+ 'downloader/response_status_count/200': 11,
+ 'downloader/response_status_count/301': 2,
+ 'downloader/response_status_count/403': 2,
+ 'elapsed_time_seconds': 14.79109,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2022, 12, 11, 7, 51, 55, 801137),
+ 'httpcompression/response_bytes': 2037129,
+ 'httpcompression/response_count': 11,
+ 'httperror/response_ignored_count': 2,
+ 'httperror/response_ignored_status_count/403': 2,
+ 'item_scraped_count': 5,
+ 'log_count/DEBUG': 27,
+ 'log_count/INFO': 13,
+ 'request_depth_max': 1,
+ 'response_received_count': 13,
+ 'scheduler/dequeued': 15,
+ 'scheduler/dequeued/memory': 15,
+ 'scheduler/enqueued': 15,
+ 'scheduler/enqueued/memory': 15,
+ 'start_time': datetime.datetime(2022, 12, 11, 7, 51, 41, 10047)}
+INFO: Spider closed (shutdown)
+INFO: Received SIGINT twice, forcing unclean shutdown
+INFO: Scrapy 2.7.1 started (bot: scraper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 38.0.4, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'scraper',
+ 'CONCURRENT_REQUESTS': 1,
+ 'DEPTH_PRIORITY': 1,
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SCHEDULER_DISK_QUEUE': 'scrapy.squeues.PickleFifoDiskQueue',
+ 'SCHEDULER_MEMORY_QUEUE': 'scrapy.squeues.FifoMemoryQueue',
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: e622369bf4d788aa
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Redirecting (301) to <GET http://www.isaacstreeservice.com/> from <GET http://isaacstreeservice.com/>
+DEBUG: Crawled (403) <GET http://www.isaacstreeservice.com/> (referer: None)
+INFO: Ignoring response <403 http://www.isaacstreeservice.com/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://timberline-tree-works.business.site/> (referer: None)
+DEBUG: Crawled (200) <GET https://octreeservices.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.tiptoparborists.com/?utm_source=google&utm_medium=organic&utm_campaign=gmbavwebsite> (referer: None)
+DEBUG: Crawled (200) <GET https://octreeservices.com/contact-us/> (referer: https://octreeservices.com/)
+DEBUG: Scraped from <200 https://octreeservices.com/contact-us/>
+{'emails': ['octreeservices1@gmail.com'],
+ 'facebook': 'N/A',
+ 'index': 3,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.tiptoparborists.com/contact/privacy/> (referer: https://www.tiptoparborists.com/?utm_source=google&utm_medium=organic&utm_campaign=gmbavwebsite)
+DEBUG: Scraped from <200 https://www.tiptoparborists.com/contact/privacy/>
+{'emails': ['privacy@reachlocal.com.'],
+ 'facebook': 'https://www.facebook.com/pg/Tip-Top-Arborists-Inc-608355719230396/reviews/',
+ 'index': 4,
+ 'instagram': 'https://www.instagram.com/tip_top_arborists/',
+ 'linkedin': 'https://www.linkedin.com/company/tip-top-arborists',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://arborworksinc.com/> (referer: None)
+DEBUG: Crawled (403) <GET https://www.modestotreetrimming.com/> (referer: None)
+INFO: Ignoring response <403 https://www.modestotreetrimming.com/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://arborworksinc.com/contact/> (referer: https://arborworksinc.com/)
+DEBUG: Scraped from <200 https://arborworksinc.com/contact/>
+{'emails': ['information@arborworksinc.com'],
+ 'facebook': 'https://www.facebook.com/arborworks1/',
+ 'index': 5,
+ 'instagram': 'https://www.instagram.com/arborworksllc/',
+ 'linkedin': 'https://www.linkedin.com/company/arborworksinc',
+ 'twitter': 'N/A'}
+DEBUG: Attempting to acquire lock 2817119144352 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2817119144352 acquired on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Attempting to release lock 2817119144352 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2817119144352 released on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Redirecting (301) to <GET https://www.herculestreeservice.com/> from <GET http://www.herculestreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.herculestreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET http://www.petersonstreeworks.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.californiaarborist.com/> from <GET http://www.californiaarborist.com/>
+DEBUG: Crawled (200) <GET https://www.californiaarborist.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.herculestreeservice.com/contact/> (referer: https://www.herculestreeservice.com/)
+DEBUG: Crawled (200) <GET http://www.petersonstreeworks.com/contact-us.html> (referer: http://www.petersonstreeworks.com/)
+DEBUG: Scraped from <200 https://www.herculestreeservice.com/contact/>
+{'emails': ['info@herculestreeservice.com'],
+ 'facebook': 'https://www.facebook.com/510799tree/',
+ 'index': 7,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Scraped from <200 http://www.petersonstreeworks.com/contact-us.html>
+{'emails': ['petersonstrees@icloud.com'],
+ 'facebook': 'N/A',
+ 'index': 8,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (403) <GET https://www.californiaarborist.com/contact-us/> (referer: https://www.californiaarborist.com/)
+INFO: Ignoring response <403 https://www.californiaarborist.com/contact-us/>: HTTP status code is not handled or not allowed
+DEBUG: Redirecting (301) to <GET https://www.californiaarborist.com/> from <GET http://www.californiaarborist.com/>
+DEBUG: Crawled (403) <GET https://www.californiaarborist.com/> (referer: None)
+INFO: Ignoring response <403 https://www.californiaarborist.com/>: HTTP status code is not handled or not allowed
+DEBUG: Redirecting (301) to <GET https://caltreeservice.com/> from <GET http://caltreeservice.com/>
+DEBUG: Redirecting (301) to <GET https://www.caltreeservice.com/> from <GET https://caltreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.caltreeservice.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.tomdaytreeservice.com/> from <GET http://www.tomdaytreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.tomdaytreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.caltreeservice.com/contact-us> (referer: https://www.caltreeservice.com/)
+DEBUG: Scraped from <200 https://www.caltreeservice.com/contact-us>
+{'emails': ['office@caltreeservice.com'],
+ 'facebook': 'https://www.facebook.com/samcolemanluxury',
+ 'index': 11,
+ 'instagram': 'https://www.instagram.com/samcolemanluxury/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.tomdaytreeservice.com/contact-us> (referer: https://www.tomdaytreeservice.com/)
+DEBUG: Scraped from <200 https://www.tomdaytreeservice.com/contact-us>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/pg/TomDayTreeService/reviews/',
+ 'index': 12,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (403) <GET http://www.davidstree.com/> (referer: None)
+INFO: Ignoring response <403 http://www.davidstree.com/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://www.monstertreeservice.com/coast/?utm_source=GMB&utm_medium=organic&utm_campaign=Belmont> (referer: None)
+DEBUG: Crawled (200) <GET https://www.monstertreeservice.com/south-bay/?utm_source=GMB&utm_medium=organic&utm_campaign=RanchoPalosVerdes> (referer: None)
+DEBUG: Crawled (200) <GET https://www.monstertreeservice.com/coast/contact-us/> (referer: https://www.monstertreeservice.com/coast/?utm_source=GMB&utm_medium=organic&utm_campaign=Belmont)
+DEBUG: Scraped from <200 https://www.monstertreeservice.com/coast/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/MonsteroftheCoast/',
+ 'index': 14,
+ 'instagram': 'https://www.instagram.com/monsterofthecoast/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.monstertreeservice.com/south-bay/contact-us/> (referer: https://www.monstertreeservice.com/south-bay/?utm_source=GMB&utm_medium=organic&utm_campaign=RanchoPalosVerdes)
+DEBUG: Scraped from <200 https://www.monstertreeservice.com/south-bay/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/Monster-Tree-Service-of-South-Bay-1088163361240866/',
+ 'index': 15,
+ 'instagram': 'https://www.instagram.com/monstertreeservices/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.twainhartetreeservice.com/> (referer: None)
+DEBUG: Redirecting (302) to <GET http://www.sequoiatreeservice.us/> from <GET http://www.sequoiatreeservice.us/>
+DEBUG: Redirecting (301) to <GET https://sequoiatreeservice.us/> from <GET http://www.sequoiatreeservice.us/>
+DEBUG: Crawled (200) <GET https://sequoiatreeservice.us/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.davey.com/residential-tree-services/local-offices/east-bay-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_East%20Bay> (referer: None)
+DEBUG: Redirecting (307) to <GET https://westcoastarborists.com/> from <GET http://westcoastarborists.com/>
+DEBUG: Crawled (200) <GET https://westcoastarborists.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.davey.com/about/contact-us/> (referer: https://www.davey.com/residential-tree-services/local-offices/east-bay-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_East%20Bay)
+DEBUG: Scraped from <200 https://www.davey.com/about/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/DaveyTree',
+ 'index': 18,
+ 'instagram': 'https://instagram.com/DaveyTree/',
+ 'linkedin': 'http://www.linkedin.com/company/the-davey-tree-expert-company',
+ 'twitter': 'https://twitter.com/DaveyTree'}
+DEBUG: Crawled (200) <GET https://westcoastarborists.com/#contact> (referer: https://westcoastarborists.com/)
+DEBUG: Scraped from <200 https://westcoastarborists.com/>
+{'emails': ['wcahiring@wcainc.com', 'corporate@wcainc.com'],
+ 'facebook': 'https://www.facebook.com/WestCoastArborists/',
+ 'index': 19,
+ 'instagram': 'https://www.instagram.com/wcainc/',
+ 'linkedin': 'https://www.linkedin.com/company/west-coast-arborists-inc-',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET http://jptreeservice.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://fallenleaftree.com/> from <GET https://www.fallenleaftree.com/>
+DEBUG: Crawled (200) <GET https://fallenleaftree.com/> (referer: None)
+DEBUG: Crawled (200) <GET http://jptreeservice.com/contact-us> (referer: None)
+DEBUG: Scraped from <200 http://jptreeservice.com/contact-us>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/TreeServiceJP/',
+ 'index': 20,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://fallenleaftree.com/contact-us/> (referer: https://fallenleaftree.com/)
+DEBUG: Scraped from <200 https://fallenleaftree.com/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/fallenleaftreemanagement',
+ 'index': 21,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/FallenLeafTree'}
+DEBUG: Crawled (200) <GET https://www.traversotree.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.bigtstrees.com/?y_source=1_MjA0NTc2NzYtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D> (referer: None)
+DEBUG: Crawled (200) <GET https://www.traversotree.com/contacts/> (referer: https://www.traversotree.com/)
+DEBUG: Scraped from <200 https://www.traversotree.com/contacts/>
+{'emails': ['Office@traversotree.com', 'office@traversotree.com'],
+ 'facebook': 'https://www.facebook.com/traversotree',
+ 'index': 22,
+ 'instagram': 'https://www.instagram.com/traversotree/?hl=en',
+ 'linkedin': 'https://www.linkedin.com/pub/traverso-tree-service/38/6a3/a40',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.bigtstrees.com/contact> (referer: https://www.bigtstrees.com/?y_source=1_MjA0NTc2NzYtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D)
+DEBUG: Scraped from <200 https://www.bigtstrees.com/contact>
+{'emails': ['605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com',
+            '831126cb46b74583bf6f72c5061cba9d@sentry-viewer.wixpress.com',
+            'igtstrees@yahoo.com',
+            'bigtstrees@yahoo.com'],
+ 'facebook': 'http://www.facebook.com/BigTsTrees',
+ 'index': 23,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.davey.com/residential-tree-services/local-offices/san-francisco-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_San%20Francisco> (referer: None)
+DEBUG: Redirecting (301) to <GET https://rndtreeservices.com/> from <GET http://rndtreeservices.com/>
+DEBUG: Crawled (200) <GET https://rndtreeservices.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.davey.com/about/contact-us/> (referer: https://www.davey.com/residential-tree-services/local-offices/san-francisco-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_San%20Francisco)
+DEBUG: Scraped from <200 https://www.davey.com/about/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/DaveyTree',
+ 'index': 24,
+ 'instagram': 'https://instagram.com/DaveyTree/',
+ 'linkedin': 'http://www.linkedin.com/company/the-davey-tree-expert-company',
+ 'twitter': 'https://twitter.com/DaveyTree'}
+DEBUG: Crawled (200) <GET https://rndtreeservices.com/contact-us> (referer: https://rndtreeservices.com/)
+DEBUG: Scraped from <200 https://rndtreeservices.com/contact-us>
+{'emails': ['filler@godaddy.com'],
+ 'facebook': 'https://www.facebook.com/106157038650413',
+ 'index': 25,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://www.sequoiastreeservice.com/> from <GET https://sequoiastreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.sequoiastreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.monstertreeservice.com/west-valley/?utm_source=GMB&utm_medium=organic&utm_campaign=SanJose> (referer: None)
+DEBUG: Crawled (200) <GET https://www.sequoiastreeservice.com/#contact> (referer: https://www.sequoiastreeservice.com/)
+DEBUG: Scraped from <200 https://www.sequoiastreeservice.com/>
+{'emails': ['evencio.martinez@yahoo.com'],
+ 'facebook': 'https://www.facebook.com/Sequoias-Tree-Service-104264014496885/',
+ 'index': 26,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.monstertreeservice.com/west-valley/contact-us/> (referer: https://www.monstertreeservice.com/west-valley/?utm_source=GMB&utm_medium=organic&utm_campaign=SanJose)
+DEBUG: Scraped from <200 https://www.monstertreeservice.com/west-valley/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/pg/Monster-Tree-Service-of-West-Valley-1287919078019258/',
+ 'index': 27,
+ 'instagram': 'https://www.instagram.com/monstertreeservices/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/'}
+DEBUG: Crawled (200) <GET http://www.specializedtreeworks.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://losangelesca-treeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET http://www.specializedtreeworks.com/contact.html> (referer: http://www.specializedtreeworks.com/)
+DEBUG: Scraped from <200 http://www.specializedtreeworks.com/contact.html>
+{'emails': ['ContactUs@specializedtreeworks.com'],
+ 'facebook': 'N/A',
+ 'index': 28,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://losangelesca-treeservice.com/contact> (referer: https://losangelesca-treeservice.com/)
+DEBUG: Scraped from <200 https://losangelesca-treeservice.com/contact>
+{'emails': ['losangelescatreeservice@gmail.com',
+            'u003Elosangelescatreeservice@gmail.com'],
+ 'facebook': 'https://www.facebook.com/losangelescatreeservice/',
+ 'index': 29,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (302) to <GET https://www.bptreeservices.com/> from <GET http://bptreeservices.com/>
+DEBUG: Crawled (200) <GET https://www.bptreeservices.com/> (referer: None)
+DEBUG: Crawled (403) <GET http://topestreeservice.com/> (referer: None)
+INFO: Ignoring response <403 http://topestreeservice.com/>: HTTP status code is not handled or not allowed
+DEBUG: Redirecting (301) to <GET https://californiagreentreecare.com/> from <GET http://californiagreentreecare.com/>
+DEBUG: Crawled (200) <GET https://californiagreentreecare.com/> (referer: None)
+DEBUG: Crawled (403) <GET http://www.forresttreeservice.com/> (referer: None)
+INFO: Ignoring response <403 http://www.forresttreeservice.com/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://californiagreentreecare.com/contact.php> (referer: None)
+DEBUG: Scraped from <200 https://californiagreentreecare.com/contact.php>
+{'emails': ['info@californiagreentreecare.com'],
+ 'facebook': 'N/A',
+ 'index': 32,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://allgreentreeservicecalifornia.com/> from <GET http://allgreentreeservicecalifornia.com/>
+DEBUG: Crawled (200) <GET https://allgreentreeservicecalifornia.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://bayareatreespecialists.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://allgreentreeservicecalifornia.com/contact-us/> (referer: https://allgreentreeservicecalifornia.com/)
+DEBUG: Scraped from <200 https://allgreentreeservicecalifornia.com/contact-us/>
+{'emails': ['allgreentreeservice.1@gmail.com'],
+ 'facebook': 'https://www.facebook.com/allgreentreeserviceca/',
+ 'index': 34,
+ 'instagram': 'https://www.instagram.com/allgreentreeserviceca/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://bayareatreespecialists.com/contact/> (referer: https://bayareatreespecialists.com/)
+DEBUG: Scraped from <200 https://bayareatreespecialists.com/contact/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/Bay-Area-Tree-Specialists-658134177581480/?timeline_context_item_type=intro_card_work&timeline_context_item_source=100007956785104',
+ 'index': 35,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/TreesSpecialist'}
+DEBUG: Crawled (200) <GET http://www.blackbeartrees.com/> (referer: None)
+INFO: Crawled 61 pages (at 61 pages/min), scraped 24 items (at 24 items/min)
+DEBUG: Redirecting (301) to <GET https://jesustreeserviceandlandscaping.com/> from <GET http://jesustreeserviceandlandscaping.com/>
+DEBUG: Crawled (200) <GET https://jesustreeserviceandlandscaping.com/> (referer: None)
+DEBUG: Crawled (200) <GET http://www.blackbeartrees.com/contact.html> (referer: http://www.blackbeartrees.com/)
+DEBUG: Scraped from <200 http://www.blackbeartrees.com/contact.html>
+{'emails': ['blackbeartreeservice559@gmail.com'],
+ 'facebook': 'N/A',
+ 'index': 36,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://jesustreeserviceandlandscaping.com/contact/> (referer: https://jesustreeserviceandlandscaping.com/)
+DEBUG: Scraped from <200 https://jesustreeserviceandlandscaping.com/contact/>
+{'emails': ['jesusjgr1987@gmail.com'],
+ 'facebook': 'https://www.facebook.com/Jesus-Tree-Services-Landscaping-104850001236628',
+ 'index': 37,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://foresttreeservices.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.artstreeservice.com/> from <GET http://www.artstreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.artstreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://foresttreeservices.com/contact-us/> (referer: https://foresttreeservices.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb)
+DEBUG: Scraped from <200 https://foresttreeservices.com/contact-us/>
+{'emails': ['info@foresttreeservices.com'],
+ 'facebook': 'https://www.facebook.com/foresttreeservices',
+ 'index': 38,
+ 'instagram': 'N/A',
+ 'linkedin': 'https://www.linkedin.com/company/forest-tree-services/about/',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.artstreeservice.com/contact.html> (referer: https://www.artstreeservice.com/)
+DEBUG: Scraped from <200 https://www.artstreeservice.com/contact.html>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'index': 39,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.davey.com/residential-tree-services/local-offices/santa-cruz-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_Santa%20Cruz> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.hamiltontree.com/> from <GET http://www.hamiltontree.com/>
+DEBUG: Redirecting (301) to <GET https://hamiltontree.com/> from <GET https://www.hamiltontree.com/>
+DEBUG: Crawled (200) <GET https://hamiltontree.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.davey.com/about/contact-us/> (referer: https://www.davey.com/residential-tree-services/local-offices/santa-cruz-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_Santa%20Cruz)
+DEBUG: Scraped from <200 https://www.davey.com/about/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/DaveyTree',
+ 'index': 40,
+ 'instagram': 'https://instagram.com/DaveyTree/',
+ 'linkedin': 'http://www.linkedin.com/company/the-davey-tree-expert-company',
+ 'twitter': 'https://twitter.com/DaveyTree'}
+DEBUG: Crawled (200) <GET https://www.davey.com/residential-tree-services/local-offices/south-bay-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_South%20Bay> (referer: None)
+DEBUG: Crawled (403) <GET http://www.cwtreeservice.com/> (referer: None)
+INFO: Ignoring response <403 http://www.cwtreeservice.com/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://www.davey.com/about/contact-us/> (referer: https://www.davey.com/residential-tree-services/local-offices/south-bay-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_South%20Bay)
+DEBUG: Scraped from <200 https://www.davey.com/about/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/DaveyTree',
+ 'index': 42,
+ 'instagram': 'https://instagram.com/DaveyTree/',
+ 'linkedin': 'http://www.linkedin.com/company/the-davey-tree-expert-company',
+ 'twitter': 'https://twitter.com/DaveyTree'}
+DEBUG: Crawled (403) <GET http://www.jmtreeserviceca.com/> (referer: None)
+DEBUG: Crawled (403) <GET http://www.travistreeserviceinc.com/> (referer: None)
+INFO: Ignoring response <403 http://www.jmtreeserviceca.com/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (403) <GET http://www.travistreeserviceinc.com/> (referer: None)
+INFO: Ignoring response <403 http://www.travistreeserviceinc.com/>: HTTP status code is not handled or not allowed
+INFO: Ignoring response <403 http://www.travistreeserviceinc.com/>: HTTP status code is not handled or not allowed
+DEBUG: Redirecting (308) to <GET https://www.shipmantree.com/> from <GET http://www.shipmantree.com/>
+DEBUG: Redirecting (301) to <GET https://shipmantree.com/> from <GET https://www.shipmantree.com/>
+DEBUG: Crawled (200) <GET https://shipmantree.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.cutitrighttreeservicefresno.com/> from <GET http://www.cutitrighttreeservicefresno.com/>
+DEBUG: Redirecting (301) to <GET https://cutitrighttreeservicefresno.com/> from <GET https://www.cutitrighttreeservicefresno.com/>
+DEBUG: Crawled (200) <GET https://cutitrighttreeservicefresno.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://shipmantree.com/contact/> (referer: https://shipmantree.com/)
+DEBUG: Scraped from <200 https://shipmantree.com/contact/>
+{'emails': ['dillanmcather@gmail.com', 'sales@shipmantree.com'],
+ 'facebook': 'https://www.facebook.com/profile.php?id=100071969492853',
+ 'index': 47,
+ 'instagram': 'https://www.instagram.com/shipmantreeservice559/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://cutitrighttreeservicefresno.com/contact-us/> (referer: https://cutitrighttreeservicefresno.com/)
+DEBUG: Scraped from <200 https://cutitrighttreeservicefresno.com/contact-us/>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'index': 48,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.mowbrays.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.commercialtreeservices.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.mowbrays.com/contact-us/> (referer: https://www.mowbrays.com/)
+DEBUG: Scraped from <200 https://www.mowbrays.com/contact-us/>
+{'emails': ['customerservice@mowbrays.com', 'info@mowbrays.com'],
+ 'facebook': 'https://www.facebook.com/mowbraystree',
+ 'index': 49,
+ 'instagram': 'https://www.instagram.com/mowbrays/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.commercialtreeservices.com/contact/> (referer: https://www.commercialtreeservices.com/)
+DEBUG: Scraped from <200 https://www.commercialtreeservices.com/contact/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/commercialtreeservices',
+ 'index': 50,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://imagetreeservice.com/> from <GET https://www.imagetreeservice.com/>
+DEBUG: Crawled (200) <GET https://imagetreeservice.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.majestictreeservice.com/> from <GET http://www.majestictreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.majestictreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://imagetreeservice.com/contact-us/> (referer: https://imagetreeservice.com/)
+DEBUG: Scraped from <200 https://imagetreeservice.com/contact-us/>
+{'emails': ['info@imagetreeservice.com'],
+ 'facebook': 'https://www.facebook.com/ImageTreeService/',
+ 'index': 51,
+ 'instagram': 'https://www.instagram.com/imagetreeservice/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.davey.com/residential-tree-services/local-offices/sacramento-roseville-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_Sacramento> (referer: None)
+DEBUG: Crawled (200) <GET https://www.davey.com/residential-tree-services/local-offices/napa-county-and-sonoma-county-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_Napa> (referer: None)
+DEBUG: Crawled (200) <GET https://www.davey.com/about/contact-us/> (referer: https://www.davey.com/residential-tree-services/local-offices/sacramento-roseville-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_Sacramento)
+DEBUG: Scraped from <200 https://www.davey.com/about/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/DaveyTree',
+ 'index': 53,
+ 'instagram': 'https://instagram.com/DaveyTree/',
+ 'linkedin': 'http://www.linkedin.com/company/the-davey-tree-expert-company',
+ 'twitter': 'https://twitter.com/DaveyTree'}
+DEBUG: Crawled (200) <GET https://www.davey.com/about/contact-us/> (referer: https://www.davey.com/residential-tree-services/local-offices/napa-county-and-sonoma-county-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_Napa)
+DEBUG: Scraped from <200 https://www.davey.com/about/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/DaveyTree',
+ 'index': 54,
+ 'instagram': 'https://instagram.com/DaveyTree/',
+ 'linkedin': 'http://www.linkedin.com/company/the-davey-tree-expert-company',
+ 'twitter': 'https://twitter.com/DaveyTree'}
+DEBUG: Redirecting (301) to <GET http://www.acleancuttree.com/> from <GET http://acleancuttree.com/>
+DEBUG: Crawled (403) <GET http://www.acleancuttree.com/> (referer: None)
+INFO: Ignoring response <403 http://www.acleancuttree.com/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (403) <GET https://www.adolphstreeservice.com/> (referer: None)
+INFO: Ignoring response <403 https://www.adolphstreeservice.com/>: HTTP status code is not handled or not allowed
+INFO: Crawled 94 pages (at 33 pages/min), scraped 37 items (at 13 items/min)
+DEBUG: Retrying <GET http://www.alliancetrees.com/> (failed 1 times): TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+DEBUG: Retrying <GET http://www.alliancetrees.com/> (failed 2 times): TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+ERROR: Gave up retrying <GET http://www.alliancetrees.com/> (failed 3 times): TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+ERROR: Error downloading <GET http://www.alliancetrees.com/>
+Traceback (most recent call last):
+  File "C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+DEBUG: Crawled (200) <GET https://www.theneckofthewoods.com/?utm_source=GMB&utm_medium=organic> (referer: None)
+DEBUG: Redirecting (301) to <GET https://calrootstreeservice.com/> from <GET http://calrootstreeservice.com/>
+DEBUG: Redirecting (301) to <GET https://www.calrootstreeservice.com/> from <GET https://calrootstreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.calrootstreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.theneckofthewoods.com/contact-us.html> (referer: https://www.theneckofthewoods.com/?utm_source=GMB&utm_medium=organic)
+DEBUG: Scraped from <200 https://www.theneckofthewoods.com/contact-us.html>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/eddie.farquharson',
+ 'index': 58,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.calrootstreeservice.com/contact> (referer: https://www.calrootstreeservice.com/)
+DEBUG: Scraped from <200 https://www.calrootstreeservice.com/contact>
+{'emails': ['calroots@outlook.com'],
+ 'facebook': 'N/A',
+ 'index': 59,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/calrootstree'}
+DEBUG: Crawled (200) <GET http://www.familytree-service.com/> (referer: None)
+DEBUG: Crawled (403) <GET https://www.corteztreecare.com/> (referer: None)
+INFO: Ignoring response <403 https://www.corteztreecare.com/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://www.treeserviceroseville.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.a1treeredding.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.treeserviceroseville.com/contact-us.html> (referer: https://www.treeserviceroseville.com/)
+DEBUG: Scraped from <200 https://www.treeserviceroseville.com/contact-us.html>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'index': 62,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.a1treeredding.com/contact/> (referer: https://www.a1treeredding.com/)
+DEBUG: Scraped from <200 https://www.a1treeredding.com/contact/>
+{'emails': ['office@a1treeredding.com', 'Office@a1treeredding.com'],
+ 'facebook': 'https://www.facebook.com/A1treeredding/',
+ 'index': 63,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET http://www.richardstree.com/> (referer: None)
+DEBUG: Crawled (200) <GET http://www.richardstree.com/> (referer: None)
+DEBUG: Crawled (200) <GET http://www.richardstree.com/contact.html> (referer: http://www.richardstree.com/)
+DEBUG: Scraped from <200 http://www.richardstree.com/contact.html>
+{'emails': ['fred@richardstree.com', 'info@richardstree.com'],
+ 'facebook': 'N/A',
+ 'index': 64,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET http://www.richardstree.com/contact.html> (referer: http://www.richardstree.com/)
+DEBUG: Scraped from <200 http://www.richardstree.com/contact.html>
+{'emails': ['fred@richardstree.com', 'info@richardstree.com'],
+ 'facebook': 'N/A',
+ 'index': 65,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://dprotreeservice.com/> from <GET http://dprotreeservice.com/>
+DEBUG: Crawled (200) <GET https://dprotreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.atlas-tree.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=gmb_website> (referer: None)
+DEBUG: Crawled (200) <GET https://dprotreeservice.com/contact-us/> (referer: https://dprotreeservice.com/)
+DEBUG: Scraped from <200 https://dprotreeservice.com/contact-us/>
+{'emails': ['d.protreeservice@gmail.com'],
+ 'facebook': 'N/A',
+ 'index': 66,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.atlas-tree.com/contact/> (referer: https://www.atlas-tree.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=gmb_website)
+DEBUG: Scraped from <200 https://www.atlas-tree.com/contact/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/AtlasTreeSurgery',
+ 'index': 67,
+ 'instagram': 'https://www.instagram.com/atlas.tree/',
+ 'linkedin': 'https://www.linkedin.com/company/atlas-tree-landscape-inc/about/',
+ 'twitter': 'https://twitter.com/atlas_and'}
+DEBUG: Crawled (403) <GET http://www.treetechservices.com/> (referer: None)
+INFO: Ignoring response <403 http://www.treetechservices.com/>: HTTP status code is not handled or not allowed
+INFO: Crawled 113 pages (at 19 pages/min), scraped 45 items (at 8 items/min)
+DEBUG: Redirecting (301) to <GET https://www.atlastree.com/> from <GET https://atlastree.com/>
+DEBUG: Crawled (200) <GET https://www.atlastree.com/> (referer: None)
+DEBUG: Redirecting (302) to <GET https://www.bptreeservices.com/> from <GET http://www.bptreeservices.com/>
+DEBUG: Crawled (200) <GET https://www.bptreeservices.com/> (referer: None)
+DEBUG: Crawled (200) <GET http://www.abotreeservice.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.eastbaytreeservice.com/> from <GET http://www.eastbaytreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.eastbaytreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET http://www.abotreeservice.com/index.html#contact> (referer: http://www.abotreeservice.com/)
+DEBUG: Scraped from <200 http://www.abotreeservice.com/index.html>
+{'emails': ['operation@abotreeservice.com',
+            'info@abotreeservice.com',
+            'krasimira.stoyanova@deluxe.com'],
+ 'facebook': 'https://www.facebook.com/abotreeservice',
+ 'index': 71,
+ 'instagram': 'N/A',
+ 'linkedin': 'https://www.linkedin.com/in/abotreeservice',
+ 'twitter': 'https://twitter.com/abotreeservice'}
+DEBUG: Redirecting (301) to <GET https://stocktontreeservices.com/> from <GET https://www.stocktontreeservices.com/>
+DEBUG: Crawled (200) <GET https://stocktontreeservices.com/> (referer: None)
+DEBUG: Crawled (403) <GET http://www.williamstreeservices.net/> (referer: None)
+INFO: Ignoring response <403 http://www.williamstreeservices.net/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://stocktontreeservices.com/contact-2/> (referer: https://stocktontreeservices.com/)
+DEBUG: Scraped from <200 https://stocktontreeservices.com/contact-2/>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'index': 73,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (403) <GET http://williamstreeserviceinc.com/> (referer: None)
+INFO: Ignoring response <403 http://williamstreeserviceinc.com/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://treeservicesandiegoca.com/> (referer: None)
+DEBUG: Crawled (403) <GET http://twincitiestreeservice.net/> (referer: None)
+INFO: Ignoring response <403 http://twincitiestreeservice.net/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://treeserviceantioch.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://ranchotreeservice.com/> from <GET http://www.ranchotreeservice.com/>
+DEBUG: Crawled (200) <GET https://ranchotreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://treeserviceantioch.com/contact-us/> (referer: https://treeserviceantioch.com/)
+DEBUG: Scraped from <200 https://treeserviceantioch.com/contact-us/>
+{'emails': ['treeserviceantioch@gmail.com'],
+ 'facebook': 'https://www.facebook.com/Tree-Service-Antioch-103898468496335/',
+ 'index': 78,
+ 'instagram': 'https://www.instagram.com/treeserviceantioch/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/AntiochTree'}
+DEBUG: Crawled (200) <GET https://ranchotreeservice.com/contact/> (referer: https://ranchotreeservice.com/)
+DEBUG: Scraped from <200 https://ranchotreeservice.com/contact/>
+{'emails': ['info@ranchotreeservice.com'],
+ 'facebook': 'https://www.facebook.com/Rancho-Tree-Service-109046575024387',
+ 'index': 79,
+ 'instagram': 'https://www.instagram.com/ranchotreeservice/',
+ 'linkedin': 'https://www.linkedin.com/company/rancho-inc-california/',
+ 'twitter': 'https://twitter.com/RanchoTree'}
+DEBUG: Crawled (403) <GET http://higueratreecare.com/> (referer: None)
+INFO: Ignoring response <403 http://higueratreecare.com/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://jtstree.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://jtstree.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://jtstree.com/contact-us/> (referer: https://jtstree.com/)
+DEBUG: Scraped from <200 https://jtstree.com/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/pages/category/Shopping---Retail/Jts-Inc-510518789043998/',
+ 'index': 81,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://jtstree.com/contact-us/> (referer: https://jtstree.com/)
+DEBUG: Scraped from <200 https://jtstree.com/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/pages/category/Shopping---Retail/Jts-Inc-510518789043998/',
+ 'index': 82,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET http://treeprotreeservice.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET http://www.delacruztreesvc.com/> from <GET http://delacruztreesvc.com/>
+DEBUG: Crawled (403) <GET http://www.delacruztreesvc.com/> (referer: None)
+INFO: Ignoring response <403 http://www.delacruztreesvc.com/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET http://treeprotreeservice.com/contact-us/> (referer: http://treeprotreeservice.com/)
+DEBUG: Scraped from <200 http://treeprotreeservice.com/contact-us/>
+{'emails': ['treepro.office@gmail.com'],
+ 'facebook': 'N/A',
+ 'index': 83,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET http://www.delacruztreesvc.com/> from <GET http://delacruztreesvc.com/>
+DEBUG: Crawled (403) <GET http://www.delacruztreesvc.com/> (referer: None)
+INFO: Ignoring response <403 http://www.delacruztreesvc.com/>: HTTP status code is not handled or not allowed
+DEBUG: Redirecting (301) to <GET http://www.larrystreecare.com/> from <GET http://larrystreecare.com/>
+DEBUG: Crawled (403) <GET http://www.larrystreecare.com/> (referer: None)
+INFO: Ignoring response <403 http://www.larrystreecare.com/>: HTTP status code is not handled or not allowed
+DEBUG: Redirecting (301) to <GET http://www.familytreeserviceca.com/> from <GET http://familytreeserviceca.com/>
+DEBUG: Crawled (403) <GET http://www.familytreeserviceca.com/> (referer: None)
+INFO: Ignoring response <403 http://www.familytreeserviceca.com/>: HTTP status code is not handled or not allowed
+DEBUG: Redirecting (301) to <GET https://www.adamstreeservice.org/> from <GET http://www.adamstreeservice.org/>
+DEBUG: Crawled (200) <GET https://www.adamstreeservice.org/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://elementstreeservices.com/> from <GET http://elementstreeservices.com/>
+DEBUG: Crawled (200) <GET https://elementstreeservices.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.adamstreeservice.org/contact.html> (referer: https://www.adamstreeservice.org/)
+DEBUG: Scraped from <200 https://www.adamstreeservice.org/contact.html>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/Adams-Tree-Service-1566642230319508',
+ 'index': 88,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://elementstreeservices.com/contact> (referer: https://elementstreeservices.com/)
+DEBUG: Scraped from <200 https://elementstreeservices.com/contact>
+{'emails': ['4elements.tree@gmail.com'],
+ 'facebook': 'https://www.facebook.com/elementstreeservice/',
+ 'index': 89,
+ 'instagram': 'https://www.instagram.com/elementstreeservice/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://treeservicemantecaca.com/> from <GET https://www.treeservicemantecaca.com/>
+DEBUG: Crawled (200) <GET https://treeservicemantecaca.com/> (referer: None)
+DEBUG: Crawled (403) <GET http://www.atlastreeservice.com/> (referer: None)
+INFO: Ignoring response <403 http://www.atlastreeservice.com/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://treeservicemantecaca.com/contact-2/> (referer: https://treeservicemantecaca.com/)
+DEBUG: Scraped from <200 https://treeservicemantecaca.com/contact-2/>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'index': 90,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.treebiz.org/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://joelstreeservices.com/> from <GET http://joelstreeservices.com/>
+DEBUG: Crawled (200) <GET https://joelstreeservices.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://navastree.wixsite.com/my-site> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.alpentree.com/> from <GET http://alpentree.com/>
+DEBUG: Crawled (200) <GET https://www.alpentree.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.alpentree.com/> from <GET http://alpentree.com/>
+DEBUG: Crawled (200) <GET https://www.alpentree.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.alpentree.com/contact> (referer: https://www.alpentree.com/)
+DEBUG: Scraped from <200 https://www.alpentree.com/contact>
+{'emails': ['alpentree@gmail.com'],
+ 'facebook': 'https://www.facebook.com/Alpen-Tree-Experts-296764412428/',
+ 'index': 95,
+ 'instagram': 'http://www.instagram.com/alpentreeexperts',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.alpentree.com/contact> (referer: https://www.alpentree.com/)
+DEBUG: Scraped from <200 https://www.alpentree.com/contact>
+{'emails': ['alpentree@gmail.com'],
+ 'facebook': 'https://www.facebook.com/Alpen-Tree-Experts-296764412428/',
+ 'index': 96,
+ 'instagram': 'http://www.instagram.com/alpentreeexperts',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://www.alpentree.com/> from <GET http://alpentree.com/>
+DEBUG: Crawled (200) <GET https://www.alpentree.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://greenzwaytreeservice.com/wp-content/endurance-page-cache/_index.html> from <GET http://greenzwaytreeservice.com/>
+DEBUG: Crawled (200) <GET https://greenzwaytreeservice.com/wp-content/endurance-page-cache/_index.html> (referer: None)
+DEBUG: Crawled (200) <GET https://www.alpentree.com/contact> (referer: https://www.alpentree.com/)
+DEBUG: Scraped from <200 https://www.alpentree.com/contact>
+{'emails': ['alpentree@gmail.com'],
+ 'facebook': 'https://www.facebook.com/Alpen-Tree-Experts-296764412428/',
+ 'index': 97,
+ 'instagram': 'http://www.instagram.com/alpentreeexperts',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://greenzwaytreeservice.com/contact/> (referer: https://greenzwaytreeservice.com/wp-content/endurance-page-cache/_index.html)
+DEBUG: Scraped from <200 https://greenzwaytreeservice.com/contact/>
+{'emails': ['Greenzway@hotmail.com', 'greenzway@hotmail.com'],
+ 'facebook': 'https://www.facebook.com/pg/greenzway',
+ 'index': 98,
+ 'instagram': 'https://www.instagram.com/greenzway_official',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://www.stevestreeservice.net/> from <GET http://www.stevestreeservice.net/>
+DEBUG: Crawled (200) <GET https://www.stevestreeservice.net/> (referer: None)
+DEBUG: Crawled (403) <GET https://www.petestreeservice.com/> (referer: None)
+INFO: Ignoring response <403 https://www.petestreeservice.com/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://www.stevestreeservice.net/contact/> (referer: https://www.stevestreeservice.net/)
+DEBUG: Scraped from <200 https://www.stevestreeservice.net/contact/>
+{'emails': ['steves8733@gmail.com'],
+ 'facebook': 'N/A',
+ 'index': 99,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 3,
+ 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 3,
+ 'downloader/request_bytes': 68707,
+ 'downloader/request_count': 211,
+ 'downloader/request_method_count/GET': 211,
+ 'downloader/response_bytes': 5265900,
+ 'downloader/response_count': 208,
+ 'downloader/response_status_count/200': 135,
+ 'downloader/response_status_count/301': 43,
+ 'downloader/response_status_count/302': 3,
+ 'downloader/response_status_count/307': 1,
+ 'downloader/response_status_count/308': 1,
+ 'downloader/response_status_count/403': 25,
+ 'elapsed_time_seconds': 235.379283,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 11, 7, 56, 12, 314858),
+ 'httpcompression/response_bytes': 21815100,
+ 'httpcompression/response_count': 141,
+ 'httperror/response_ignored_count': 25,
+ 'httperror/response_ignored_status_count/403': 25,
+ 'item_scraped_count': 60,
+ 'log_count/DEBUG': 277,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 38,
+ 'request_depth_max': 1,
+ 'response_received_count': 160,
+ 'retry/count': 2,
+ 'retry/max_reached': 1,
+ 'retry/reason_count/twisted.internet.error.TCPTimedOutError': 2,
+ 'scheduler/dequeued': 211,
+ 'scheduler/dequeued/memory': 211,
+ 'scheduler/enqueued': 211,
+ 'scheduler/enqueued/memory': 211,
+ 'start_time': datetime.datetime(2022, 12, 11, 7, 52, 16, 935575)}
+INFO: Spider closed (finished)
+INFO: Scrapy 2.7.1 started (bot: scraper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 38.0.4, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'scraper',
+ 'CONCURRENT_REQUESTS': 1,
+ 'DEPTH_PRIORITY': 1,
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SCHEDULER_DISK_QUEUE': 'scrapy.squeues.PickleFifoDiskQueue',
+ 'SCHEDULER_MEMORY_QUEUE': 'scrapy.squeues.FifoMemoryQueue',
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) '
+               'AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'}
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: 99275e701ab4ea99
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6024
+DEBUG: Redirecting (meta refresh) to <GET https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&view_all_page_id=108448151941309&sort_data%5Bdirection%5D=desc&sort_data%5Bmode%5D=relevancy_monthly_grouped&search_type=page&media_type=all&_fb_noscript=1> from <GET https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&view_all_page_id=108448151941309&sort_data%5Bdirection%5D=desc&sort_data%5Bmode%5D=relevancy_monthly_grouped&search_type=page&media_type=all>
+DEBUG: Attempting to acquire lock 1606379514096 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 1606379514096 acquired on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Attempting to release lock 1606379514096 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 1606379514096 released on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Crawled (200) <GET https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&view_all_page_id=108448151941309&sort_data%5Bdirection%5D=desc&sort_data%5Bmode%5D=relevancy_monthly_grouped&search_type=page&media_type=all&_fb_noscript=1> (referer: None)
+ERROR: Spider error processing <GET https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&view_all_page_id=108448151941309&sort_data%5Bdirection%5D=desc&sort_data%5Bmode%5D=relevancy_monthly_grouped&search_type=page&media_type=all&_fb_noscript=1> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\twisted\internet\defer.py", line 892, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\scrapy\spiders\__init__.py", line 67, in _parse
+    return self.parse(response, **kwargs)
+  File "C:\Users\moffi\PycharmProjects\scraping_web\scraper\scraper\spiders\tester_meta.py", line 34, in parse
+    if "secure" in cookie:
+TypeError: a bytes-like object is required, not 'str'
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 967,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 177862,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 1.877354,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 11, 8, 7, 27, 837477),
+ 'httpcompression/response_bytes': 728944,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 9,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'spider_exceptions/TypeError': 1,
+ 'start_time': datetime.datetime(2022, 12, 11, 8, 7, 25, 960123)}
+INFO: Spider closed (finished)
+INFO: Scrapy 2.7.1 started (bot: scraper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 38.0.4, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'scraper',
+ 'CONCURRENT_REQUESTS': 1,
+ 'DEPTH_PRIORITY': 1,
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SCHEDULER_DISK_QUEUE': 'scrapy.squeues.PickleFifoDiskQueue',
+ 'SCHEDULER_MEMORY_QUEUE': 'scrapy.squeues.FifoMemoryQueue',
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) '
+               'AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'}
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: 30ce207034635f4b
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6024
+DEBUG: Redirecting (301) to <GET http://www.isaacstreeservice.com/> from <GET http://isaacstreeservice.com/>
+DEBUG: Redirecting (301) to <GET https://www.isaacstreeservice.com/> from <GET http://www.isaacstreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.isaacstreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://timberline-tree-works.business.site/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.isaacstreeservice.com/contact-us> (referer: https://www.isaacstreeservice.com/)
+DEBUG: Scraped from <200 https://www.isaacstreeservice.com/contact-us>
+{'emails': ['treeserviceisaac@gmail.com'],
+ 'facebook': 'N/A',
+ 'index': 1,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://octreeservices.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.tiptoparborists.com/?utm_source=google&utm_medium=organic&utm_campaign=gmbavwebsite> (referer: None)
+DEBUG: Crawled (200) <GET https://octreeservices.com/contact-us/> (referer: https://octreeservices.com/)
+DEBUG: Scraped from <200 https://octreeservices.com/contact-us/>
+{'emails': ['octreeservices1@gmail.com'],
+ 'facebook': 'N/A',
+ 'index': 3,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.tiptoparborists.com/contact/privacy/> (referer: https://www.tiptoparborists.com/?utm_source=google&utm_medium=organic&utm_campaign=gmbavwebsite)
+DEBUG: Scraped from <200 https://www.tiptoparborists.com/contact/privacy/>
+{'emails': ['privacy@reachlocal.com.'],
+ 'facebook': 'https://www.facebook.com/pg/Tip-Top-Arborists-Inc-608355719230396/reviews/',
+ 'index': 4,
+ 'instagram': 'https://www.instagram.com/tip_top_arborists/',
+ 'linkedin': 'https://www.linkedin.com/company/tip-top-arborists',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://arborworksinc.com/> (referer: None)
+DEBUG: Attempting to acquire lock 1415893294896 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 1415893294896 acquired on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Attempting to release lock 1415893294896 on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 1415893294896 released on C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Crawled (200) <GET https://www.modestotreetrimming.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://arborworksinc.com/contact/> (referer: https://arborworksinc.com/)
+DEBUG: Scraped from <200 https://arborworksinc.com/contact/>
+{'emails': ['information@arborworksinc.com'],
+ 'facebook': 'https://www.facebook.com/arborworks1/',
+ 'index': 5,
+ 'instagram': 'https://www.instagram.com/arborworksllc/',
+ 'linkedin': 'https://www.linkedin.com/company/arborworksinc',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.modestotreetrimming.com/contact> (referer: https://www.modestotreetrimming.com/)
+DEBUG: Scraped from <200 https://www.modestotreetrimming.com/contact>
+{'emails': ['your@email.com', 'rodney@treetrimmingmodestoca.com'],
+ 'facebook': 'https://www.facebook.com/Clarkscustomtreeworks/',
+ 'index': 6,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://www.herculestreeservice.com/> from <GET http://www.herculestreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.herculestreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET http://www.petersonstreeworks.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.californiaarborist.com/> from <GET http://www.californiaarborist.com/>
+DEBUG: Crawled (200) <GET https://www.californiaarborist.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.herculestreeservice.com/contact/> (referer: https://www.herculestreeservice.com/)
+DEBUG: Crawled (200) <GET http://www.petersonstreeworks.com/contact-us.html> (referer: http://www.petersonstreeworks.com/)
+DEBUG: Scraped from <200 https://www.herculestreeservice.com/contact/>
+{'emails': ['info@herculestreeservice.com'],
+ 'facebook': 'https://www.facebook.com/510799tree/',
+ 'index': 7,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Scraped from <200 http://www.petersonstreeworks.com/contact-us.html>
+{'emails': ['petersonstrees@icloud.com'],
+ 'facebook': 'N/A',
+ 'index': 8,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (403) <GET https://www.californiaarborist.com/contact-us/> (referer: https://www.californiaarborist.com/)
+INFO: Ignoring response <403 https://www.californiaarborist.com/contact-us/>: HTTP status code is not handled or not allowed
+DEBUG: Redirecting (301) to <GET https://www.californiaarborist.com/> from <GET http://www.californiaarborist.com/>
+DEBUG: Crawled (403) <GET https://www.californiaarborist.com/> (referer: None)
+INFO: Ignoring response <403 https://www.californiaarborist.com/>: HTTP status code is not handled or not allowed
+DEBUG: Redirecting (301) to <GET https://caltreeservice.com/> from <GET http://caltreeservice.com/>
+DEBUG: Redirecting (301) to <GET https://www.caltreeservice.com/> from <GET https://caltreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.caltreeservice.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.tomdaytreeservice.com/> from <GET http://www.tomdaytreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.tomdaytreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.caltreeservice.com/contact-us> (referer: https://www.caltreeservice.com/)
+DEBUG: Scraped from <200 https://www.caltreeservice.com/contact-us>
+{'emails': ['office@caltreeservice.com'],
+ 'facebook': 'https://www.facebook.com/samcolemanluxury',
+ 'index': 11,
+ 'instagram': 'https://www.instagram.com/samcolemanluxury/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (403) <GET http://www.davidstree.com/> (referer: None)
+INFO: Ignoring response <403 http://www.davidstree.com/>: HTTP status code is not handled or not allowed
+DEBUG: Crawled (200) <GET https://www.tomdaytreeservice.com/contact-us> (referer: https://www.tomdaytreeservice.com/)
+DEBUG: Scraped from <200 https://www.tomdaytreeservice.com/contact-us>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/pg/TomDayTreeService/reviews/',
+ 'index': 12,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.monstertreeservice.com/coast/?utm_source=GMB&utm_medium=organic&utm_campaign=Belmont> (referer: None)
+DEBUG: Crawled (200) <GET https://www.monstertreeservice.com/south-bay/?utm_source=GMB&utm_medium=organic&utm_campaign=RanchoPalosVerdes> (referer: None)
+DEBUG: Crawled (200) <GET https://www.monstertreeservice.com/coast/contact-us/> (referer: https://www.monstertreeservice.com/coast/?utm_source=GMB&utm_medium=organic&utm_campaign=Belmont)
+DEBUG: Scraped from <200 https://www.monstertreeservice.com/coast/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/MonsteroftheCoast/',
+ 'index': 14,
+ 'instagram': 'https://www.instagram.com/monsterofthecoast/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.monstertreeservice.com/south-bay/contact-us/> (referer: https://www.monstertreeservice.com/south-bay/?utm_source=GMB&utm_medium=organic&utm_campaign=RanchoPalosVerdes)
+DEBUG: Scraped from <200 https://www.monstertreeservice.com/south-bay/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/Monster-Tree-Service-of-South-Bay-1088163361240866/',
+ 'index': 15,
+ 'instagram': 'https://www.instagram.com/monstertreeservices/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.twainhartetreeservice.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://sequoiatreeservice.us/> from <GET http://www.sequoiatreeservice.us/>
+DEBUG: Crawled (200) <GET https://sequoiatreeservice.us/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.davey.com/residential-tree-services/local-offices/east-bay-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_East%20Bay> (referer: None)
+DEBUG: Redirecting (307) to <GET https://westcoastarborists.com/> from <GET http://westcoastarborists.com/>
+DEBUG: Crawled (200) <GET https://westcoastarborists.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.davey.com/about/contact-us/> (referer: https://www.davey.com/residential-tree-services/local-offices/east-bay-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_East%20Bay)
+DEBUG: Scraped from <200 https://www.davey.com/about/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/DaveyTree',
+ 'index': 18,
+ 'instagram': 'https://instagram.com/DaveyTree/',
+ 'linkedin': 'http://www.linkedin.com/company/the-davey-tree-expert-company',
+ 'twitter': 'https://twitter.com/DaveyTree'}
+DEBUG: Crawled (200) <GET https://westcoastarborists.com/#contact> (referer: https://westcoastarborists.com/)
+DEBUG: Scraped from <200 https://westcoastarborists.com/>
+{'emails': ['corporate@wcainc.com', 'wcahiring@wcainc.com'],
+ 'facebook': 'https://www.facebook.com/WestCoastArborists/',
+ 'index': 19,
+ 'instagram': 'https://www.instagram.com/wcainc/',
+ 'linkedin': 'https://www.linkedin.com/company/west-coast-arborists-inc-',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET http://jptreeservice.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://fallenleaftree.com/> from <GET https://www.fallenleaftree.com/>
+DEBUG: Crawled (200) <GET https://fallenleaftree.com/> (referer: None)
+DEBUG: Crawled (200) <GET http://jptreeservice.com/contact-us> (referer: None)
+DEBUG: Scraped from <200 http://jptreeservice.com/contact-us>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/TreeServiceJP/',
+ 'index': 20,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://fallenleaftree.com/contact-us/> (referer: https://fallenleaftree.com/)
+DEBUG: Scraped from <200 https://fallenleaftree.com/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/fallenleaftreemanagement',
+ 'index': 21,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/FallenLeafTree'}
+DEBUG: Crawled (200) <GET https://www.traversotree.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.bigtstrees.com/?y_source=1_MjA0NTc2NzYtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D> (referer: None)
+DEBUG: Crawled (200) <GET https://www.traversotree.com/contacts/> (referer: https://www.traversotree.com/)
+DEBUG: Scraped from <200 https://www.traversotree.com/contacts/>
+{'emails': ['office@traversotree.com', 'Office@traversotree.com'],
+ 'facebook': 'https://www.facebook.com/traversotree',
+ 'index': 22,
+ 'instagram': 'https://www.instagram.com/traversotree/?hl=en',
+ 'linkedin': 'https://www.linkedin.com/pub/traverso-tree-service/38/6a3/a40',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.bigtstrees.com/contact> (referer: https://www.bigtstrees.com/?y_source=1_MjA0NTc2NzYtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D)
+DEBUG: Scraped from <200 https://www.bigtstrees.com/contact>
+{'emails': ['bigtstrees@yahoo.com',
+            'igtstrees@yahoo.com',
+            '605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com',
+            '831126cb46b74583bf6f72c5061cba9d@sentry-viewer.wixpress.com'],
+ 'facebook': 'http://www.facebook.com/BigTsTrees',
+ 'index': 23,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.davey.com/residential-tree-services/local-offices/san-francisco-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_San%20Francisco> (referer: None)
+DEBUG: Redirecting (301) to <GET https://rndtreeservices.com/> from <GET http://rndtreeservices.com/>
+DEBUG: Crawled (200) <GET https://rndtreeservices.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.davey.com/about/contact-us/> (referer: https://www.davey.com/residential-tree-services/local-offices/san-francisco-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_San%20Francisco)
+DEBUG: Crawled (200) <GET https://rndtreeservices.com/contact-us> (referer: https://rndtreeservices.com/)
+DEBUG: Scraped from <200 https://www.davey.com/about/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/DaveyTree',
+ 'index': 24,
+ 'instagram': 'https://instagram.com/DaveyTree/',
+ 'linkedin': 'http://www.linkedin.com/company/the-davey-tree-expert-company',
+ 'twitter': 'https://twitter.com/DaveyTree'}
+DEBUG: Scraped from <200 https://rndtreeservices.com/contact-us>
+{'emails': ['filler@godaddy.com'],
+ 'facebook': 'https://www.facebook.com/106157038650413',
+ 'index': 25,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://www.sequoiastreeservice.com/> from <GET https://sequoiastreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.sequoiastreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.monstertreeservice.com/west-valley/?utm_source=GMB&utm_medium=organic&utm_campaign=SanJose> (referer: None)
+DEBUG: Crawled (200) <GET https://www.sequoiastreeservice.com/#contact> (referer: https://www.sequoiastreeservice.com/)
+DEBUG: Scraped from <200 https://www.sequoiastreeservice.com/>
+{'emails': ['evencio.martinez@yahoo.com'],
+ 'facebook': 'https://www.facebook.com/Sequoias-Tree-Service-104264014496885/',
+ 'index': 26,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.monstertreeservice.com/west-valley/contact-us/> (referer: https://www.monstertreeservice.com/west-valley/?utm_source=GMB&utm_medium=organic&utm_campaign=SanJose)
+DEBUG: Scraped from <200 https://www.monstertreeservice.com/west-valley/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/pg/Monster-Tree-Service-of-West-Valley-1287919078019258/',
+ 'index': 27,
+ 'instagram': 'https://www.instagram.com/monstertreeservices/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/'}
+DEBUG: Crawled (200) <GET http://www.specializedtreeworks.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://losangelesca-treeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET http://www.specializedtreeworks.com/contact.html> (referer: http://www.specializedtreeworks.com/)
+DEBUG: Scraped from <200 http://www.specializedtreeworks.com/contact.html>
+{'emails': ['ContactUs@specializedtreeworks.com'],
+ 'facebook': 'N/A',
+ 'index': 28,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://losangelesca-treeservice.com/contact> (referer: https://losangelesca-treeservice.com/)
+DEBUG: Scraped from <200 https://losangelesca-treeservice.com/contact>
+{'emails': ['u003Elosangelescatreeservice@gmail.com',
+            'losangelescatreeservice@gmail.com'],
+ 'facebook': 'https://www.facebook.com/losangelescatreeservice/',
+ 'index': 29,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (302) to <GET https://www.bptreeservices.com/> from <GET http://bptreeservices.com/>
+DEBUG: Crawled (200) <GET https://www.bptreeservices.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.topestreeservice.com/> from <GET http://topestreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.topestreeservice.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://californiagreentreecare.com/> from <GET http://californiagreentreecare.com/>
+INFO: Crawled 55 pages (at 55 pages/min), scraped 23 items (at 23 items/min)
+DEBUG: Crawled (200) <GET https://californiagreentreecare.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.topestreeservice.com/contact> (referer: https://www.topestreeservice.com/)
+DEBUG: Scraped from <200 https://www.topestreeservice.com/contact>
+{'emails': ['your@email.com', 'info@topestreeservice.com'],
+ 'facebook': 'https://facebook.com/topestreeservice',
+ 'index': 31,
+ 'instagram': 'https://instagram.com/topestreeserviceinc/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://californiagreentreecare.com/contact.php> (referer: None)
+DEBUG: Scraped from <200 https://californiagreentreecare.com/contact.php>
+{'emails': ['info@californiagreentreecare.com'],
+ 'facebook': 'N/A',
+ 'index': 32,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://www.forresttreeservice.com/> from <GET http://www.forresttreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.forresttreeservice.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://allgreentreeservicecalifornia.com/> from <GET http://allgreentreeservicecalifornia.com/>
+DEBUG: Crawled (200) <GET https://allgreentreeservicecalifornia.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.forresttreeservice.com/contact-us> (referer: https://www.forresttreeservice.com/)
+DEBUG: Scraped from <200 https://www.forresttreeservice.com/contact-us>
+{'emails': ['forresttreeservice@hotmail.com'],
+ 'facebook': 'https://www.facebook.com/Forrest-Tree-Service-912274625521872/',
+ 'index': 33,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/'}
+DEBUG: Crawled (200) <GET https://allgreentreeservicecalifornia.com/contact-us/> (referer: https://allgreentreeservicecalifornia.com/)
+DEBUG: Scraped from <200 https://allgreentreeservicecalifornia.com/contact-us/>
+{'emails': ['allgreentreeservice.1@gmail.com'],
+ 'facebook': 'https://www.facebook.com/allgreentreeserviceca/',
+ 'index': 34,
+ 'instagram': 'https://www.instagram.com/allgreentreeserviceca/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://bayareatreespecialists.com/> (referer: None)
+DEBUG: Crawled (200) <GET http://www.blackbeartrees.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://bayareatreespecialists.com/contact/> (referer: https://bayareatreespecialists.com/)
+DEBUG: Scraped from <200 https://bayareatreespecialists.com/contact/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/Bay-Area-Tree-Specialists-658134177581480/?timeline_context_item_type=intro_card_work&timeline_context_item_source=100007956785104',
+ 'index': 35,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/TreesSpecialist'}
+DEBUG: Crawled (200) <GET http://www.blackbeartrees.com/contact.html> (referer: http://www.blackbeartrees.com/)
+DEBUG: Scraped from <200 http://www.blackbeartrees.com/contact.html>
+{'emails': ['blackbeartreeservice559@gmail.com'],
+ 'facebook': 'N/A',
+ 'index': 36,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://jesustreeserviceandlandscaping.com/> from <GET http://jesustreeserviceandlandscaping.com/>
+DEBUG: Crawled (200) <GET https://jesustreeserviceandlandscaping.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://foresttreeservices.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb> (referer: None)
+DEBUG: Crawled (200) <GET https://jesustreeserviceandlandscaping.com/contact/> (referer: https://jesustreeserviceandlandscaping.com/)
+DEBUG: Scraped from <200 https://jesustreeserviceandlandscaping.com/contact/>
+{'emails': ['jesusjgr1987@gmail.com'],
+ 'facebook': 'https://www.facebook.com/Jesus-Tree-Services-Landscaping-104850001236628',
+ 'index': 37,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://foresttreeservices.com/contact-us/> (referer: https://foresttreeservices.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb)
+DEBUG: Scraped from <200 https://foresttreeservices.com/contact-us/>
+{'emails': ['info@foresttreeservices.com'],
+ 'facebook': 'https://www.facebook.com/foresttreeservices',
+ 'index': 38,
+ 'instagram': 'N/A',
+ 'linkedin': 'https://www.linkedin.com/company/forest-tree-services/about/',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://www.artstreeservice.com/> from <GET http://www.artstreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.artstreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.davey.com/residential-tree-services/local-offices/santa-cruz-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_Santa%20Cruz> (referer: None)
+DEBUG: Crawled (200) <GET https://www.artstreeservice.com/contact.html> (referer: https://www.artstreeservice.com/)
+DEBUG: Scraped from <200 https://www.artstreeservice.com/contact.html>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'index': 39,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.davey.com/about/contact-us/> (referer: https://www.davey.com/residential-tree-services/local-offices/santa-cruz-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_Santa%20Cruz)
+DEBUG: Scraped from <200 https://www.davey.com/about/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/DaveyTree',
+ 'index': 40,
+ 'instagram': 'https://instagram.com/DaveyTree/',
+ 'linkedin': 'http://www.linkedin.com/company/the-davey-tree-expert-company',
+ 'twitter': 'https://twitter.com/DaveyTree'}
+DEBUG: Redirecting (301) to <GET https://www.hamiltontree.com/> from <GET http://www.hamiltontree.com/>
+DEBUG: Redirecting (301) to <GET https://hamiltontree.com/> from <GET https://www.hamiltontree.com/>
+DEBUG: Crawled (200) <GET https://hamiltontree.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.davey.com/residential-tree-services/local-offices/south-bay-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_South%20Bay> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.cwtreeservice.com/> from <GET http://www.cwtreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.cwtreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.davey.com/about/contact-us/> (referer: https://www.davey.com/residential-tree-services/local-offices/south-bay-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_South%20Bay)
+DEBUG: Crawled (200) <GET https://www.cwtreeservice.com/contact> (referer: https://www.cwtreeservice.com/)
+DEBUG: Scraped from <200 https://www.davey.com/about/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/DaveyTree',
+ 'index': 42,
+ 'instagram': 'https://instagram.com/DaveyTree/',
+ 'linkedin': 'http://www.linkedin.com/company/the-davey-tree-expert-company',
+ 'twitter': 'https://twitter.com/DaveyTree'}
+DEBUG: Scraped from <200 https://www.cwtreeservice.com/contact>
+{'emails': ['your@email.com', 'cwtreelandscape@yahoo.com'],
+ 'facebook': 'https://www.facebook.com/CW-Tree-Landscape-Co-106657641966896',
+ 'index': 43,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://www.jmtreeserviceca.com/> from <GET http://www.jmtreeserviceca.com/>
+DEBUG: Crawled (200) <GET https://www.jmtreeserviceca.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.travistreeserviceinc.com/> from <GET http://www.travistreeserviceinc.com/>
+DEBUG: Crawled (200) <GET https://www.travistreeserviceinc.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.jmtreeserviceca.com/contact-page> (referer: https://www.jmtreeserviceca.com/)
+DEBUG: Scraped from <200 https://www.jmtreeserviceca.com/contact-page>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/Jose-Martinez-Tree-Service-Inc-596583343858969',
+ 'index': 44,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/JoseMartinezT34'}
+DEBUG: Crawled (200) <GET https://www.travistreeserviceinc.com/contact> (referer: https://www.travistreeserviceinc.com/)
+DEBUG: Redirecting (301) to <GET https://www.travistreeserviceinc.com/> from <GET http://www.travistreeserviceinc.com/>
+DEBUG: Crawled (200) <GET https://www.travistreeserviceinc.com/> (referer: None)
+DEBUG: Scraped from <200 https://www.travistreeserviceinc.com/contact>
+{'emails': ['travishensley85@yahoo.com', 'your@email.com'],
+ 'facebook': 'https://facebook.com/TravisTreeServices',
+ 'index': 45,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (308) to <GET https://www.shipmantree.com/> from <GET http://www.shipmantree.com/>
+DEBUG: Redirecting (301) to <GET https://shipmantree.com/> from <GET https://www.shipmantree.com/>
+DEBUG: Crawled (200) <GET https://shipmantree.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.travistreeserviceinc.com/contact> (referer: https://www.travistreeserviceinc.com/)
+DEBUG: Scraped from <200 https://www.travistreeserviceinc.com/contact>
+{'emails': ['travishensley85@yahoo.com', 'your@email.com'],
+ 'facebook': 'https://facebook.com/TravisTreeServices',
+ 'index': 46,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://www.cutitrighttreeservicefresno.com/> from <GET http://www.cutitrighttreeservicefresno.com/>
+DEBUG: Redirecting (301) to <GET https://cutitrighttreeservicefresno.com/> from <GET https://www.cutitrighttreeservicefresno.com/>
+DEBUG: Crawled (200) <GET https://cutitrighttreeservicefresno.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://shipmantree.com/contact/> (referer: https://shipmantree.com/)
+DEBUG: Scraped from <200 https://shipmantree.com/contact/>
+{'emails': ['dillanmcather@gmail.com', 'sales@shipmantree.com'],
+ 'facebook': 'https://www.facebook.com/profile.php?id=100071969492853',
+ 'index': 47,
+ 'instagram': 'https://www.instagram.com/shipmantreeservice559/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://cutitrighttreeservicefresno.com/contact-us/> (referer: https://cutitrighttreeservicefresno.com/)
+DEBUG: Scraped from <200 https://cutitrighttreeservicefresno.com/contact-us/>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'index': 48,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.mowbrays.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.commercialtreeservices.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.mowbrays.com/contact-us/> (referer: https://www.mowbrays.com/)
+DEBUG: Scraped from <200 https://www.mowbrays.com/contact-us/>
+{'emails': ['info@mowbrays.com', 'customerservice@mowbrays.com'],
+ 'facebook': 'https://www.facebook.com/mowbraystree',
+ 'index': 49,
+ 'instagram': 'https://www.instagram.com/mowbrays/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.commercialtreeservices.com/contact/> (referer: https://www.commercialtreeservices.com/)
+DEBUG: Scraped from <200 https://www.commercialtreeservices.com/contact/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/commercialtreeservices',
+ 'index': 50,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://imagetreeservice.com/> from <GET https://www.imagetreeservice.com/>
+DEBUG: Crawled (200) <GET https://imagetreeservice.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.majestictreeservice.com/> from <GET http://www.majestictreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.majestictreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://imagetreeservice.com/contact-us/> (referer: https://imagetreeservice.com/)
+DEBUG: Scraped from <200 https://imagetreeservice.com/contact-us/>
+{'emails': ['info@imagetreeservice.com'],
+ 'facebook': 'https://www.facebook.com/ImageTreeService/',
+ 'index': 51,
+ 'instagram': 'https://www.instagram.com/imagetreeservice/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.davey.com/residential-tree-services/local-offices/sacramento-roseville-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_Sacramento> (referer: None)
+DEBUG: Crawled (200) <GET https://www.davey.com/residential-tree-services/local-offices/napa-county-and-sonoma-county-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_Napa> (referer: None)
+DEBUG: Crawled (200) <GET https://www.davey.com/about/contact-us/> (referer: https://www.davey.com/residential-tree-services/local-offices/sacramento-roseville-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_Sacramento)
+DEBUG: Scraped from <200 https://www.davey.com/about/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/DaveyTree',
+ 'index': 53,
+ 'instagram': 'https://instagram.com/DaveyTree/',
+ 'linkedin': 'http://www.linkedin.com/company/the-davey-tree-expert-company',
+ 'twitter': 'https://twitter.com/DaveyTree'}
+DEBUG: Crawled (200) <GET https://www.davey.com/about/contact-us/> (referer: https://www.davey.com/residential-tree-services/local-offices/napa-county-and-sonoma-county-tree-service/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=RC_Napa)
+DEBUG: Scraped from <200 https://www.davey.com/about/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/DaveyTree',
+ 'index': 54,
+ 'instagram': 'https://instagram.com/DaveyTree/',
+ 'linkedin': 'http://www.linkedin.com/company/the-davey-tree-expert-company',
+ 'twitter': 'https://twitter.com/DaveyTree'}
+DEBUG: Redirecting (301) to <GET http://www.acleancuttree.com/> from <GET http://acleancuttree.com/>
+DEBUG: Redirecting (301) to <GET https://www.acleancuttree.com/> from <GET http://www.acleancuttree.com/>
+DEBUG: Crawled (200) <GET https://www.acleancuttree.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.adolphstreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.acleancuttree.com/a-clean-cut-tree-service-contact> (referer: https://www.acleancuttree.com/)
+DEBUG: Scraped from <200 https://www.acleancuttree.com/a-clean-cut-tree-service-contact>
+{'emails': ['acleancut559@gmail.com', 'sagariballa1@aol.com'],
+ 'facebook': 'https://facebook.com/A-CLEAN-CUT-TREE-SERVICE-120174881332515/',
+ 'index': 55,
+ 'instagram': 'http://instagram.com/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.adolphstreeservice.com/contact-us> (referer: https://www.adolphstreeservice.com/)
+DEBUG: Scraped from <200 https://www.adolphstreeservice.com/contact-us>
+{'emails': ['your@email.com'],
+ 'facebook': 'N/A',
+ 'index': 56,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+INFO: Crawled 104 pages (at 49 pages/min), scraped 47 items (at 24 items/min)
+DEBUG: Retrying <GET http://www.alliancetrees.com/> (failed 1 times): TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+DEBUG: Retrying <GET http://www.alliancetrees.com/> (failed 2 times): TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+ERROR: Gave up retrying <GET http://www.alliancetrees.com/> (failed 3 times): TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+ERROR: Error downloading <GET http://www.alliancetrees.com/>
+Traceback (most recent call last):
+  File "C:\Users\moffi\PycharmProjects\scraping_web\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+DEBUG: Crawled (200) <GET https://www.theneckofthewoods.com/?utm_source=GMB&utm_medium=organic> (referer: None)
+DEBUG: Redirecting (301) to <GET https://calrootstreeservice.com/> from <GET http://calrootstreeservice.com/>
+DEBUG: Redirecting (301) to <GET https://www.calrootstreeservice.com/> from <GET https://calrootstreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.calrootstreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.theneckofthewoods.com/contact-us.html> (referer: https://www.theneckofthewoods.com/?utm_source=GMB&utm_medium=organic)
+DEBUG: Scraped from <200 https://www.theneckofthewoods.com/contact-us.html>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/eddie.farquharson',
+ 'index': 58,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.calrootstreeservice.com/contact> (referer: https://www.calrootstreeservice.com/)
+DEBUG: Scraped from <200 https://www.calrootstreeservice.com/contact>
+{'emails': ['calroots@outlook.com'],
+ 'facebook': 'N/A',
+ 'index': 59,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/calrootstree'}
+DEBUG: Crawled (200) <GET http://www.familytree-service.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.corteztreecare.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.treeserviceroseville.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.corteztreecare.com/contact> (referer: https://www.corteztreecare.com/)
+DEBUG: Scraped from <200 https://www.corteztreecare.com/contact>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/corteztreecare/',
+ 'index': 61,
+ 'instagram': 'http://instagram.com/corteztreecare',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/corteztreecare1'}
+DEBUG: Crawled (200) <GET https://www.treeserviceroseville.com/contact-us.html> (referer: https://www.treeserviceroseville.com/)
+DEBUG: Scraped from <200 https://www.treeserviceroseville.com/contact-us.html>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'index': 62,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.a1treeredding.com/> (referer: None)
+INFO: Crawled 114 pages (at 10 pages/min), scraped 51 items (at 4 items/min)
+DEBUG: Crawled (200) <GET http://www.richardstree.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.a1treeredding.com/contact/> (referer: https://www.a1treeredding.com/)
+DEBUG: Scraped from <200 https://www.a1treeredding.com/contact/>
+{'emails': ['Office@a1treeredding.com', 'office@a1treeredding.com'],
+ 'facebook': 'https://www.facebook.com/A1treeredding/',
+ 'index': 63,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET http://www.richardstree.com/contact.html> (referer: http://www.richardstree.com/)
+DEBUG: Scraped from <200 http://www.richardstree.com/contact.html>
+{'emails': ['fred@richardstree.com', 'info@richardstree.com'],
+ 'facebook': 'N/A',
+ 'index': 64,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET http://www.richardstree.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://dprotreeservice.com/> from <GET http://dprotreeservice.com/>
+DEBUG: Crawled (200) <GET https://dprotreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET http://www.richardstree.com/contact.html> (referer: http://www.richardstree.com/)
+DEBUG: Scraped from <200 http://www.richardstree.com/contact.html>
+{'emails': ['fred@richardstree.com', 'info@richardstree.com'],
+ 'facebook': 'N/A',
+ 'index': 65,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://dprotreeservice.com/contact-us/> (referer: https://dprotreeservice.com/)
+DEBUG: Scraped from <200 https://dprotreeservice.com/contact-us/>
+{'emails': ['d.protreeservice@gmail.com'],
+ 'facebook': 'N/A',
+ 'index': 66,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.atlas-tree.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=gmb_website> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.treetechservices.com/> from <GET http://www.treetechservices.com/>
+DEBUG: Crawled (200) <GET https://www.treetechservices.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.atlas-tree.com/contact/> (referer: https://www.atlas-tree.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=gmb_website)
+DEBUG: Scraped from <200 https://www.atlas-tree.com/contact/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/AtlasTreeSurgery',
+ 'index': 67,
+ 'instagram': 'https://www.instagram.com/atlas.tree/',
+ 'linkedin': 'https://www.linkedin.com/company/atlas-tree-landscape-inc/about/',
+ 'twitter': 'https://twitter.com/atlas_and'}
+DEBUG: Redirecting (301) to <GET https://www.atlastree.com/> from <GET https://atlastree.com/>
+DEBUG: Crawled (200) <GET https://www.atlastree.com/> (referer: None)
+DEBUG: Redirecting (302) to <GET https://www.bptreeservices.com/> from <GET http://www.bptreeservices.com/>
+DEBUG: Crawled (200) <GET https://www.bptreeservices.com/> (referer: None)
+DEBUG: Crawled (200) <GET http://www.abotreeservice.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.eastbaytreeservice.com/> from <GET http://www.eastbaytreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.eastbaytreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET http://www.abotreeservice.com/index.html#contact> (referer: http://www.abotreeservice.com/)
+DEBUG: Scraped from <200 http://www.abotreeservice.com/index.html>
+{'emails': ['operation@abotreeservice.com',
+            'krasimira.stoyanova@deluxe.com',
+            'info@abotreeservice.com'],
+ 'facebook': 'https://www.facebook.com/abotreeservice',
+ 'index': 71,
+ 'instagram': 'N/A',
+ 'linkedin': 'https://www.linkedin.com/in/abotreeservice',
+ 'twitter': 'https://twitter.com/abotreeservice'}
+DEBUG: Redirecting (301) to <GET https://stocktontreeservices.com/> from <GET https://www.stocktontreeservices.com/>
+DEBUG: Crawled (200) <GET https://stocktontreeservices.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.williamstreeservices.net/> from <GET http://www.williamstreeservices.net/>
+DEBUG: Crawled (200) <GET https://www.williamstreeservices.net/> (referer: None)
+DEBUG: Crawled (200) <GET https://stocktontreeservices.com/contact-2/> (referer: https://stocktontreeservices.com/)
+DEBUG: Scraped from <200 https://stocktontreeservices.com/contact-2/>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'index': 73,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.williamstreeservices.net/contact> (referer: https://www.williamstreeservices.net/)
+DEBUG: Scraped from <200 https://www.williamstreeservices.net/contact>
+{'emails': ['wtreedude@aol.com'],
+ 'facebook': 'https://www.facebook.com/whittiertree/',
+ 'index': 74,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/ServicWilliams'}
+DEBUG: Redirecting (301) to <GET https://www.williamstreeserviceinc.com/> from <GET http://williamstreeserviceinc.com/>
+DEBUG: Crawled (200) <GET https://www.williamstreeserviceinc.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://treeservicesandiegoca.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.twincitiestreeservice.net/> from <GET http://twincitiestreeservice.net/>
+DEBUG: Crawled (200) <GET https://www.twincitiestreeservice.net/> (referer: None)
+DEBUG: Crawled (200) <GET https://treeserviceantioch.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://ranchotreeservice.com/> from <GET http://www.ranchotreeservice.com/>
+DEBUG: Crawled (200) <GET https://ranchotreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://treeserviceantioch.com/contact-us/> (referer: https://treeserviceantioch.com/)
+DEBUG: Scraped from <200 https://treeserviceantioch.com/contact-us/>
+{'emails': ['treeserviceantioch@gmail.com'],
+ 'facebook': 'https://www.facebook.com/Tree-Service-Antioch-103898468496335/',
+ 'index': 78,
+ 'instagram': 'https://www.instagram.com/treeserviceantioch/',
+ 'linkedin': 'N/A',
+ 'twitter': 'https://twitter.com/AntiochTree'}
+DEBUG: Crawled (200) <GET https://ranchotreeservice.com/contact/> (referer: https://ranchotreeservice.com/)
+DEBUG: Scraped from <200 https://ranchotreeservice.com/contact/>
+{'emails': ['info@ranchotreeservice.com'],
+ 'facebook': 'https://www.facebook.com/Rancho-Tree-Service-109046575024387',
+ 'index': 79,
+ 'instagram': 'https://www.instagram.com/ranchotreeservice/',
+ 'linkedin': 'https://www.linkedin.com/company/rancho-inc-california/',
+ 'twitter': 'https://twitter.com/RanchoTree'}
+DEBUG: Redirecting (301) to <GET https://www.higueratreecare.com/> from <GET http://higueratreecare.com/>
+DEBUG: Crawled (200) <GET https://www.higueratreecare.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://jtstree.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://jtstree.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://jtstree.com/contact-us/> (referer: https://jtstree.com/)
+DEBUG: Scraped from <200 https://jtstree.com/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/pages/category/Shopping---Retail/Jts-Inc-510518789043998/',
+ 'index': 81,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://jtstree.com/contact-us/> (referer: https://jtstree.com/)
+DEBUG: Scraped from <200 https://jtstree.com/contact-us/>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/pages/category/Shopping---Retail/Jts-Inc-510518789043998/',
+ 'index': 82,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET http://treeprotreeservice.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET http://www.delacruztreesvc.com/> from <GET http://delacruztreesvc.com/>
+DEBUG: Redirecting (301) to <GET https://www.delacruztreesvc.com/> from <GET http://www.delacruztreesvc.com/>
+DEBUG: Crawled (200) <GET https://www.delacruztreesvc.com/> (referer: None)
+DEBUG: Crawled (200) <GET http://treeprotreeservice.com/contact-us/> (referer: http://treeprotreeservice.com/)
+DEBUG: Scraped from <200 http://treeprotreeservice.com/contact-us/>
+{'emails': ['treepro.office@gmail.com'],
+ 'facebook': 'N/A',
+ 'index': 83,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.delacruztreesvc.com/contact> (referer: https://www.delacruztreesvc.com/)
+DEBUG: Scraped from <200 https://www.delacruztreesvc.com/contact>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'index': 84,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET http://www.delacruztreesvc.com/> from <GET http://delacruztreesvc.com/>
+DEBUG: Redirecting (301) to <GET https://www.delacruztreesvc.com/> from <GET http://www.delacruztreesvc.com/>
+DEBUG: Crawled (200) <GET https://www.delacruztreesvc.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET http://www.larrystreecare.com/> from <GET http://larrystreecare.com/>
+DEBUG: Redirecting (301) to <GET https://www.larrystreecare.com/> from <GET http://www.larrystreecare.com/>
+DEBUG: Crawled (200) <GET https://www.larrystreecare.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.delacruztreesvc.com/contact> (referer: https://www.delacruztreesvc.com/)
+DEBUG: Scraped from <200 https://www.delacruztreesvc.com/contact>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'index': 85,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.larrystreecare.com/contact> (referer: https://www.larrystreecare.com/)
+DEBUG: Scraped from <200 https://www.larrystreecare.com/contact>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'index': 86,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET http://www.familytreeserviceca.com/> from <GET http://familytreeserviceca.com/>
+DEBUG: Redirecting (301) to <GET https://www.familytreeserviceca.com/> from <GET http://www.familytreeserviceca.com/>
+DEBUG: Crawled (200) <GET https://www.familytreeserviceca.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.adamstreeservice.org/> from <GET http://www.adamstreeservice.org/>
+DEBUG: Crawled (200) <GET https://www.adamstreeservice.org/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.familytreeserviceca.com/contact> (referer: https://www.familytreeserviceca.com/)
+DEBUG: Scraped from <200 https://www.familytreeserviceca.com/contact>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'index': 87,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.adamstreeservice.org/contact.html> (referer: https://www.adamstreeservice.org/)
+DEBUG: Scraped from <200 https://www.adamstreeservice.org/contact.html>
+{'emails': [],
+ 'facebook': 'https://www.facebook.com/Adams-Tree-Service-1566642230319508',
+ 'index': 88,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+INFO: Crawled 157 pages (at 43 pages/min), scraped 69 items (at 18 items/min)
+DEBUG: Redirecting (301) to <GET https://elementstreeservices.com/> from <GET http://elementstreeservices.com/>
+DEBUG: Crawled (200) <GET https://elementstreeservices.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://treeservicemantecaca.com/> from <GET https://www.treeservicemantecaca.com/>
+DEBUG: Crawled (200) <GET https://treeservicemantecaca.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://elementstreeservices.com/contact> (referer: https://elementstreeservices.com/)
+DEBUG: Scraped from <200 https://elementstreeservices.com/contact>
+{'emails': ['4elements.tree@gmail.com'],
+ 'facebook': 'https://www.facebook.com/elementstreeservice/',
+ 'index': 89,
+ 'instagram': 'https://www.instagram.com/elementstreeservice/',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://treeservicemantecaca.com/contact-2/> (referer: https://treeservicemantecaca.com/)
+DEBUG: Scraped from <200 https://treeservicemantecaca.com/contact-2/>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'index': 90,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://www.atlastreeservice.com/> from <GET http://www.atlastreeservice.com/>
+DEBUG: Crawled (200) <GET https://www.atlastreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.treebiz.org/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.atlastreeservice.com/contact-us> (referer: https://www.atlastreeservice.com/)
+DEBUG: Scraped from <200 https://www.atlastreeservice.com/contact-us>
+{'emails': ['your@email.com', 'atlastreeservice@atlastreeservice.com'],
+ 'facebook': 'https://facebook.com/Atlas-Tree-Service-154491755177249',
+ 'index': 91,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://joelstreeservices.com/> from <GET http://joelstreeservices.com/>
+DEBUG: Crawled (200) <GET https://joelstreeservices.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://navastree.wixsite.com/my-site> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.alpentree.com/> from <GET http://alpentree.com/>
+DEBUG: Crawled (200) <GET https://www.alpentree.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://www.alpentree.com/> from <GET http://alpentree.com/>
+DEBUG: Crawled (200) <GET https://www.alpentree.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.alpentree.com/contact> (referer: https://www.alpentree.com/)
+DEBUG: Scraped from <200 https://www.alpentree.com/contact>
+{'emails': ['alpentree@gmail.com'],
+ 'facebook': 'https://www.facebook.com/Alpen-Tree-Experts-296764412428/',
+ 'index': 95,
+ 'instagram': 'http://www.instagram.com/alpentreeexperts',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.alpentree.com/contact> (referer: https://www.alpentree.com/)
+DEBUG: Scraped from <200 https://www.alpentree.com/contact>
+{'emails': ['alpentree@gmail.com'],
+ 'facebook': 'https://www.facebook.com/Alpen-Tree-Experts-296764412428/',
+ 'index': 96,
+ 'instagram': 'http://www.instagram.com/alpentreeexperts',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://www.alpentree.com/> from <GET http://alpentree.com/>
+DEBUG: Crawled (200) <GET https://www.alpentree.com/> (referer: None)
+DEBUG: Redirecting (301) to <GET https://greenzwaytreeservice.com/wp-content/endurance-page-cache/_index.html> from <GET http://greenzwaytreeservice.com/>
+DEBUG: Crawled (200) <GET https://greenzwaytreeservice.com/wp-content/endurance-page-cache/_index.html> (referer: None)
+DEBUG: Crawled (200) <GET https://www.alpentree.com/contact> (referer: https://www.alpentree.com/)
+DEBUG: Scraped from <200 https://www.alpentree.com/contact>
+{'emails': ['alpentree@gmail.com'],
+ 'facebook': 'https://www.facebook.com/Alpen-Tree-Experts-296764412428/',
+ 'index': 97,
+ 'instagram': 'http://www.instagram.com/alpentreeexperts',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://greenzwaytreeservice.com/contact/> (referer: https://greenzwaytreeservice.com/wp-content/endurance-page-cache/_index.html)
+DEBUG: Scraped from <200 https://greenzwaytreeservice.com/contact/>
+{'emails': ['Greenzway@hotmail.com', 'greenzway@hotmail.com'],
+ 'facebook': 'https://www.facebook.com/pg/greenzway',
+ 'index': 98,
+ 'instagram': 'https://www.instagram.com/greenzway_official',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Redirecting (301) to <GET https://www.stevestreeservice.net/> from <GET http://www.stevestreeservice.net/>
+DEBUG: Crawled (200) <GET https://www.stevestreeservice.net/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.petestreeservice.com/> (referer: None)
+DEBUG: Crawled (200) <GET https://www.stevestreeservice.net/contact/> (referer: https://www.stevestreeservice.net/)
+DEBUG: Scraped from <200 https://www.stevestreeservice.net/contact/>
+{'emails': ['steves8733@gmail.com'],
+ 'facebook': 'N/A',
+ 'index': 99,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+DEBUG: Crawled (200) <GET https://www.petestreeservice.com/contact> (referer: https://www.petestreeservice.com/)
+DEBUG: Scraped from <200 https://www.petestreeservice.com/contact>
+{'emails': [],
+ 'facebook': 'N/A',
+ 'index': 100,
+ 'instagram': 'N/A',
+ 'linkedin': 'N/A',
+ 'twitter': 'N/A'}
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 3,
+ 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 3,
+ 'downloader/request_bytes': 95325,
+ 'downloader/request_count': 246,
+ 'downloader/request_method_count/GET': 246,
+ 'downloader/response_bytes': 6740101,
+ 'downloader/response_count': 243,
+ 'downloader/response_status_count/200': 175,
+ 'downloader/response_status_count/301': 61,
+ 'downloader/response_status_count/302': 2,
+ 'downloader/response_status_count/307': 1,
+ 'downloader/response_status_count/308': 1,
+ 'downloader/response_status_count/403': 3,
+ 'elapsed_time_seconds': 264.863378,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 12, 11, 8, 12, 3, 328837),
+ 'httpcompression/response_bytes': 27158028,
+ 'httpcompression/response_count': 159,
+ 'httperror/response_ignored_count': 3,
+ 'httperror/response_ignored_status_count/403': 3,
+ 'item_scraped_count': 78,
+ 'log_count/DEBUG': 330,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 17,
+ 'request_depth_max': 1,
+ 'response_received_count': 178,
+ 'retry/count': 2,
+ 'retry/max_reached': 1,
+ 'retry/reason_count/twisted.internet.error.TCPTimedOutError': 2,
+ 'scheduler/dequeued': 246,
+ 'scheduler/dequeued/memory': 246,
+ 'scheduler/enqueued': 246,
+ 'scheduler/enqueued/memory': 246,
+ 'start_time': datetime.datetime(2022, 12, 11, 8, 7, 38, 465459)}
+INFO: Spider closed (finished)

@@ -22,7 +22,7 @@ options.add_argument("--user-data-dir=C:\\Users\\moffi\\AppData\\Local\\Google\\
 options.page_load_strategy = 'normal'
 driver= webdriver.Chrome(options=options)
 data = [
-    ["name", "website", "address", "phone number", "rating", "amount of ratings","facebook","instagram","twitter","linkedin","emails"],
+    ["index","name", "website", "address", "phone number", "rating", "amount of ratings","facebook","instagram","twitter","linkedin","emails"],
 ]
 
 

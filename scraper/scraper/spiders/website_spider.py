@@ -135,7 +135,7 @@ class WebsiteSpider(scrapy.Spider):
                 #         emails.remove((item))
             #print(emails)
             item = SocialMediaLinks()
-            #item["index"] = test_number
+            item["index"] = test_number
             item["facebook"] = response.meta['facebook']
             item["instagram"] = response.meta['instagram']
             item["twitter"] = response.meta['twitter']
@@ -143,16 +143,16 @@ class WebsiteSpider(scrapy.Spider):
             item["emails"] = emails
 
             # reading the csv file
-            df = pd.read_csv("data.csv")
+            df = pd.read_csv("data4.csv")
             print("WEBSITE ",response.url," RECORD NUMBER",test_number ,"FACEBOOK: ",response.meta['facebook']," INSTAGRAM: ",response.meta['instagram'])
-
+            df.loc[test_number,'index']=test_number
             df.loc[test_number, 'facebook'] = response.meta['facebook']
             df.loc[test_number, 'instagram'] = response.meta['instagram']
             df.loc[test_number, 'twitter'] = response.meta['twitter']
             df.loc[test_number, 'linkedin'] = response.meta['linkedin']
             df.loc[test_number, 'emails'] = str(emails)
             # writing into the file
-            df.to_csv("data.csv", index=False)
+            df.to_csv("data4.csv", index=False)
             #WebsiteSpider.record_number += 1
             #WebsiteSpider.info_list.append(item)
             #print(WebsiteSpider.info_list)
