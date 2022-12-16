@@ -30,9 +30,20 @@ data = [
 #niche = input("niche: ")
 #driver.get("https://www.google.com/search?q="+city+"+"+niche) #I commented it out for now to not have to input each time
 #print("https://www.google.com/search?q="+city+"+"+niche)
-search_bar=driver.get("https://www.google.com/search?q=tree+works+in+california") #Going to google searching for that
+search_bar=driver.get("https://www.google.com/search?q=tree+works+in+ohio") #Going to google searching for that
 
 
+#-----------------------------------------
+#HOW IT WORKS
+# GET INPUT CITY AND NICHE
+# GO TO GOOGLE AND CHECK EACH BUSINESS INDIVIDUALLY FOR DATA
+# NAME, WEBSITE, REVIEW, REVIEWS AMOUNT, PHONE NUMBER, ADDRESS
+# NEED TO ADJUST NAME OF WEB ELEMENTS TO YOUR LANGUAGE
+# CURRENT ERROR RESOLVES AROUND SPEED OF SCRAPING
+# MOST COMMON ERROR: STALE ELEMENT, LIST OUT OF INDEX, NOT SURE HOW TO SOLVE IT
+
+
+#--------------------------------------
 start = time.perf_counter()
 element = '//span[@class="wUrVib OSrXXb"]'
 
@@ -50,11 +61,11 @@ driver.find_element(By.XPATH, element).click()
 #driver.find_element("xpath","//span[@class='wUrVib OSrXXb']").click() #trying to click the "more businesses button"
 
 page_num=1
-
+business_index=1
 def FindBusiness(count_var):
     count_var+=1
     sleep(4)
-
+    #google_places = WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.XPATH,"//div[@class='rllt__details']")))
     try:
         google_places = driver.find_elements("xpath", "//div[@class='rllt__details']")
     except StaleElementReferenceException:
@@ -158,8 +169,9 @@ def FindBusiness(count_var):
                 except Exception as e:
                     print("no website: ", e)
 
-            row = [name, website, address, phone_number, review, review_amount]
+            row = [business_index,name, website, address, phone_number, review, review_amount]
             data.append(row)
+
             # sleep(1)
         except (HttpError, DNSLookupError, TimeoutError, TCPTimedOutError):
             # Handle any errors that occur while waiting for the element

@@ -1,79 +1,279 @@
 index,facebook,instagram,twitter,linkedin,emails
 1.0,,,,,['treeserviceisaac@gmail.com']
-3.0,,,,,['octreeservices1@gmail.com']
-4.0,https://www.facebook.com/pg/Tip-Top-Arborists-Inc-608355719230396/reviews/,https://www.instagram.com/tip_top_arborists/,,https://www.linkedin.com/company/tip-top-arborists,['privacy@reachlocal.com.']
-5.0,https://www.facebook.com/arborworks1/,https://www.instagram.com/arborworksllc/,,https://www.linkedin.com/company/arborworksinc,['information@arborworksinc.com']
+1.0,https://www.facebook.com/josephtreeservice,https://www.instagram.com/urbanforestspecialists/,,,[]
+2.0,https://www.facebook.com/MonsterTreeServiceofAkron/,https://www.instagram.com/monstertreeservices/,,,"['wght@700', 'wght@0']"
+3.0,https://www.facebook.com/treehelpnow/,,,,['treehelp@charteroakscompany.com']
 6.0,https://www.facebook.com/Clarkscustomtreeworks/,,,,"['your@email.com', 'rodney@treetrimmingmodestoca.com']"
-7.0,https://www.facebook.com/510799tree/,,,,['info@herculestreeservice.com']
+5.0,http://www.facebook.com/wix,,http://www.twitter.com/wix,,"['react-dom@16.14.0', '605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com', 'info@mysite.com', 'focus-within-polyfill@5.0.9', 'core-js-bundle@3.2.1', 'react@16.14.0', 'lodash@4.17.21', '8eb368c655b84e029ed79ad7a5c1718e@sentry.wixpress.com', '831126cb46b74583bf6f72c5061cba9d@sentry-viewer.wixpress.com']"
 8.0,,,,,['petersonstrees@icloud.com']
-11.0,https://www.facebook.com/samcolemanluxury,https://www.instagram.com/samcolemanluxury/,,,['office@caltreeservice.com']
-12.0,https://www.facebook.com/pg/TomDayTreeService/reviews/,,,,[]
-14.0,https://www.facebook.com/MonsteroftheCoast/,https://www.instagram.com/monsterofthecoast/,,,[]
+7.0,,,https://twitter.com/share,,[]
+8.0,https://www.facebook.com/russelltreeexperts/,https://www.instagram.com/russelltreeexperts/,,https://www.linkedin.com/company/15746140/,"['Walter@RussellTreeExperts.com', 'TJ@RussellTreeExperts.com', 'Kenny@RussellTreeExperts.com', 'Krista@RussellTreeExperts.com', 'Mike@RussellTreeExperts.com', 'Cindy@RussellTreeExperts.com', 'Matt@RussellTreeExperts.com', 'Andy@RussellTreeExperts.com', 'JRussell@RussellTreeExperts.com', 'hello@russelltreeexperts.com', 'Chris@RussellTreeExperts.com']"
+9.0,,,,,['columbustree@hotmail.com']
 15.0,https://www.facebook.com/Monster-Tree-Service-of-South-Bay-1088163361240866/,https://www.instagram.com/monstertreeservices/,,,[]
-18.0,https://www.facebook.com/DaveyTree,https://instagram.com/DaveyTree/,https://twitter.com/DaveyTree,http://www.linkedin.com/company/the-davey-tree-expert-company,[]
-19.0,https://www.facebook.com/WestCoastArborists/,https://www.instagram.com/wcainc/,,https://www.linkedin.com/company/west-coast-arborists-inc-,"['corporate@wcainc.com', 'wcahiring@wcainc.com']"
+11.0,https://www.facebook.com/hardwicktreecarellc,,,,"['react-dom@16.14.0', '605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com', 'core-js-bundle@3.2.1', 'info@HardwickTreeCare.com', 'focus-within-polyfill@5.0.9', 'f1ffc0b5efe04e9eb9762cd808722520@sentry.wixpress.com', 'react@16.14.0', 'lodash@4.17.21', '8eb368c655b84e029ed79ad7a5c1718e@sentry.wixpress.com', '831126cb46b74583bf6f72c5061cba9d@sentry-viewer.wixpress.com']"
+12.0,https://www.facebook.com/HerculesTreeLLC/,,,,"['HerculesTree@gmail.com', 'info@herculesTrees.com']"
 20.0,https://www.facebook.com/TreeServiceJP/,,,,[]
-21.0,https://www.facebook.com/fallenleaftreemanagement,,https://twitter.com/FallenLeafTree,,[]
-22.0,https://www.facebook.com/traversotree,https://www.instagram.com/traversotree/?hl=en,,https://www.linkedin.com/pub/traverso-tree-service/38/6a3/a40,"['office@traversotree.com', 'Office@traversotree.com']"
-23.0,http://www.facebook.com/BigTsTrees,,,,"['bigtstrees@yahoo.com', 'igtstrees@yahoo.com', '605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com', '831126cb46b74583bf6f72c5061cba9d@sentry-viewer.wixpress.com']"
-24.0,https://www.facebook.com/DaveyTree,https://instagram.com/DaveyTree/,https://twitter.com/DaveyTree,http://www.linkedin.com/company/the-davey-tree-expert-company,[]
+14.0,https://www.facebook.com/HackettsTreeService/,,,,"['hackettstree@att.net', 'your@email.com']"
+15.0,https://www.facebook.com/specialtytreeohio/,,,,['estimates@specialtytreeohio.com']
+16.0,https://www.facebook.com/treesaremybusinessohio/,https://www.instagram.com/trees_are_my_business/,,,"['millcraft@treesaremybusiness.com', 'office@treesaremybusiness.com']"
+17.0,https://www.facebook.com/DeeprootedTreeService/,https://www.instagram.com/deeprootedtreeservice/,,,['deeprootedtreeservice@gmail.com']
 25.0,https://www.facebook.com/106157038650413,,,,['filler@godaddy.com']
-26.0,https://www.facebook.com/Sequoias-Tree-Service-104264014496885/,,,,['evencio.martinez@yahoo.com']
-27.0,https://www.facebook.com/pg/Monster-Tree-Service-of-West-Valley-1287919078019258/,https://www.instagram.com/monstertreeservices/,https://twitter.com/,,[]
-28.0,,,,,['ContactUs@specializedtreeworks.com']
-29.0,https://www.facebook.com/losangelescatreeservice/,,,,"['u003Elosangelescatreeservice@gmail.com', 'losangelescatreeservice@gmail.com']"
-31.0,https://facebook.com/topestreeservice,https://instagram.com/topestreeserviceinc/,,,"['your@email.com', 'info@topestreeservice.com']"
-32.0,,,,,['info@californiagreentreecare.com']
-33.0,https://www.facebook.com/Forrest-Tree-Service-912274625521872/,,https://twitter.com/,,['forresttreeservice@hotmail.com']
-34.0,https://www.facebook.com/allgreentreeserviceca/,https://www.instagram.com/allgreentreeserviceca/,,,['allgreentreeservice.1@gmail.com']
-35.0,https://www.facebook.com/Bay-Area-Tree-Specialists-658134177581480/?timeline_context_item_type=intro_card_work&timeline_context_item_source=100007956785104,,https://twitter.com/TreesSpecialist,,[]
-36.0,,,,,['blackbeartreeservice559@gmail.com']
+19.0,https://www.facebook.com/567765746714751,https://www.instagram.com/The1treeservice,,,"['amkryukov@gmail.com', 'agustinamingote@gmail.com', 'the1scheduling@the1treeservice.com']"
+20.0,https://www.facebook.com/RoqueTree,,,,['nate@roquetree.com']
+21.0,https://www.facebook.com/IndependentTreeOH/,https://www.instagram.com/independenttreeservice/,,,['info@independenttree.com']
+22.0,,,,,"['wght@700', 'wght@300', 'wght@1']"
+23.0,,,,,[]
+24.0,https://www.facebook.com/challengerstreeservice,,,,['info@challengerstreeservice.com']
+25.0,https://www.facebook.com/Basic-Tree-Care-135444619800299/,,,,"['wght@400', 'basictreeohio@gmail.com']"
+26.0,https://www.facebook.com/Monster-Tree-Service-of-Cleveland-609719395842064/,https://www.instagram.com/monstertreeservices/,,,"['wght@700', 'wght@0']"
+27.0,//facebook.com/JTTreeServiceLLC/,,,,"['JTTreeServicellc@gmail.com', 'jttreeservicellc@gmail.com']"
+28.0,https://www.facebook.com/ToledosExtremeTree/,,https://twitter.com/SuperClimber101,,['extremetreeswanton@gmail.com']
 37.0,https://www.facebook.com/Jesus-Tree-Services-Landscaping-104850001236628,,,,['jesusjgr1987@gmail.com']
-38.0,https://www.facebook.com/foresttreeservices,,,https://www.linkedin.com/company/forest-tree-services/about/,['info@foresttreeservices.com']
-39.0,,,,,[]
-40.0,https://www.facebook.com/DaveyTree,https://instagram.com/DaveyTree/,https://twitter.com/DaveyTree,http://www.linkedin.com/company/the-davey-tree-expert-company,[]
-42.0,https://www.facebook.com/DaveyTree,https://instagram.com/DaveyTree/,https://twitter.com/DaveyTree,http://www.linkedin.com/company/the-davey-tree-expert-company,[]
-43.0,https://www.facebook.com/CW-Tree-Landscape-Co-106657641966896,,,,"['your@email.com', 'cwtreelandscape@yahoo.com']"
-44.0,https://www.facebook.com/Jose-Martinez-Tree-Service-Inc-596583343858969,,https://twitter.com/JoseMartinezT34,,[]
-45.0,https://facebook.com/TravisTreeServices,,,,"['travishensley85@yahoo.com', 'your@email.com']"
-46.0,https://facebook.com/TravisTreeServices,,,,"['travishensley85@yahoo.com', 'your@email.com']"
-47.0,https://www.facebook.com/profile.php?id=100071969492853,https://www.instagram.com/shipmantreeservice559/,,,"['dillanmcather@gmail.com', 'sales@shipmantree.com']"
-48.0,,,,,[]
-49.0,https://www.facebook.com/mowbraystree,https://www.instagram.com/mowbrays/,,,"['info@mowbrays.com', 'customerservice@mowbrays.com']"
-50.0,https://www.facebook.com/commercialtreeservices,,,,[]
-51.0,https://www.facebook.com/ImageTreeService/,https://www.instagram.com/imagetreeservice/,,,['info@imagetreeservice.com']
+30.0,https://www.facebook.com/KandAProfessionalWoodServices1/,,,,"['your@email.com', 'amanda@kandatreeservice.com']"
+31.0,https://www.facebook.com/JJs-Family-Tree-Service-LLC-111457428208950/,,,,"['jjsfamilyts@gmail.com', 'your@email.com']"
+32.0,https://www.facebook.com/DaveyTree,https://instagram.com/DaveyTree/,https://twitter.com/DaveyTree,http://www.linkedin.com/company/the-davey-tree-expert-company,[]
+33.0,https://www.facebook.com/DaveyTree,https://instagram.com/DaveyTree/,https://twitter.com/DaveyTree,http://www.linkedin.com/company/the-davey-tree-expert-company,[]
+34.0,https://www.facebook.com/104721042265875,,,,"['impallari@gmail.com', 'hello@rfuenzalida.com', 'parkswest@parkstree.net']"
+35.0,https://www.facebook.com/rawtreeserviceoh,https://www.instagram.com/rawtreeserviceoh/,,,"['barrettrawtimber@icloud.com', 'calebstoll@rawtreeserv.com']"
+36.0,https://www.facebook.com/DaveyTree,https://instagram.com/DaveyTree/,https://twitter.com/DaveyTree,http://www.linkedin.com/company/the-davey-tree-expert-company,[]
+37.0,https://www.facebook.com/SavATreeHQ/,https://www.instagram.com/savatree_official/,https://twitter.com/savatree,https://www.linkedin.com/company/savatree,[]
+38.0,https://www.facebook.com/131129980235300,,,,['sales@parkstree.com']
+39.0,https://www.facebook.com/pages/biz/43015/James-Tree-Service/194987980849287/,,,,['cached@1671126794']
+40.0,https://facebook.com/haymakertreeandlawn,https://instagram.com/haymakertreeandlawn,https://twitter.com/haymakertree,https://linkedin.com/company/haymakertreeandlawn,"['info@ha', 'your@email.com', 'info@haymakertreeandlawn.com']"
+41.0,,,,,['affordabletreeservicesohio@gmail.com']
+42.0,https://www.facebook.com/stevestoledotree2/?epa=SEARCH_BOX,,,,[]
 53.0,https://www.facebook.com/DaveyTree,https://instagram.com/DaveyTree/,https://twitter.com/DaveyTree,http://www.linkedin.com/company/the-davey-tree-expert-company,[]
 54.0,https://www.facebook.com/DaveyTree,https://instagram.com/DaveyTree/,https://twitter.com/DaveyTree,http://www.linkedin.com/company/the-davey-tree-expert-company,[]
 55.0,https://facebook.com/A-CLEAN-CUT-TREE-SERVICE-120174881332515/,http://instagram.com/,,,"['acleancut559@gmail.com', 'sagariballa1@aol.com']"
-56.0,,,,,['your@email.com']
-58.0,https://www.facebook.com/eddie.farquharson,,,,[]
-59.0,,,https://twitter.com/calrootstree,,['calroots@outlook.com']
-61.0,https://www.facebook.com/corteztreecare/,http://instagram.com/corteztreecare,https://twitter.com/corteztreecare1,,[]
-62.0,,,,,[]
+46.0,https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Froguetreesolutions%2F&src=sdkpreparse,,,,"['sales@roguetreesolutions.com', 'Sales@RogueTreeSolutions.com']"
+47.0,,,,,[]
+48.0,https://www.facebook.com/pages/Blacks-Tree-Service/205784306214398,http://instagram.com/wix,https://twitter.com/BlacksTreeMOV,,"['BlacksTreeService140@gmail.com', '605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com', 'blackstreeservice140@gmail.com', 'focus-within-polyfill@5.0.9', 'core-js-bundle@3.2.1', 'react@16.14.0', 'lodash@4.17.21', 'react-dom@16.14.0', '831126cb46b74583bf6f72c5061cba9d@sentry-viewer.wixpress.com']"
+49.0,https://www.facebook.com/DaveyTree,https://instagram.com/DaveyTree/,https://twitter.com/DaveyTree,http://www.linkedin.com/company/the-davey-tree-expert-company,[]
+50.0,,https://www.instagram.com/urbanloggersllc/,,,['Info@urbanloggersohio.com']
 63.0,https://www.facebook.com/A1treeredding/,,,,"['Office@a1treeredding.com', 'office@a1treeredding.com']"
 64.0,,,,,"['fred@richardstree.com', 'info@richardstree.com']"
-65.0,,,,,"['fred@richardstree.com', 'info@richardstree.com']"
-66.0,,,,,['d.protreeservice@gmail.com']
-67.0,https://www.facebook.com/AtlasTreeSurgery,https://www.instagram.com/atlas.tree/,https://twitter.com/atlas_and,https://www.linkedin.com/company/atlas-tree-landscape-inc/about/,[]
-71.0,https://www.facebook.com/abotreeservice,,https://twitter.com/abotreeservice,https://www.linkedin.com/in/abotreeservice,"['operation@abotreeservice.com', 'krasimira.stoyanova@deluxe.com', 'info@abotreeservice.com']"
-73.0,,,,,[]
-74.0,https://www.facebook.com/whittiertree/,,https://twitter.com/ServicWilliams,,['wtreedude@aol.com']
-78.0,https://www.facebook.com/Tree-Service-Antioch-103898468496335/,https://www.instagram.com/treeserviceantioch/,https://twitter.com/AntiochTree,,['treeserviceantioch@gmail.com']
-79.0,https://www.facebook.com/Rancho-Tree-Service-109046575024387,https://www.instagram.com/ranchotreeservice/,https://twitter.com/RanchoTree,https://www.linkedin.com/company/rancho-inc-california/,['info@ranchotreeservice.com']
+53.0,,,,,[]
+54.0,,,,,['cached@1671140846']
+55.0,,,,,['jeff@boonestreeservice.com']
+56.0,https://www.facebook.com/DaveyTree,https://instagram.com/DaveyTree/,https://twitter.com/DaveyTree,http://www.linkedin.com/company/the-davey-tree-expert-company,[]
+57.0,https://www.facebook.com/LaRocheTree,https://www.instagram.com/LaRochetree/,https://twitter.com/larochetree,https://www.linkedin.com/company/laroche-tree-service-inc,"['contactus@larochetree.com', '605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com', 'dd0a55ccb8124b9c9d938e3acf41f8aa@sentry.wixpress.com', 'ContactUs@larochetree.com', 'focus-within-polyfill@5.0.9', '8c4075d5481d476e945486754f783364@sentry.io', 'core-js-bundle@3.2.1', 'react@16.14.0', 'lodash@4.17.21', 'react-dom@16.14.0', '831126cb46b74583bf6f72c5061cba9d@sentry-viewer.wixpress.com']"
+58.0,https://www.facebook.com/lamannatreeservice/,,,,[]
+59.0,https://www.facebook.com/lamannatreeservice/,,,,[]
+60.0,https://www.facebook.com/lamannatreeservice/,,,,[]
 81.0,https://www.facebook.com/pages/category/Shopping---Retail/Jts-Inc-510518789043998/,,,,[]
-82.0,https://www.facebook.com/pages/category/Shopping---Retail/Jts-Inc-510518789043998/,,,,[]
-83.0,,,,,['treepro.office@gmail.com']
+62.0,https://www.facebook.com/pages/Tomco-Tree-Service-Landscaping/420545354796345,,,,[]
+63.0,https://www.facebook.com/pages/Tomco-Tree-Service-Landscaping/420545354796345,,,,[]
 84.0,,,,,[]
 85.0,,,,,[]
 86.0,,,,,[]
 87.0,,,,,[]
-88.0,https://www.facebook.com/Adams-Tree-Service-1566642230319508,,,,[]
-89.0,https://www.facebook.com/elementstreeservice/,https://www.instagram.com/elementstreeservice/,,,['4elements.tree@gmail.com']
-90.0,,,,,[]
-91.0,https://facebook.com/Atlas-Tree-Service-154491755177249,,,,"['your@email.com', 'atlastreeservice@atlastreeservice.com']"
-95.0,https://www.facebook.com/Alpen-Tree-Experts-296764412428/,http://www.instagram.com/alpentreeexperts,,,['alpentree@gmail.com']
-96.0,https://www.facebook.com/Alpen-Tree-Experts-296764412428/,http://www.instagram.com/alpentreeexperts,,,['alpentree@gmail.com']
-97.0,https://www.facebook.com/Alpen-Tree-Experts-296764412428/,http://www.instagram.com/alpentreeexperts,,,['alpentree@gmail.com']
-98.0,https://www.facebook.com/pg/greenzway,https://www.instagram.com/greenzway_official,,,"['Greenzway@hotmail.com', 'greenzway@hotmail.com']"
-99.0,,,,,['steves8733@gmail.com']
-100.0,N/A,N/A,N/A,N/A,[]
+68.0,https://www.facebook.com/EcoTree-Services-LLC-746203725445335/,,https://twitter.com/TreeserviceEco,,['office@ecotreeservices.com']
+69.0,,,,,"['mkmarlow@aol.com', 'your@email.com', 'mkmarlow@marlowtree.com']"
+70.0,https://www.facebook.com/treeimages/,,,,['cached@1671108024']
+71.0,,,,,[]
+72.0,https://www.facebook.com/JerredsEx/,,,,"['fishstix515@gmail.com', 'cached@1671118523']"
+73.0,https://www.facebook.com/pages/Edwards-Tree-Service/1498930117008808,,,,"['info@edwardslandclearingandtreeservice.com', 'info@edwardstree.com']"
+74.0,,,,,[]
+75.0,https://www.facebook.com/Gatorback-Tree-Service-808677955931962,,,,['cookieconsent@3']
+76.0,https://www.facebook.com/DolcesBiz/,,,,"['dts@dolcestreeservice.com', 'your@email.com', 'j.doe@inbox.com']"
+77.0,,,,https://www.linkedin.com/in/robert-r-165824b4?trk=hp-identity-name,['info@landprolandscaping.com']
+78.0,https://www.facebook.com/LingersLumberjacksTreeService,https://www.instagram.com/lingerslumberjack/,https://twitter.com/LingersLumber,,[]
+79.0,https://www.facebook.com/moyertree,,,,['moyerstreeservices@hotmail.com']
+80.0,https://www.facebook.com/SeymourTreeService/,,,,[]
+82.0,https://www.facebook.com/DuffeyTree,,,,"['user@email.com', 'duffey.caleb1994@gmail.com']"
+82.0,https://www.facebook.com/DuffeyTree,,,,"['user@email.com', 'wght@0', 'duffey.caleb1994@gmail.com']"
+83.0,https://www.facebook.com/Tristatetreeservice/,,,,['info@ohiotreetrimming.com']
+84.0,https://www.facebook.com/Tree-Tech-of-Ohio-LLC-166903126654412/?fref=ts,,,,"['605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com', 'focus-within-polyfill@5.0.9', 'core-js-bundle@3.2.1', 'react@16.14.0', 'lodash@4.17.21', 'react-dom@16.14.0', '831126cb46b74583bf6f72c5061cba9d@sentry-viewer.wixpress.com', 'TREETECHLA@GMAIL.COM']"
+85.0,,,,,[]
+86.0,https://www.facebook.com/MBI-Tree-Service-1495547690464918/,https://www.instagram.com/mbitreeservice/,,,['simple-line-icons@2.4.1']
+89.0,https://www.facebook.com/ahlumarbor,https://www.instagram.com/ahlumarbor,,https://www.linkedin.com/company/ahlum-&-arbor-tree-preservation,['info@ahlumarbor.com']
+88.0,https://www.facebook.com/WE-Miller-Tree-Service-895693507113143/reviews/?ref=page_internal,,,,"['your@email.com', 'wemillertrees@aol.com']"
+89.0,https://www.facebook.com/ahlumarbor,https://www.instagram.com/ahlumarbor,,https://www.linkedin.com/company/ahlum-&-arbor-tree-preservation,['info@ahlumarbor.com']
+90.0,https://www.facebook.com/GraysTreeExperts/,,,,"['lf@C1X37r.', 'graytree937@gmail.com']"
+91.0,https://www.facebook.com/DaveyTree,https://instagram.com/DaveyTree/,https://twitter.com/DaveyTree,http://www.linkedin.com/company/the-davey-tree-expert-company,[]
+97.0,https://www.facebook.com/Chomperstreeservice/timeline,,https://twitter.com/ChompersTrees,,[]
+93.0,,,,,['kidrontree@hotmail.com']
+102.0,https://www.facebook.com/DaveyTree,https://instagram.com/DaveyTree/,https://twitter.com/DaveyTree,http://www.linkedin.com/company/the-davey-tree-expert-company,[]
+104.0,https://www.anytimetree.com/redirect/?https://www.facebook.com/anytimetree,https://www.anytimetree.com/redirect/?https://www.instagram.com/anytimetreeservice,,,['pamela@anytimetree.com']
+96.0,https://www.facebook.com/Boydbrostreecare/,,,,"['react-dom@16.14.0', '605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com', 'boydtrees@gmail.com', 'focus-within-polyfill@5.0.9', 'core-js-bundle@3.2.1', 'react@16.14.0', 'lodash@4.17.21', '8eb368c655b84e029ed79ad7a5c1718e@sentry.wixpress.com', '831126cb46b74583bf6f72c5061cba9d@sentry-viewer.wixpress.com']"
+97.0,https://www.facebook.com/Chomperstreeservice/timeline,,https://twitter.com/ChompersTrees,,[]
+110.0,https://www.facebook.com/DaveyTree,https://instagram.com/DaveyTree/,https://twitter.com/DaveyTree,http://www.linkedin.com/company/the-davey-tree-expert-company,[]
+99.0,,,,,"['react-dom@16.14.0', '605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com', 'focus-within-polyfill@5.0.9', 'core-js-bundle@3.2.1', 'react@16.14.0', 'lodash@4.17.21', '8eb368c655b84e029ed79ad7a5c1718e@sentry.wixpress.com', '831126cb46b74583bf6f72c5061cba9d@sentry-viewer.wixpress.com']"
+112.0,,,,,"['email@example.com', 'info@richardstreeservicellc.com']"
+114.0,,,,,[]
+102.0,https://www.facebook.com/DaveyTree,https://instagram.com/DaveyTree/,https://twitter.com/DaveyTree,http://www.linkedin.com/company/the-davey-tree-expert-company,[]
+117.0,https://www.facebook.com/RICESTREESERVICE,,https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=RiceTreeService,,['office@ricestree.com']
+104.0,https://www.anytimetree.com/redirect/?https://www.facebook.com/anytimetree,https://www.anytimetree.com/redirect/?https://www.instagram.com/anytimetreeservice,,,['pamela@anytimetree.com']
+105.0,,,,,"['info@cardinal-landscaping.net', 'wght@700', 'wght@0']"
+121.0,,,,,['vonarbor@yahoo.com']
+123.0,https://www.facebook.com/Falls.Group?fref=ts,,,,[]
+125.0,https://www.facebook.com/gptreeservice/,https://www.instagram.com/gptreeservice/,https://twitter.com/gp_tree,,[]
+109.0,https://www.facebook.com/Humblerootstreecare/,https://www.instagram.com/humble_roots_tree_care/,,,"['Humblerootstreecare@gmail.com', 'cached@1671134105']"
+110.0,https://www.facebook.com/DaveyTree,https://instagram.com/DaveyTree/,https://twitter.com/DaveyTree,http://www.linkedin.com/company/the-davey-tree-expert-company,[]
+111.0,,,,,[]
+112.0,,,,,"['wght@400', 'info@richardstreeservicellc.com', 'wght@0', 'email@example.com']"
+135.0,https://business.facebook.com/Excellent-Arborist-Tree-Company-LLC-420081402080052/?tn-str=k*F,,,,['excellentarboristtreecompany@yahoo.com']
+114.0,,,,,[]
+115.0,//facebook.com/1stChoiceTreeService,,,,['224tree@gmail.com']
+139.0,//www.facebook.com/HelpForTrees/,,,,['justin@helpfortrees.com']
+117.0,https://www.facebook.com/RICESTREESERVICE,,https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=RiceTreeService,,['office@ricestree.com']
+141.0,,,,,[]
+119.0,,,,,[]
+120.0,,,,,"['605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com', 'focus-within-polyfill@5.0.9', 'core-js-bundle@3.2.1', 'react@16.14.0', 'lodash@4.17.21', 'react-dom@16.14.0', '831126cb46b74583bf6f72c5061cba9d@sentry-viewer.wixpress.com']"
+121.0,,,,,['vonarbor@yahoo.com']
+146.0,http://www.facebook.com/Oberlanders-Tree-Landscape-636170703066927/,,,,[]
+123.0,https://www.facebook.com/Falls.Group?fref=ts,,,,[]
+148.0,,,,,[]
+125.0,https://www.facebook.com/gptreeservice/,https://www.instagram.com/gptreeservice/,https://twitter.com/gp_tree,,[]
+150.0,,,,,['Doug@allseasonlandworks.com']
+151.0,,,,,[]
+152.0,,,,,[]
+153.0,https://www.facebook.com/111532752711441,https://www.instagram.com/landmtreeservice/,,,['astigma@astigmatic.com']
+130.0,http://www.facebook.com/wix,,http://www.twitter.com/wix,,"['605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com', 'Bryantstree@gmail.com', 'focus-within-polyfill@5.0.9', 'core-js-bundle@3.2.1', 'react@16.14.0', 'lodash@4.17.21', 'react-dom@16.14.0', '831126cb46b74583bf6f72c5061cba9d@sentry-viewer.wixpress.com']"
+131.0,,,,,"['605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com', 'focus-within-polyfill@5.0.9', 'core-js-bundle@3.2.1', 'react@16.14.0', 'lodash@4.17.21', 'react-dom@16.14.0', '831126cb46b74583bf6f72c5061cba9d@sentry-viewer.wixpress.com']"
+157.0,,,https://twitter.com/Clean_Cut_Tree,,"['mycleancut@gmail.com', 'MyCleanCut@Gmail.com']"
+133.0,https://www.facebook.com/treetaz/,,,,[]
+134.0,https://www.facebook.com/BackTreeService/?fref=ts,,,,[]
+135.0,https://business.facebook.com/Excellent-Arborist-Tree-Company-LLC-420081402080052/?tn-str=k*F,,,,['excellentarboristtreecompany@yahoo.com']
+136.0,https://business.facebook.com/Excellent-Arborist-Tree-Company-LLC-420081402080052/?tn-str=k*F,,,,['excellentarboristtreecompany@yahoo.com']
+137.0,https://www.facebook.com/Bodey-Family-Tree-Service-LLC-651585521570657/,,,,['jesse@bodeytrees.com']
+139.0,//www.facebook.com/HelpForTrees/,,,,['justin@helpfortrees.com']
+139.0,//www.facebook.com/HelpForTrees/,,,,['justin@helpfortrees.com']
+140.0,,,,,['timascher@gmail.com']
+141.0,,,,,[]
+142.0,https://www.facebook.com/DaveyTree,https://instagram.com/DaveyTree/,https://twitter.com/DaveyTree,http://www.linkedin.com/company/the-davey-tree-expert-company,[]
+143.0,https://www.facebook.com/TreeCare614,https://instagram.com/awomanstouchtreecare,http://twitter.com/intent/tweet?text=Check this coupon out!&url=https%3A%2F%2Fwww.awomanstouchtreecare.com,http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.awomanstouchtreecare.com&title=Check this coupon out!,['your@email.com']
+144.0,https://www.facebook.com/TreeCare614,https://instagram.com/awomanstouchtreecare,http://twitter.com/intent/tweet?text=Check this coupon out!&url=https%3A%2F%2Fwww.awomanstouchtreecare.com,http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.awomanstouchtreecare.com&title=Check this coupon out!,['your@email.com']
+147.0,http://www.facebook.com/Oberlanders-Tree-Landscape-636170703066927/,,,,[]
+146.0,http://www.facebook.com/Oberlanders-Tree-Landscape-636170703066927/,,,,[]
+147.0,http://www.facebook.com/Oberlanders-Tree-Landscape-636170703066927/,,,,[]
+148.0,,,,,[]
+149.0,,,,,[]
+150.0,,,,,['Doug@allseasonlandworks.com']
+151.0,,,,,['midohiotree@sbcglobal.net']
+152.0,,,,,[]
+153.0,https://www.facebook.com/111532752711441,https://www.instagram.com/landmtreeservice/,,,['astigma@astigmatic.com']
+154.0,,,,,[]
+155.0,,,,,[]
+159.0,,,,,[]
+157.0,,,https://twitter.com/Clean_Cut_Tree,,"['mycleancut@gmail.com', 'MyCleanCut@Gmail.com']"
+158.0,,,,,['mts.inc@hotmail.com']
+159.0,,,,,['johnstreeservice@windstream.net']
+160.0,,,,,['midohiotree@sbcglobal.net']
+170.0,https://www.facebook.com/everarbor,https://www.instagram.com/everarbor/,https://twitter.com/everarborco?lang=en,https://www.linkedin.com/company/everarbor/jobs/?viewAsMember=true&lipi=urn%3Ali%3Apage%3Acompanies_company_jobs_jobs%3Bf5a989fa-0327-4451-9185-9feefc6c6228,[]
+172.0,,,,,[]
+173.0,,,,,['info@richeytreeservice.com']
+174.0,https://www.facebook.com/formandfibertrees,,,,"['admin@formfibertrees.com', 'team@latofonts.com']"
+165.0,https://www.facebook.com/spencerstreeandlandscapesolutions/,,,,"['MAIL-spencer@stls.biz', 'spencer@stls.biz']"
+166.0,https://facebook.com/bowmantrees,,,,"['info@bowmantrees.com', 'your@email.com']"
+180.0,https://www.facebook.com/FullTiltStumpGrinding,,,,['FullTiltStumpGrinding@gmail.com']
+182.0,https://www.facebook.com/pg/OhioStumpGrinding/,,,,['services@ohiostumpgrinding.com']
+169.0,https://www.facebook.com/morrisfamilytreeservice,,,,['morrisfamilytreeservice@gmail.com']
+170.0,https://www.facebook.com/everarbor,https://www.instagram.com/everarbor/,https://twitter.com/everarborco?lang=en,https://www.linkedin.com/company/everarbor/jobs/?viewAsMember=true&lipi=urn%3Ali%3Apage%3Acompanies_company_jobs_jobs%3Bf5a989fa-0327-4451-9185-9feefc6c6228,[]
+187.0,https://www.facebook.com/Daniel-Tree-Service-Inc-871262459614158/,,,,['danieltreesvcinc@gmail.com']
+172.0,,,,,[]
+173.0,,,,,['info@richeytreeservice.com']
+174.0,https://www.facebook.com/formandfibertrees,,,,"['team@latofonts.com', 'admin@formfibertrees.com']"
+195.0,,,,,[]
+196.0,https://www.facebook.com/Pros-Mulch-Tree-service-105504894613089/,,,,[]
+197.0,https://www.facebook.com/Pros-Mulch-Tree-service-105504894613089/,,,,[]
+178.0,,,,,[]
+179.0,,,,,[]
+180.0,https://www.facebook.com/FullTiltStumpGrinding,,,,['FullTiltStumpGrinding@gmail.com']
+204.0,,,,,[]
+182.0,https://www.facebook.com/pg/OhioStumpGrinding/,,,,['services@ohiostumpgrinding.com']
+183.0,http://www.facebook.com/coreysstumpgrinding,,,,"['605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com', 'stumpgrinding@roadrunner.com', 'focus-within-polyfill@5.0.9', 'core-js-bundle@3.2.1', 'react@16.14.0', 'lodash@4.17.21', 'react-dom@16.14.0', '831126cb46b74583bf6f72c5061cba9d@sentry-viewer.wixpress.com']"
+208.0,,,,,['info@billstephensontreeservice.com']
+209.0,,,,,['info@billstephensontreeservice.com']
+186.0,https://www.facebook.com/Daniel-Tree-Service-Inc-871262459614158/,,,,['danieltreesvcinc@gmail.com']
+187.0,https://www.facebook.com/Daniel-Tree-Service-Inc-871262459614158/,,,,['danieltreesvcinc@gmail.com']
+214.0,,,,,[]
+215.0,,,,,"['Ohiotreepros@ymail.com', 'filler@godaddy.com', 'micah@micahrich.com']"
+190.0,,,,,[]
+191.0,//www.facebook.com/HelpForTrees/,,,,['justin@helpfortrees.com']
+192.0,,,,,[]
+219.0,,,,,['your@email.com']
+221.0,http://smashballoon.com/custom-facebook-feed/docs/errors/,,,,['contact@theohiotreeman.com']
+195.0,,,,,[]
+196.0,https://www.facebook.com/Pros-Mulch-Tree-service-105504894613089/,,,,[]
+197.0,https://www.facebook.com/Pros-Mulch-Tree-service-105504894613089/,,,,[]
+233.0,,,,,['eddiestreeservice1@yahoo.com']
+234.0,,,,,['eddiestreeservice1@yahoo.com']
+235.0,,,,,['eddiestreeservice1@yahoo.com']
+201.0,https://www.facebook.com/tawatreeservice/,,,,['treeservice@tawatree.com']
+202.0,https://www.facebook.com/tawatreeservice/,,,,['treeservice@tawatree.com']
+203.0,,,,,"['esllc@gmail.com', 'your@email.com', 'icesllc@gmail.com', 'campostreeservicesllc@gmail.com']"
+204.0,,,,,[]
+245.0,,,,,[]
+206.0,,,,,['info@billstephensontreeservice.com']
+207.0,,,,,['info@billstephensontreeservice.com']
+208.0,,,,,['info@billstephensontreeservice.com']
+209.0,,,,,['info@billstephensontreeservice.com']
+210.0,http://www.facebook.com/pages/Columbus-OH/Kevin-Masters-Certified-Arborist/129203423760765?ref=ts,,http://twitter.com/masterarbor,,[]
+211.0,http://www.facebook.com/pages/Columbus-OH/Kevin-Masters-Certified-Arborist/129203423760765?ref=ts,,http://twitter.com/masterarbor,,[]
+267.0,https://www.facebook.com/Joelsprotreeservice/,,https://twitter.com/JoelsProTree,,[]
+272.0,,,,,['Rootchasers@gmail.com']
+214.0,,,,,[]
+215.0,,,,,"['Ohiotreepros@ymail.com', 'filler@godaddy.com', 'micah@micahrich.com']"
+216.0,https://www.facebook.com/GreenTreeColumbus/,,,https://www.linkedin.com/company/greentreecolumbus,[]
+217.0,,,http://www.twitter.com/wrightstree,,"['605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com', 'focus-within-polyfill@5.0.9', '8c4075d5481d476e945486754f783364@sentry.io', 'core-js-bundle@3.2.1', 'react@16.14.0', 'lodash@4.17.21', 'react-dom@16.14.0', '831126cb46b74583bf6f72c5061cba9d@sentry-viewer.wixpress.com', 'service@wrightstree-ohio.com']"
+218.0,,,,,"['your@email.com', 'protree6180@sbcglobal.net']"
+219.0,,,,,"['your@email.com', 'protree6180@sbcglobal.net']"
+282.0,https://www.facebook.com/spencerstreeandlandscapesolutions/,,,,[]
+221.0,http://smashballoon.com/custom-facebook-feed/docs/errors/,,,,['contact@theohiotreeman.com']
+286.0,https://www.facebook.com/CATreeService/,,,,[]
+287.0,,,,,['ross.sonnier@gmail.com']
+288.0,,,,,['ross.sonnier@gmail.com']
+290.0,,,,,[]
+291.0,,,,,[]
+227.0,https://www.facebook.com/pages/Cincinnati-Tree-Service/263092000499844,,,,['onetreeman@aol.com']
+228.0,https://www.facebook.com/pages/Cincinnati-Tree-Service/263092000499844,,,,['onetreeman@aol.com']
+229.0,https://facebook.com/treeproohio,,https://twitter.com/treeproohio,,['cbustreecare@gmail.com']
+295.0,,,,,['some@gmail.com']
+299.0,https://www.facebook.com/1stImpressionsGardenCenter/,https://www.instagram.com/1stimpressions_landscapegarden/,,,['retail@1stgardencenter.com']
+300.0,,,,,[]
+233.0,,,,,['eddiestreeservice1@yahoo.com']
+234.0,,,,,['eddiestreeservice1@yahoo.com']
+235.0,,,,,['eddiestreeservice1@yahoo.com']
+236.0,,,,,"['tommymiller66@hotmail.com', 'your@email.com']"
+305.0,http://www.facebook.com/Jakesps,http://instagram.com/jakespropertyservices,http://twitter.com/#!/jakesproperty,,['info@jakespropertyservices.com']
+306.0,http://www.facebook.com/Jakesps,http://instagram.com/jakespropertyservices,http://twitter.com/#!/jakesproperty,,['info@jakespropertyservices.com']
+239.0,,,,,"['your@email.com', 'bluedenimtreeservice@yahoo.com']"
+240.0,https://www.facebook.com/Andriistreeservice,https://www.instagram.com/andriistreeservice/,,,"['react-dom@16.14.0', '605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com', 'andriistreeservice@gmail.com', 'dd0a55ccb8124b9c9d938e3acf41f8aa@sentry.wixpress.com', 'focus-within-polyfill@5.0.9', 'core-js-bundle@3.2.1', 'react@16.14.0', 'lodash@4.17.21', '8eb368c655b84e029ed79ad7a5c1718e@sentry.wixpress.com', '831126cb46b74583bf6f72c5061cba9d@sentry-viewer.wixpress.com']"
+243.0,,,,,[]
+245.0,,,,,['cached@1671140846']
+246.0,https://www.facebook.com/WE-Miller-Tree-Service-895693507113143/reviews/?ref=page_internal,,,,"['your@email.com', 'wemillertrees@aol.com']"
+247.0,https://www.facebook.com/WE-Miller-Tree-Service-895693507113143/reviews/?ref=page_internal,,,,"['your@email.com', 'wemillertrees@aol.com']"
+250.0,,,,,[]
+251.0,https://www.facebook.com/ziehler,,http://www.twitter.com/discoverziehler,https://www.linkedin.com/company/ziehler-lawn-and-tree-care,['info@discoverziehler.com.']
+252.0,,,,,['Stephensonstreeservice@yahoo.com']
+253.0,,,,,['Stephensonstreeservice@yahoo.com']
+267.0,https://www.facebook.com/Joelsprotreeservice/,,https://twitter.com/JoelsProTree,,[]
+272.0,,,,,['Rootchasers@gmail.com']
+273.0,,,,,['Rootchasers@gmail.com']
+275.0,,,,,[]
+278.0,https://www.facebook.com/CATreeService/,,,,[]
+279.0,https://www.facebook.com/CATreeService/,,,,[]
+280.0,https://www.facebook.com/CATreeService/,,,,[]
+281.0,https://www.facebook.com/spencerstreeandlandscapesolutions/,,,,"['MAIL-spencer@stls.biz', 'spencer@stls.biz']"
+282.0,https://www.facebook.com/spencerstreeandlandscapesolutions/,,,,"['MAIL-spencer@stls.biz', 'spencer@stls.biz']"
+283.0,https://www.facebook.com/spencerstreeandlandscapesolutions/,,,,"['MAIL-spencer@stls.biz', 'spencer@stls.biz']"
+286.0,https://www.facebook.com/CATreeService/,,,,[]
+287.0,,,,,['ross.sonnier@gmail.com']
+288.0,,,,,['ross.sonnier@gmail.com']
+290.0,,,,,"['info@cardinal-landscaping.net', 'wght@700', 'wght@0']"
+291.0,,,,,"['info@cardinal-landscaping.net', 'wght@700', 'wght@0']"
+292.0,,,,,"['info@cardinal-landscaping.net', 'wght@700', 'wght@0']"
+293.0,https://www.facebook.com/precisioncorporation,,https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=@PrecisionCorpor,,[]
+294.0,https://www.facebook.com/precisioncorporation,,https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=@PrecisionCorpor,,[]
+295.0,,,,,['some@gmail.com']
+297.0,https://www.facebook.com/hoffmanlawnohio/,,,,[]
+298.0,https://www.facebook.com/hoffmanlawnohio/,,,,[]
+299.0,https://www.facebook.com/1stImpressionsGardenCenter/,https://www.instagram.com/1stimpressions_landscapegarden/,,,['retail@1stgardencenter.com']
+300.0,,,,,['wght@400']
+301.0,https://facebook.com/HeritageHabitatCo,,,,['heritagehabitatco@gmail.com']
+302.0,,,,,[]
+303.0,https://www.facebook.com/Meyers-Green-Services-1813862212273727/,,,,['cookieconsent@3']
+304.0,http://www.facebook.com/Jakesps,http://instagram.com/jakespropertyservices,http://twitter.com/#!/jakesproperty,,['info@jakespropertyservices.com']
+305.0,http://www.facebook.com/Jakesps,http://instagram.com/jakespropertyservices,http://twitter.com/#!/jakesproperty,,['info@jakespropertyservices.com']
+306.0,http://www.facebook.com/Jakesps,http://instagram.com/jakespropertyservices,http://twitter.com/#!/jakesproperty,N/A,['info@jakespropertyservices.com']

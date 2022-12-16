@@ -1,5 +1,6 @@
 import traceback
 import csv
+from datetime import time
 from urllib.parse import urljoin
 import pandas as pd
 from logzero import logfile, logger
@@ -9,7 +10,7 @@ import sys
 sys.path.append('C:\\Users\\moffi\\PycharmProjects\\scraping_web\\scraper') #change path to your pc
 from scraper.items import SocialMediaLinks
 import logging
-
+import time
 logging.basicConfig(
     filename='log.txt',
     format='%(levelname)s: %(message)s',
@@ -25,7 +26,7 @@ class WebsiteSpider(scrapy.Spider):
     # Using a dummy website to start scrapy request
     def start_requests(self):
         # Open the CSV file for reading
-
+        start = time.perf_counter()
         with open("data.csv") as csvfile: #read out data from .csv file and go through each link positioned in 2nd row
             # Create a CSV reader
             reader = csv.reader(csvfile)
@@ -35,13 +36,22 @@ class WebsiteSpider(scrapy.Spider):
             for row in reader:
                 test_number+=1
                 # Get the URL from the first column of the row
-                url = row[1]
-                #print("URL IS ",url)
+                url = row[0]
+                print("URL IS ",url, " test number ",test_number)
                 # Generate a request for the URL
                 #print("this is the list of items:", len(WebsiteSpider.info_list))
+                try:
+                    yield scrapy.Request(url=url, callback=self.parse_website,meta={'test_number':test_number})
+                except Exception as e:
+                    print(e)
+                    pass
+        end = time.perf_counter()
 
-                yield scrapy.Request(url=url, callback=self.parse_website,meta={'test_number':test_number})
+        # calculate the total time it took to execute the script
+        elapsed = end - start
 
+        # print the total time it took to execute the script
+        print(f"Total time: {elapsed:.2f} seconds")
             # with open("items.csv", "w") as csvfile:
             #     # Create a CSV writer
             #     writer = csv.DictWriter(csvfile,
@@ -71,8 +81,8 @@ class WebsiteSpider(scrapy.Spider):
         emails ="N/A"
         contact_link = "N/A"
         try:
-
-            emails = re.findall(r'[\w\.-]+@[\w\.-]+', response.text)
+            print("attempting finding emails")
+            emails = re.findall(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+', response.text)
             set_emails = set(emails)
             emails = list(set_emails)
 
@@ -82,7 +92,7 @@ class WebsiteSpider(scrapy.Spider):
             clear_bad_emails(emails)
             #print(emails)
         except Exception as e:
-            print(e)
+            print("no emails",e)
 
         for href in hrefs:
 
@@ -106,7 +116,7 @@ class WebsiteSpider(scrapy.Spider):
                     contact_link = href
 
                     contact_link = urljoin(response.url, contact_link)
-                    #print("contact link", contact_link)
+                    print("contact link", contact_link)
             except Exception as e:
                 print("error with yield is:", e)
 
@@ -123,13 +133,13 @@ class WebsiteSpider(scrapy.Spider):
     def parse_contact(self, response):
 
         test_number = response.meta['test_number']
-
+        print("parse contact call")
         try:
             if response.meta['emails']!="N/A":
                 emails = re.findall(r'[\w\.-]+@[\w\.-]+', response.text)
                 set_emails = set(emails)
                 emails = list(set_emails)
-                clear_bad_emails(emails) #need more options to filter out bad emails
+                #clear_bad_emails(emails) #need more options to filter out bad emails
                 # for item in list(emails):
                 #     if ".com" not in item:
                 #         emails.remove((item))
@@ -169,7 +179,7 @@ class WebsiteSpider(scrapy.Spider):
 def clear_bad_emails(emails):
     #print("called clear bad emails")
     for item in list(emails):
-       # print("ITEM",item)
+        print("ITEM",item)
         try:
             if "careers" in item or "reservations" in item or "donations" in item or "events" in item or "activities" in item:
                 #print('removeing email', item)
